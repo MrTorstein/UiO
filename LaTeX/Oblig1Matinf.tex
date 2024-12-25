@@ -1,0 +1,228 @@
+\documentclass[11pt,norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/MatInf1100/Python programmer"}
+
+\author{Torstein Solheim Ølberg}
+\title{Svar på Oblig nr. 1 i MatInf1100}
+
+\begin{document}
+\maketitle
+	\begin{center}
+\Large \textbf{Oppgaver}
+	\end{center}
+		\paragraph{1.}
+			\begin{flushleft}
+Vi skal se på differensligningen
+			\end{flushleft}
+				\begin{align}
+x_{n+2} - 2x_{n+1} - x_{n} = 0, \text{med $x_0 = 1$ og $x_1 = 1$.}
+				\end{align}
+			\subparagraph{a)}
+				\begin{flushleft}
+Lag et dataprogram som simulerer denne ligningen og skriver ut følgen $x_2$, $x_3$, \dots, $x_{100}$.
+				\end{flushleft}
+				\begin{flushleft}
+\textbf{Løsning:}
+				\end{flushleft}
+\lstinputlisting{oblig1_oppg1a.py}
+			\subparagraph{b)}
+				\begin{flushleft}
+Simuler ligningen og skriv ut følgen $x_2, x_3, \dots, x_{100}$ når startverdiene endres til $x_0 = 1$ og $x_1 = 1 - \sqrt{2}$
+				\end{flushleft}
+				\begin{flushleft}
+\textbf{Løsning:}
+				\end{flushleft}
+\lstinputlisting{oblig1_oppg1b.py}
+			\subparagraph{c)}
+				\begin{flushleft}
+Vis at den generelle løsningen av ligningen $x_{n+2} - 2 x_{n+1} - x_{n} = 0$ er på formen
+$$
+x_n = C(1-\sqrt 2)^n + D(1+\sqrt 2)^n
+$$
+og at initialverdiene $x_0=1$ og $x_1 = 1-\sqrt 2$ bestemmer den endelige løsningen til å være $x_n = (1-\sqrt 2)^n$.
+				\end{flushleft}
+				\begin{flushleft}
+\textbf{Løsning:}
+				\end{flushleft}
+				\begin{align}				
+x_{n+2} - 2x_{n+1} - x_{n} = 0, \text{med $x_0 = 1$ og $x_1 = 1-\sqrt{2}$.} \\
+\text{Prøver med løsningen $x_{n} = r^{n}$} \\
+\text{Den karakteristiske løsningen blir da $r^{2} - 2r - 1 = 0$} \nonumber \\
+%\vspace{1mm} \nonumber \\
+r = \dfrac{2 \pm \sqrt{4+4}}{2} = \dfrac{2\pm 2\sqrt{2}}{2} = 1 \pm \sqrt{2} \Rightarrow r =
+\left \{
+\begin{tabular}{c}
+$1 - \sqrt{2}$ \\ 
+$1 + \sqrt{2}$
+\end{tabular} \right. \\
+\vspace{3mm}
+x_n = Cr_1^n + Dr_2^n = C \left( 1 - \sqrt{2} \right) ^n + D \left(1 - \sqrt{2}\right)^n \\
+\vspace{3mm}
+x_0 = 1 = C + D \Rightarrow C = 1 - D \label{eq:1}\\
+\vspace{1mm}
+x_1 = 1 - \sqrt{2} = C\left(1 - \sqrt{2}\right)^1 + D\left(  1 - \sqrt{2} \right)^1 \label{eq:2} \\
+\text{Setter \eqref{eq:1} inn i \eqref{eq:2}} \nonumber \\
+1 - \sqrt{2} = \left(1 - D\right)  \left(1 - \sqrt{2}\right)^n + D\left(1 - \sqrt{2}\right)^n \nonumber \\
+1 - \sqrt{2} = 1 - \sqrt{2} - D + \sqrt{2} D + D + \sqrt{2} D \nonumber \\
+\dfrac{0}{2 \sqrt{2}} = \dfrac{2 \sqrt{2} D}{2 \sqrt{2}} \Rightarrow D = 0 \\
+\text{Setter $D = 0$ inn i \eqref{eq:1}} \nonumber \\
+C = 1 - D = 1 - 0 = 1 \\
+x_n = C(1 - \sqrt{2})^n + D(1 + \sqrt{2})^n \nonumber \\
+x_n = 1(1 - \sqrt{2})^n + 0(1 + \sqrt{2})^n = (1 - \sqrt{2})^n
+				\end{align}
+			\subparagraph{d)}
+				\begin{flushleft}
+Sjekk om den analytiske løsningen i (c) stemmer med dine beregninger i (b) og forklar eventuelle avvik.
+				\begin{flushleft}
+					\textbf{Løsning:}
+				\end{flushleft}
+					\begin{align}
+x_0 = (1 - \sqrt{2})^0 = 1 \nonumber \\
+x_1 = (1 - \sqrt{2})^1 = 1 - \sqrt{2} = -0.414213562373 \nonumber \\
+x_2 = (1 - \sqrt{2})^2 = 1 - 2\sqrt{2} + 2 = 0.171572875254 \nonumber \\
+x_3 = (1 - \sqrt{2})^3 = -0.0710678118655 \nonumber \\
+x_{16} = (1 - \sqrt{2})^{16} = 7.50911982603 \cdot 10^{-7} \nonumber
+					\end{align}
+Avviket skyldes at leddet $D(1 + \sqrt{2})^n$ egentlig skal forsvinne fordi $D = 0$, noe vi ser i oppg c. Dette er derimot ikke tilfelle når maskinen regner ut sine resultater, og vi får en liten feil på ca. $10^{-17}$. Denne feilen virker liten og ubetydelig, men når $n$ blir stor nok vil dette begynne å spille inn på resultatet vårt, og til slutt vil denne feilen, som ikke skulle ha eksistert føre til at rekka ikke går mot $0$, men heller $\infty$
+\vspace{3mm}
+				\end{flushleft}
+		\paragraph{2.}
+			\begin{flushleft}
+Binomialkoeffisienten $\binom{n}{i}$ er definert som
+				\begin{equation}\label{eq:binomdef}
+\binom{n}{i}=\frac{n!}{i!\,(n-i)!}
+				\end{equation}
+der $n\ge 0$ er et ikke-negativt heltall og $i$ is et heltall i intervallet $0\le i \le n$.
+Binomialkoeffisientene dukker opp i mange ulike sammenhenger og må ofte beregnes på datamaskin. Siden alle binomialkoeffisientene er heltall (divisjonen i  \eqref{eq:binomdef} gir aldri noen rest) så er det rimelig å bruke heltallige variable i slike beregninger. For små verdier av $n$ og $i$ går det bra, men for større verdier får vi fort problemer fordi både teller og nevner i \eqref{eq:binomdef} lett blir større enn det største heltallet som kan representeres med 32- eller 64-bits heltall selv om binomialkoeffisienten i seg selv ikke er så stor. I mange språk vil dette føre til en form for «overflow», men selv i et språk som Python som unngår dette ved at innebygget programvare kommer til unnsetning, vil beregningene gå langt saktere enn ellers. Vi kan bruke flyttall i steden, men selv da kan vil vi lett få «overflow» underveis i beregningene. I denne oppgaven skal vi se hvordan vi kan unngå slike problemer.
+Hvis vi ser litt nærmere på definisjonen \eqref{eq:binomdef} legger vi merke til at vi kan forkorte i stor skala,
+$$
+\binom{n}{i}=\frac{1\cdot 2 \cdots i \cdot (i+1) \cdots n}
+{1\cdot 2 \cdots i \cdot 1 \cdot 2 \cdots (n-i)}
+=\frac{i+1}{1}\cdot\frac{i+2}{2}\cdots \frac{n}{n-i}.
+$$
+Ved hjelp av produktnotasjon kan vi derfor skrive $\binom{n}{i}$ som
+				\begin{equation}\label{eq:altdef}
+\binom{n}{i}=\prod_{j=1}^{n-i} \frac{i+j}{j}.
+				\end{equation}
+			\end{flushleft}			
+			\subparagraph{a)}
+				\begin{flushleft}
+Skriv et program som beregner binomialkoeffisienter ved hjelp av formelen \eqref{eq:altdef}. Test metoden på eksemplene
+					\begin{align*}
+\binom{9998}{4} &= 416083629102505,\\[3pt]
+\binom{100000}{70} &= 8.14900007813826 \cdot 10^{249},\\[3pt]
+\binom{1000}{500} &=  2.702882409454366 \cdot 10^{299}.
+					\end{align*}\nobreak
+				\end{flushleft}
+				\begin{flushleft}
+\textbf{Løsning:}
+				\end{flushleft}
+				\begin{flushleft}
+Vi må bruke flyttall fordi vi har en deleopprasjon som kan føre til heltallsdivisjon.
+				\end{flushleft}
+\lstinputlisting{oblig1_oppg2a.py}
+			\subparagraph{b)}
+				\begin{flushleft}
+Er det nå mulig at du underveis får «overflow» om binomialkoeffisienten du skal beregne er mindre enn det største flyttallet som kan representeres på maskinen din?
+				\end{flushleft}
+				\begin{flushleft}
+\textbf{Løsning:}
+				\end{flushleft}
+				\begin{flushleft}
+Nei fordi hvert ledd $\frac{i + j}{j}$ er tall som aldri blir mindre enn $1$ og derfor vil alltid sluttresultatet av alle disse tallene ganget sammen bli det største tallet i utregninga.
+				\end{flushleft}
+			\subparagraph{c)}
+				\begin{flushleft}
+I vår utledning av \eqref{eq:altdef} forkortet vi $i!$ mot $n!$ i
+\eqref{eq:binomdef}. En alternativ metode kan utledes ved å forkorte 
+$(n-i)!$ mot $n!$ isteden. Utled denne alternative metoden på samme måte som over og diskuter når de to metodene bør brukes (du trenger ikke programmere denne metoden, det holder å argumentere matematisk).
+				\end{flushleft}
+				\begin{flushleft}
+\textbf{Løsning:}
+				\end{flushleft}
+				\begin{flushleft}
+					\begin{align}{\label{eq:altdef2}}
+\binom{n}{i} = \frac{1 \cdot 2 \cdots i \cdot (i + 1) \cdots n}{1 \cdot 2 \cdots i \cdot 1 \cdot 2 \cdots (n - i)} \nonumber \\
+\frac{(n-i+1) \cdots n}{1 \cdot 2 \cdots i} = \frac{n - i + 1}{1} \cdot \frac{n - i + 2}{2} \cdots \frac{n}{i} \nonumber \\
+\binom{n}{i}=\prod_{j = 1}^{i} \frac{n - i + j}{j}.
+					\end{align}
+Metode \eqref{eq:altdef} er best å bruke når forskjellen mellom n og i er liten, fordi da blir det få utregninger, slik at det ikke tar så lang tid. I tillegg er det store tall som deles på små tall, noe som gjør at utregningene blir ganske nøyaktige. Når forskjellen mellom n og i er stor burde metode \eqref{eq:altdef2} brukes fordi da blir det færrest utregninger og det tar kortest tid å regne ut for datamaskinen, i tillegg til at det igjen blir store tall delt på små tall som blir ganske nøyaktige.
+				\end{flushleft}
+		\paragraph{3.}
+			\begin{flushleft}
+Følgende python-program er gitt:
+			\end{flushleft}
+			\begin{verbatim}
+from random import random
+
+antfeil = 0; N = 10000
+x0 = y0 = z0 = 0.0
+feil1 = feil2 = 0.0
+
+for i in range(N):
+x = random(); y = random();
+    res1 = (x + y)*(x - y)
+    res2 = x**2 - y**2
+    
+    if res1 != res2:
+        antfeil += 1
+        x0 = x; y0 = y
+        feil1 = res1
+        feil2 = res2
+
+print (100. * antfeil/N)
+print (x0, y0, feil1 - feil2)
+			\end{verbatim}
+
+En kjøring av programmet ga utskriften
+
+			{\small\begin{verbatim}
+	48.76
+	0.8206445131955394 0.6733852440761772 -2.7755575615628914e-17
+			\end{verbatim}}
+			\subparagraph{a)}
+				\begin{flushleft}
+Forklar hva programmet gjør og hva utskriften forteller oss.
+				\end{flushleft}
+				\begin{flushleft}
+\textbf{Løsning:}
+				\end{flushleft}
+				\begin{flushleft}
+Programmet genererer to tilfeldige tall mellom $0$ og $1$, og bruker to forskjellige måter å regne ut $x^2 - y^2$. Deretter sjekker programmet om disse to metodene gir samme svar. Programmet gjør utregningene $10000$ ganger og teller antall ganger de to metodene gir forskjellig svar. Tilslutt regner den ut hvor mange prosent av de $10000$ gangene det blir en forskjell, og printer det. I tillegg printer den $x$ og $y$ den siste gangen det ble en forskjell på metodene og også forskjellen disse to metodene gav. \\
+Utskriften forteller oss at $48.76\%$ av gangene ble det en forskjell og at den siste gangen det ble en forskjell mellom metodene var $x = 0.8206445131955394$, $y = 0.6733852440761772$ og forskjellen ble mellom metodene ble $-2.7755575615628914 \cdot 10^{-17}$, noe som betyr at res1, altså $x**2 - y**2$ metoden gav det største tallet.
+				\end{flushleft}
+			\subparagraph{b)}
+				\begin{flushleft}
+Vi vet fra kompendiet at de matematiske opperasjonene, på datamaskin, som gir de største feilene er addisjon og subtraksjon. Program nr.1 har disse to opperasjonene i seg, mens program nr.2 ikke har det. Dette er grunnen til at det blir flere feil i program 1 enn i program 2
+				\end{flushleft}
+\end{document}

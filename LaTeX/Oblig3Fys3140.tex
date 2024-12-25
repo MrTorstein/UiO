@@ -1,0 +1,256 @@
+\documentclass[11pt, A4paper,norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{textcomp}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/Fys3140/Python programmer"}
+\graphicspath{{C:/Users/Torstein/Documents/UiO/Fys3140/"Python programmer"/}}
+\hypersetup{colorlinks, urlcolor=url}
+
+\author{Torstein Solheim Ølberg}
+\title{Svar på Oblig nr. 3 i Fys3140}
+
+
+
+%\lstinputlisting{Filnavn! type kodefil}
+%\includegraphics[width=12.6cm,height=8cm]{Filnavn! type png}
+
+
+
+\begin{document}
+\maketitle
+	\begin{center}
+\Large \textbf{Oppgaver}
+	\end{center}
+
+
+
+
+
+
+
+
+
+		\paragraph{1.}
+			\subparagraph{a)}
+				\begin{flushleft}
+Siden integralet $\oint_{\Gamma} \frac{sin(z)dz}{2z - \pi}$ har en singulæritet inni sirkelen $|z| = 3$, altså $z = \frac{\pi}{2}$ vil dette integralet ikke være mulig å bruke Cauchy's teorem på. Integralet kan derimot også skrives på formen 
+$$\oint_{\Gamma} \frac{\frac{sin(z)}{2}dz}{z - \frac{\pi}{2}} = \frac{1}{2} \oint_{\Gamma} \frac{\sin(z)dz}{z - \frac{\pi}{2}}$$
+Da sier Cauchy's integral formel at
+$$\pi i \sin\left(\frac{\pi}{2}\right) =  \frac{1}{2} \oint_{\Gamma} \frac{\sin(z)dz}{z - \frac{\pi}{2}}$$
+Som vi kan se betyr at integralet blir lik $\pi i$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{flushleft}
+Integralet $\oint_{\Gamma} \frac{sin(z)dz}{2z - \pi}$ har derimot ikke noen singulæriteter inni sirkelen $|z| = 1$ og Cauchy's teorem sier da at integralet blir lik null
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+Integralet $\oint_{\Gamma} \frac{sin(z)dz}{6z - \pi}$ har en singulæritet inni sirkelen $|z| = 1$, altså $z = \frac{\pi}{6}$ vil dette integralet ikke være mulig å bruke Cauchy's teorem på heller. Integralet kan derimot også skrives på formen
+$$\oint_{\Gamma} \frac{\frac{sin(z)}{6}dz}{z - \frac{\pi}{6}} = \frac{1}{2} \oint_{\Gamma} \frac{\frac{\sin(z)}{3}dz}{z - \frac{\pi}{6}}$$
+Da sier Cauchy's integral formel at
+$$\pi i \frac{\sin\left(\frac{\pi}{6}\right)}{3} =  \frac{1}{2} \oint_{\Gamma} \frac{\frac{\sin(z)}{3}dz}{z - \frac{\pi}{6}} = \pi i \frac{1}{2} \cdot \frac{1}{3} = i \frac{\pi}{6}$$
+				\end{flushleft}
+			
+
+
+
+
+
+
+
+
+
+			\subparagraph{d)}
+				\begin{flushleft}
+Integralet $\oint_{\Gamma} \frac{e^{2z}dz}{z - \ln(2)}$ har singulæriteten $z = \ln(2)$ som ligger inni firkanten i oppgave teksten, altså en med senter i $0$ og sider med lengde $2$. Dermed kan vi ikke bruke Cauchy's teorem, men vi kan bruke Cauchy's integral formel direkte, som sier
+$$2 \pi i e^{2 \ln(2)} = \oint_{\Gamma} \frac{e^{2z}dz}{z - ln(2)} = 2 \pi i (2)^2 = 8 \pi i$$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+		\paragraph{2.}
+			\subparagraph{a)}
+				\begin{flushleft}
+Deriverer Cauchys integral formel
+				\end{flushleft}
+				\begin{gather*}
+f(z) = \frac{1}{2 \pi i} \oint_{\Gamma} \frac{f(w) dw}{( w - z)} \\
+f'(z) = \frac{1}{2 \pi i} \oint_{\Gamma} \frac{f(w) dw}{(w - z)^{2}} \cdot - 1 \cdot - 1 = \frac{1}{2 \pi i} \oint_{\Gamma} \frac{f(w) dw}{(w - z)^{2}} \\
+f''(z) = \frac{1}{2 \pi i} \oint_{\Gamma} \frac{f(w) dw}{(w - z)^{2}} \cdot - 2 \cdot - 1 = \frac{2}{2 \pi i} \oint_{\Gamma} \frac{f(w) dw}{(w - z)^{3}} \\
+f'''(z) = \frac{2}{2 \pi i} \oint_{\Gamma} \frac{f(w) dw}{(w - z)^{3}} \cdot - 3 \cdot - 1 = \frac{6}{2 \pi i} \oint_{\Gamma} \frac{f(w) dw}{(w - z)^{4}}
+				\end{gather*}
+				\begin{flushleft}
+Ser at alt som endrer seg for hver gang du deriverer er at du ganger med $n$, der $n$ er det tallet du deriverer med, og legger til en i potensen til telleren. Altså blir formelen 
+$$f^{(n)}(z) = \frac{n!}{2 \pi i} \oint_{\Gamma} \frac{f(w) dw}{(w - z)^{n + 1}}$$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{flushleft}
+Integralet $\oint_{\Gamma} \frac{\sin(2z)dz}{(6z - \pi)^3}$ er på en form som gjør at vi kan bruke den generaliserte Cauchy integral formelen med $n = 2$, altså
+$$f^{(2)}(a) = \frac{2}{2 \pi i} \oint_{\Gamma} \frac{f(z) dz}{(z - a)^{3}} = \frac{1}{\pi i} \oint_{\Gamma} \frac{f(z) dz}{(z - a)^{3}}$$
+Siden integralet vårt kan skrives på formen
+$$\oint_{\Gamma} \frac{\sin(2z)dz}{\left( 6 \left(z - \frac{\pi}{6} \right) \right)^3} = \oint_{\Gamma} \frac{\frac{\sin(2z)}{\sqrt[3]{6}}dz}{\left(z - \frac{\pi}{6} \right)^3}$$
+Altså får vi, ved hjelp av integralformelen
+$$\oint_{\Gamma} \frac{\frac{\sin(2z)}{\sqrt[3]{6}}dz}{\left(z - \frac{\pi}{6} \right)^3} = \pi i \left( \frac{\sin(2z)}{\sqrt[3]{6}} \right)''\left( \frac{\pi}{6} \right) = \pi i \left( \frac{- 4 \sin\left( \frac{\pi}{3} \right)}{\sqrt[3]{6}} \right) = - i 2^{\frac{2}{3}} \sqrt[6]{3} \pi $$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+		\paragraph{3.}
+			\subparagraph{a)}
+				\begin{gather*}
+\oint_{\Gamma} \frac{\cosh(z)dz}{2 \ln (2) - z} = \oint_{\Gamma} \frac{- \cosh(z)dz}{z - 2 \ln (2)} \\
+\text{Dette blir etter Cauchys integral formel} \\
+\oint_{\Gamma} \frac{- \cosh(z)dz}{z - 2 \ln (2)} = - 2 \pi i \cosh(2 \ln(2)) = - 2 \pi i \frac{e^{2 \ln(2)} + e^{-2 \ln(2)}}{2} = - \frac{9 \pi i}{4}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{gather*}
+\oint_{\Gamma} \frac{e^{3z}dz}{\left( z - \ln(2) \right)^4} \\
+\text{Dette blir etter Cauchys integral formel} \\
+\oint_{\Gamma} \frac{e^{3z}dz}{\left( z - \ln(2) \right)^4} = \frac{2 \pi i \left( e^{3z} \right)'''(\ln(2))}{6} = 3 \pi i e^{3 \ln(2)} = 24 \pi i
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+
+
+		\paragraph{4.}
+			\subparagraph{a)}
+				\begin{gather*}
+\text{Utrykket} f(z) = \frac{z - 1}{z^2 (z - 2)} \text{kan også skrives som} \\
+f(z) = \frac{1}{z^2}\left( \frac{z}{z - 2} - \frac{1}{z - 2} \right) \\
+\text{Skriver på formen $\frac{1}{1 - \frac{z}{k}}$} \\
+\frac{z}{z - 2} = - \frac{z}{2} \frac{1}{1 - \frac{z}{2}} = - \frac{z}{2} \sum_{n = 0}^{\infty} \left( \frac{z}{2} \right)^n = - \sum_{n = 0}^{\infty} \left( \frac{z}{2} \right)^{n + 1} \\
+\text{Som vi kan se at konvergerer med $|z| < 2$} \\
+\frac{1}{z - 2} = - \frac{1}{2} \frac{1}{1 - \frac{1}{2}} = - \sum_{n = 0}^{\infty} \frac{z^n}{2^{n + 1}} \\
+\text{Dette konvergerer også når $|z| < 2$. Putter vi alt sammen får vi.} \\
+f(z) = \frac{z - 1}{z^2(z - 2)} = \frac{1}{z^2} \left( \frac{z}{z - 2} - \frac{1}{z - 2} \right) = \frac{1}{z^2} \left( - \sum_{n = 0}^{\infty} \left( \frac{z}{2} \right)^{n + 1} - \sum_{n = 0}^{\infty} \frac{z^n}{2^{n + 1}} \right) \\
+f(z) = - \sum_{n = 0}^{\infty} \left( \frac{\frac{1}{z} + \frac{1}{z^2}}{2^{n + 1}} \right)z^n \\
+\text{Dette blir da Laurent serien for $|z| < 2$}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{gather*}
+f(z) = \frac{1}{z^2}\left( \frac{z}{z - 2} - \frac{1}{z - 2} \right) \\
+\text{Skriver på formen $\frac{1}{1 - \frac{k}{z}}$} \\
+\frac{z}{z - 2} = - \frac{1}{1 - \frac{2}{z}} = - \sum_{n = 0}^{\infty} \left( \frac{2}{z} \right)^n \\
+\text{Som vi kan se at konvergerer med $|z| > 2$} \\
+\frac{1}{z - 2} = - \frac{1}{z} \frac{1}{1 - \frac{2}{z}} = - \sum_{n = 0}^{\infty} \frac{2^{n}}{z^{n + 1}} \\
+\text{Dette konvergerer også når $|z| > 2$. Putter vi alt sammen får vi.} \\
+f(z) = \frac{z - 1}{z^2(z - 2)} = \frac{1}{z^2} \left( \frac{z}{z - 2} - \frac{1}{z - 2} \right) = \frac{1}{z^2} \left( - \sum_{n = 0}^{\infty} \left( \frac{2}{z} \right)^n - \sum_{n = 0}^{\infty} \frac{2^n}{z^{n + 1}} \right) \\
+f(z) = - \sum_{n = 0}^{\infty} \left( \frac{2^n(z + 1)}{z^3} \right)\frac{1}{z^n} \\
+\text{Dette blir da Laurent serien for $|z| > 2$}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+Fra uttrykket for $f(z)$ gyldig innenfor sirkelen $|z| < 2$ har vi at $b_1$ er 
+$$- \frac{1}{2} - \frac{1}{4} = - \frac{3}{4}$$
+Hvor jeg henter den første brøken fra brøk en i telleren ved ledd $n = 0$ og den andre brøken fra brøk to i telleren, når $n = 1$
+				\end{flushleft}
+\end{document}

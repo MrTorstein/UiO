@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MCAstSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <movieResolution>1</movieResolution>
+  <gridSize>1</gridSize>
+  <screenShotResolution>4</screenShotResolution>
+  <advancedClouds>false</advancedClouds>
+  <cameraEffects>true</cameraEffects>
+  <previousFile>data\part2A_8_frame1.xml</previousFile>
+  <PerPixelShading>true</PerPixelShading>
+  <UseGPURenderer>true</UseGPURenderer>
+</MCAstSettings>

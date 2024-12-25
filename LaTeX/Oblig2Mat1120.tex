@@ -1,0 +1,680 @@
+\documentclass[11pt, A4paper,norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/Mat1120/Python programmer"}
+\hypersetup{colorlinks, urlcolor=url}
+
+\author{Torstein Solheim Ølberg}
+\title{Svar på Oblig nr. 2 i Mat1120}
+
+
+
+%\lstinputlisting{Filnavn! type kodefil}
+%\includegraphics[width=12.6cm,height=8cm]{"C:/Users/Torstein/Documents/UiO/Mat1120/Python programmer"/Filnavn! type .png}
+
+
+
+\begin{document}
+\maketitle
+	\begin{center}
+\Large \textbf{Oppgaver}
+	\end{center}
+
+
+
+
+
+
+
+
+
+		\paragraph{1.}
+			\subparagraph{a)}
+				\begin{flushleft}
+Radreduserer A for å finne hvilke kolloner som er lineært uavhengige. Lager Basisen av disse, og bruker Gram-Schmidts for å få en ortagonal basis.
+				\end{flushleft}
+				\begin{align}
+W = Col(A) \\
+A = 
+\left[
+\begin{tabular} { cccc }
+1 & 1 & 0 & 2 \\
+0 & 1 & 0 & 1 \\
+1 & 0 & 0 & 1 \\
+1 & 0 & 1 & 2
+\end{tabular}
+\right] 
+\sim
+\left[
+\begin{tabular} { cccc }
+1 & 0 & 0 & 1 \\
+0 & 1 & 0 & 1 \\
+0 & 0 & 1 & 1 \\
+0 & 0 & 0 & 0
+\end{tabular}
+\right] \\
+Basis_{Col(A)} =
+\left\{
+\left[ \begin{tabular} { c }
+1 \\
+0 \\
+1 \\
+1
+\end{tabular}
+\right] ,
+\left[
+\begin{tabular} { c }
+1 \\
+1 \\
+0 \\
+0
+\end{tabular}
+\right] ,
+\left[
+\begin{tabular} { c }
+0 \\
+0 \\
+0 \\
+1
+\end{tabular}
+\right]
+\right\} \\
+\vec{v_1} = \vec{x_1} \\
+\vec{v_2} = \vec{x_2} - \frac{\vec{x_2} \cdot \vec{x_1}}{\vec{x_1} \cdot \vec{x_1}} \vec{x_1}  = 
+\left[
+\begin{tabular} { c }
+2 \\
+3 \\
+-1 \\
+-1
+\end{tabular}
+\right] \\
+v_3 = x_3 - \frac{x_3 \cdot x_1}{x_1 \cdot x_1}x_1 - \frac{x_3 \cdot v_2}{v_2 \cdot v_2} =
+\left[
+\begin{tabular} { c }
+-1 \\
+1 \\
+-2 \\
+3
+\end{tabular}
+\right] \\
+B = \left\{ 
+\left[
+\begin{tabular} { c }
+1 \\
+1 \\
+0 \\
+1
+\end{tabular}
+\right], \left[
+\begin{tabular} { c }
+2 \\
+3 \\
+-1 \\
+-1
+\end{tabular}
+\right], \left[
+\begin{tabular} { c }
+-1 \\
+1 \\
+-2 \\
+3
+\end{tabular}
+\right]
+\right\}
+				\end{align}
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{flushleft}
+finner $proj_W(y)$ og bruker denne til å lage en fjerde vektor som jeg legger til basisen $B$
+				\end{flushleft}
+				\begin{align}
+y = 
+\left[
+\begin{tabular} { c }
+1 \\
+1 \\
+1 \\
+1
+\end{tabular}
+\right] \\
+proj_W (y) = \frac{y \cdot v_1}{v_1 \cdot v_1}v_1 + \frac{y \cdot v_2}{v_2 \cdot v_2}v_2 + \frac{y \cdot v_3}{v_3 \cdot v_3}v_3 = \frac{1}{3} 
+\left[
+\begin{tabular} { c }
+4 \\
+2 \\
+2 \\
+3
+\end{tabular}
+\right] \\
+v_4 = y - proj_W = \frac{1}{3}
+\left[
+\begin{tabular} { c }
+-1 \\
+1 \\
+1 \\
+0
+\end{tabular}
+\right] \\
+C =
+\left \{ 
+\left[
+\begin{tabular} { c }
+1 \\
+1 \\
+0 \\
+1
+\end{tabular}
+\right]
+,
+\left[
+\begin{tabular} { c }
+2 \\
+3 \\
+-1 \\
+-1
+\end{tabular}
+\right]
+,
+\left[
+\begin{tabular} { c }
+-1 \\
+1 \\
+-2 \\
+3
+\end{tabular}
+\right]
+,
+\left[
+\begin{tabular} { c }
+-1 \\
+1 \\
+1 \\
+0
+\end{tabular}
+\right]
+\right \}
+				\end{align}
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+Tester om $y$ er i Col(A), og siden den ikke er det så bruker jeg minste kvadraters metode for å finne x'
+				\end{flushleft}
+				\begin{align}
+\begin{tabular} { c }
+x + 1 = 1 \\
+y = 1 \\
+x = 1 \\
+\end{tabular} \\
+||y' - Ax'|| \leq ||y - Ax|| \\
+y' = proj_{Col(A)}(y) = \frac{1}{3}
+\left[
+\begin{tabular} { c }
+4 \\
+2 \\
+2 \\
+3
+\end{tabular}
+\right] \\
+Ax' = y'
+\text{radreduserer $Ax'$ i python}
+\begin{tabular} { c }
+$x_1$ + $x_4$ = $\frac{2}{3}$ \\
+$x_2$ + $x_4$ = $\frac{2}{3}$ \\
+$x_3$ + $x_4$ = $\frac{1}{3}$ \\
+0 = 0
+\end{tabular} \\
+x' = 
+\left[
+\begin{tabular} { c }
+$\frac{2}{3}$ - $x_4$ \\
+$\frac{2}{3}$ - $x_4$ \\
+$\frac{1}{3}$ - $x_4$ \\
+$x_4$
+\end{tabular}
+\right] = \frac{1}{3}
+\left[
+\begin{tabular} { c }
+2 \\
+2 \\
+1 \\
+0
+\end{tabular}
+\right]
++ x_4
+\left[
+\begin{tabular} { c }
+-1 \\
+-1 \\
+-1 \\
+1
+\end{tabular}
+\right]
+				\end{align}
+			
+
+
+
+
+
+
+
+
+
+		\paragraph{2.}
+			\subparagraph{a)}
+				\begin{flushleft}
+Finner det karakteristiske polynomet ved å regne ut $det(A/B - \lambda I)$
+				\end{flushleft}
+				\begin{align}
+det \left|
+\begin{tabular} { ccc }
+$- \lambda$ &$ -3 $&$ -3$ \\
+$-1$ & $2 - \lambda$ & $-1$ \\
+$-2$ & $-2$ & $1 - \lambda$
+\end{tabular}
+\right| = - \lambda^3 + 3 \lambda^2 + 9 \lambda - 27 \\
+det \left|
+\begin{tabular} { ccc }
+$- \lambda$ & 3 & $-6$ \\
+$-1$ & $- \lambda$ & $0$ \\
+$-2$ & $-6$ & $3 - \lambda$
+\end{tabular}
+\right| = - \lambda^3 + 3 \lambda^2 + 9 \lambda - 27
+				\end{align}
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{flushleft}
+Finner en egenverdi for A ved hjelp av $\vec{v}$ og siden den finnes så vet jeg at v er en egenvektor. Derretter regner jeg ut basiser for egenromene på vanlig måte.
+				\end{flushleft}
+				\begin{align}
+A \vec{v} = \lambda \vec{v} \\
+\begin{tabular} { c }
+-3 + 3 = 0 \\
+2 + 1 = $\lambda$ \\
+- 2 - 1 = - $\lambda$
+\end{tabular} \Rightarrow \lambda = 3 \\
+- \lambda^3 + 3 \lambda^2 + 9 \lambda - 27 \div (\lambda - 3) = - \lambda^2 + 9 = -(\lambda - 3)(\lambda + 3) \\
+\lambda = \pm 3 \\
+A \vec{x} = 3 \vec{x} \\
+\vec{x} = y
+\left[
+\begin{tabular} { c }
+-1 \\
+1 \\
+0
+\end{tabular}
+\right] + 
+\left[
+\begin{tabular} { c }
+-1 \\
+0 \\
+1
+\end{tabular}
+\right] \\
+A \vec{x} = -3 \vec{x} \\
+\vec{x} = z
+\left[
+\begin{tabular} { c }
+$\frac{3}{2}$ \\
+$\frac{1}{2}$ \\
+$1$
+\end{tabular}
+\right] \\
+for A: Basis = 
+\left \{
+\left[
+\begin{tabular} { c }
+-1 \\
+1 \\
+0
+\end{tabular}
+\right]
+,
+\left[
+\begin{tabular} { c }
+-1 \\
+0 \\
+1
+\end{tabular}
+\right]
+,
+\left[
+\begin{tabular} { c }
+$\frac{3}{2}$ \\
+$\frac{1}{2}$ \\
+$1$
+\end{tabular}
+\right]
+\right \} \\
+B \vec{x} = 3 \vec{x}
+\vec{x} = z
+\left[
+\begin{tabular} { c }
+$\frac{1}{2}$ \\
+$- \frac{3}{2}$ \\
+$1$
+\end{tabular}
+\right] \\
+B \vec{x} = -3 \vec{x}
+\vec{x} = y
+\left[
+\begin{tabular} { c }
+$3$ \\
+$1$ \\
+$0$
+\end{tabular}
+\right] \\
+for B: Basis = 
+\left \{
+\left[
+\begin{tabular} { c }
+$\frac{1}{2}$ \\
+$- \frac{3}{2}$ \\
+$1$
+\end{tabular}
+\right]
+,
+\left[
+\begin{tabular} { c }
+3 \\
+1 \\
+0
+\end{tabular}
+\right]
+\right \}
+				\end{align}
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+Siden P er den eneste av matrisene som har 3 egenvektorer så er denne den eneste som kan være diagonaliserbar.
+				\end{flushleft}
+				\begin{align}
+P = 
+\left[
+\begin{tabular} { ccc }
+$-1$ & $ -1$ & $\frac{3}{2}$ \\
+$1$ & $0$ & $\frac{1}{2}$ \\
+$0$ & $1$ & $1$
+\end{tabular}
+\right]
+\text{og} D =
+\left[
+\begin{tabular} { ccc }
+$3$ & $0$ & $0$ \\
+$0$ & $3$ & $0$ \\
+$0$ & $0$ & $-3$
+\end{tabular}
+\right]
+				\end{align}
+				\begin{flushleft}
+Testet om AP og PD er like for å sjekke om P og D er riktig, og det var de.
+				\end{flushleft}
+				
+
+
+
+
+
+
+
+		\paragraph{3.}
+			\begin{align}
+det \left| \begin{tabular} { ccc }
+1 - $\lambda$ & 0 & $\sqrt{2}$ \\
+0 & 2 - $\lambda$ & 0 \\
+$\sqrt{2}$ & 0 & - $\lambda$
+\end{tabular} \right| \\
+= - \lambda^3 + 3 \lambda^2 - 4 \\
+\text{Ser at $-1$ er en av egenverdiene, og bruker denne til å finne de andre} \nonumber \\
+\lambda = - 1 \\
+- \lambda^3 + 3 \lambda^2 - 4 \div (\lambda + 1) = - \lambda^2 + 4 \lambda - 4 \\
+\text{Ser at dette er det samme som:} \nonumber \\
+- (\lambda - 2)^2 \\
+\text{Altså er $2$ også en egenverdi. sjekker om $\lambda = 2$ har flere egenvektorer} \nonumber \\
+\left[ \begin{tabular} { ccc }
+1 - $\lambda$ & 0 & $\sqrt{2}$ \\
+0 & 2 - $\lambda$ & 0 \\
+$\sqrt{2}$ & 0 & - $\lambda$
+\end{tabular} \right]
+\left[ \begin{tabular} { c }
+x \\
+y \\
+z
+\end{tabular} \right] = 2
+\left[ \begin{tabular} { c }
+x \\
+y \\
+z
+\end{tabular} \right] \\
+\begin{tabular} { c }
+x + $\sqrt{2}$z = 2x \\
+2y = 2y \\
+$\sqrt{2}$x = 2z
+\end{tabular}
+			\end{align}
+			\begin{align}
+\begin{tabular} { c }
+x = $\sqrt{2}$ z \\
+y = y \\
+$\sqrt{2}$ x = 2z
+\end{tabular} \\
+\text{Ser at y og z er frie variabler, egenverdiene blir:} \nonumber \\
+\left[ \begin{tabular} { c }
+$\sqrt{2}$ \\
+0 \\
+1
+\end{tabular} \right], 
+\left[ \begin{tabular} { c }
+0 \\
+1 \\
+0
+\end{tabular} \right]
+			\end{align}
+			\begin{flushleft}
+Siden A har en basis som ikke er for et nullrom og denne basisen består av 3 egenvektorer, så er A ortagonalt diagonaliserbar. Finner den siste egenvektoren og så en ortagonal basis. Deretter finner jeg P og D.
+			\end{flushleft}
+			\begin{align}
+\begin{tabular} { c }
+x + $\sqrt{2}$ = - x \\
+2y = - y \\
+$\sqrt{2}$x = -z
+\end{tabular} \\
+\text{Da blir egenvektoren for $\lambda = -1$:} \nonumber \\
+\left[ \begin{tabular} { c }
+1 \\
+0 \\
+- $\sqrt{2}$
+\end{tabular} \right] \\
+B = \left\{
+\left[ \begin{tabular} { c }
+1 \\
+0 \\
+- $\sqrt{2}$
+\end{tabular}
+\right] ,
+\left[
+\begin{tabular} { c }
+0 \\
+1 \\
+0
+\end{tabular}
+\right] ,
+\left[
+\begin{tabular} { c }
+$\sqrt{2}$ \\
+0 \\
+1
+\end{tabular}
+\right]
+\right\} \\
+\text{Sjekker om denne basisen allerede er ortagonal:} \nonumber \\
+v_1 \cdot v_2 =
+\left[ \begin{tabular} { c }
+1 \\
+0 \\
+- $\sqrt{2}$
+\end{tabular} \right] \cdot
+\left[ \begin{tabular} { c }
+0 \\
+1 \\
+0
+\end{tabular} \right] = 0 \\
+v_2 \cdot v_3 =
+\left[ \begin{tabular} { c }
+0 \\
+1 \\
+0
+\end{tabular} \right] \cdot
+\left[ \begin{tabular} { c }
+$\sqrt{2}$ \\
+0 \\
+1
+\end{tabular} \right] = 0 \\
+v_1 \cdot v_3 =
+\left[ \begin{tabular} { c }
+1 \\
+0 \\
+- $\sqrt{2}$
+\end{tabular} \right] \cdot
+\left[ \begin{tabular} { c }
+$\sqrt{2}$ \\
+0 \\
+1
+\end{tabular} \right] = 0
+			\end{align}
+			\begin{flushleft}
+Da vet vi at basisen $B$ allerede er ortagonal og vi trenger ikke finne en ny basis. Finner så P og D ved å vite at P er egenvektorene og D er en diagonalmatrise med egenverdiene på diagonalen.
+			\end{flushleft}
+			\begin{align}
+P = \left[ 
+\begin{tabular} { ccc }
+1 & 0 & $\sqrt{2}$ \\
+0 & 1 & 0 \\
+- $\sqrt{2}$ & 0 & 1
+\end{tabular} 
+\right] \\
+D = \left[ 
+\begin{tabular} { ccc }
+-1 & 0 & 0 \\
+0 & 2 & 0 \\
+0 & 0 & 2
+\end{tabular} 
+\right]
+			\end{align}
+
+
+
+
+
+
+		\paragraph{4.}
+			\subparagraph{a)}
+				\begin{flushleft}
+Lager en funksjon som tilpasser datasettet, gitt en funksjon for hvordan kurven skal se ut, og et datasett. Fikk funksjonene under
+				\end{flushleft}
+				\begin{align*}
+funk: y = 3.05 + 17.84 x - 69.55 x^2
+				\end{align*}
+
+
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{flushleft}
+Lager en ny form på kurva, og kaller på den samme funksjonen som i (a). Får da funksjonen under:
+				\end{flushleft}
+				\begin{align*}
+funk: y = 2.96 \sin(2 \pi x) + 3.01 \cos(2\pi x)
+				\end{align*}
+
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+Regner ut de to normene som gitt i oppgaven, og bruker numpys innebygde funksjon for å regne ut normen til en vektor. Ut i fra svarene under velger jeg sinus/cosinus kurva som den beste tilnærmingen.
+				\end{flushleft}
+				\begin{align}
+\epsilon_i = y_i - f(x_i) \nonumber \\
+\text{for tredjegrads kurva får jeg normen:} \nonumber \\
+|| \epsilon || = 0.0452961133406 \nonumber \\
+\text{for sinus/cosinus kurva får jeg normen:} \nonumber \\
+|| \epsilon || = 0.137044526055 \nonumber
+				\end{align}
+\end{document}

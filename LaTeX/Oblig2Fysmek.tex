@@ -1,0 +1,213 @@
+\documentclass[11pt, A4paper,norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/Fys-Mek1110/Python programmer"}
+\hypersetup{colorlinks, urlcolor=url}
+
+\author{Torstein Solheim Ølberg}
+\title{Svar på Oblig nr.2 i Fys-Mek1100}
+
+\begin{document}
+\maketitle
+	\begin{center}
+\Large \textbf{Oppgaver}
+	\end{center}
+		\paragraph{a)}
+			\begin{flushleft}
+Identify the forces and draw a free-body diagram of the ball. \\
+\vspace{1mm}
+\textbf{Løsning:}
+			\end{flushleft}
+\includegraphics[width=12.6cm,height=8cm]{C:/Users/Torstein/Documents/UiO/Fys-Mek1110/oblig2_a.png}
+		\paragraph{b)}
+			\begin{flushleft}
+Show that the net external force acting on the ball can be written as:
+$$\sum \vec{F} = -mgj - k(r - L_{0})\frac{\vec{r}}{r}$$
+where $\vec{r} = |\vec{r}|$ is the length of the (stretched) rope, and the origin of the coordinate system is chosen to be the attachment point, $O$, of the rope. \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+				\begin{align}
+\sum F = - G + S \\
+\sum F = -mgj - kx \\
+\sum F = - mg\vec{j} - k(r - L_0)\frac{\vec{r}}{r}
+				\end{align}
+Der x er forandringen i lengde.
+			\end{flushleft}
+		\paragraph{c)}
+			\begin{flushleft}
+Rewrite the expression of the external force on component form by writing the
+force components, $F_{x}$, and $F_{y}$, as functions of the components $x$ and $y$ of the
+position vector. \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+				\begin{align}
+\sum F_x = -k(r - L_0)sin(\theta)\vec{i} \\
+\sum F_y = - mg\vec{j} - k(r - L_0)cos(\theta)\vec{j}
+				\end{align}
+			\end{flushleft}
+		\paragraph{d)}
+			\begin{flushleft}
+In this project, we will not assume that the ball is following a particular path, such
+as a circle, but we will instead use Newton’s second law to determine the motion of
+the ball from the forces acting on it. Using our model, we can measure the tension
+in the rope, as well as the motion of the ball, and analyze these to learn about the
+motion. \\
+For a pendulum, it is customary to describe the position of the pendulum by its
+angle $\theta$ with the vertical. Does the angle $\theta$ give a sufficient description of the
+position of the ball in this case? Explain your answer. \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+Nei, vi trenger også utstrekningen av tråden, altså hvor tøyelig tråden/strikken er, fordi kula vil hoppe opp og ned og derfor ikke gå i en perfekt bane.
+			\end{flushleft}
+		\paragraph{e)}
+			\begin{flushleft}
+If the ball is at rest at $\theta = 0$ with no velocity $(\vec{v} = \vec{0})$ and no acceleration, what is the position of the ball? What happens if you increase the value of $k$ for the rope? \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+Ballen har da posisjonen $r = (x, y) = (0, 0)$.
+				\begin{align}
+-G = S \\
+-mg = -k(r - L_0) \Rightarrow r = \frac{mg}{k} + L_0
+				\end{align}
+Radien blir mindre hvis $k$ blir større som vi ser av formelen over, og det gir i tillegg mening utifra at en større $k$ betyr en stivere strikk/tråd som vil si at den strekker seg mindre.
+			\end{flushleft}
+		\paragraph{f)}
+			\begin{flushleft}
+We will now study a specific pendulum, consisting of a ball with a mass of $0.1kg$, and a rope of equilibrium length $L_0 = 1m$ with a spring constant $k = 200N/m$, which corresponds to a rather elastic rope. Initially, you can assume that the ball starts with zero velocity at an angle $\theta = 30^{\circ}$ at a distance $L_0$ from the origin. We want to study the motion of the ball by integrating the equations of motion numerically. \linebreak
+Find an expression for the acceleration, $\vec{a}$, of the ball. You should write it both on vector form, where there acceleration vector is a function of the position vector $\vec{r}$ and its length, $r$, and on component form, where the components $a_x$ and $a_y$ are functions of the $x$ and $y$ components of the position vector. \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+				\begin{align}
+ma = -mg\vec{j} - k(r - L_0)\frac{\vec{r}}{r} \\
+a = -g\vec{j} - \frac{k(r - L_0)}{m}\frac{\vec{r}}{r} \\
+a_x = - \frac{k(x - L_0 \cdot sin(\theta))}{m} \\
+a_y = -g - \frac{k(y - L_0 \cdot cos(\theta))}{m}
+				\end{align}
+			\end{flushleft}
+		\paragraph{g)}
+			\begin{flushleft}
+What is the mathematical initial value problem you need to solve in order to find the motion of the ball? Include both the differential equation you need to solve and the initial conditions in your answer. \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+				\begin{align}
+a_x(t) = -\frac{k(x - L_0 \cdot sin(\theta(x)))}{m} \\
+a_y(t) = -g -\frac{k(y - L_0 \cdot cos(\theta(x)))}{m} \\
+v_x(t)_2 = v_x(t)_1 + a_x(t) \cdot dt \space; v_x0 = 0 \\
+v_y(t)_2 = v_y(t)_1 + a_y(t) \cdot dt \space; v_y0 = 0 \\
+x(t)_2 = x(t)_1 + v_x(t)_1 \cdot dt \space; x_0 = L_0 \cdot sin(\theta) \\
+y(t)_2 = y(t)_1 + v_y(t)_1 \cdot dt \space; y_0 = L_0 \cdot cos(\theta)
+				\end{align}	
+			\end{flushleft}
+		\paragraph{h)}
+			\begin{flushleft}
+How can you solve this problem numerically? Write down a set of equations that find the position and velocity at a time $t + \Delta t$ given the position and velocity at $t$ using Euler-Cromer’s method. Insert your expression for the acceleration from above. Mark the terms in your equations that vary in time. \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+				\begin{align}
+a(t) = g\vec{j} - \frac{k(r(t) - L0)}{m}\frac{\vec{r}}{r} \\
+v(t + dt) = v(t) + a(t) \cdot dt \\
+r(t + dt) = r(t) + v(t + dt) \cdot dt
+				\end{align}
+			\end{flushleft}
+		\paragraph{i)}
+			\begin{flushleft}
+Write a program that "solves" the problem by finding the motion of the ball. The program should plot the position of the ball in the xy-plane for the first $10s$ of the motion. Hint 1: You may write the mathematical expression almost directly into your program if you use a vector notation and vector operations in your code. Hint 2: Remember that $r = r(t) = |\vec{r}(t)|$ varies in time! Hint 3: Do not use $\theta(t)$ to describe the position of the ball. Describe the motion using $\vec{r}(t) = x(t)i + y(t)j$ and use your results from above for the acceleration. \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+\lstinputlisting{Oblig2_i.py}
+				\end{flushleft}
+		\paragraph{j)}
+			\begin{flushleft}
+Use the program to find the behavior for the given initial conditions using a time-step of $\Delta t = 0.001$. Plot the resulting motion. Describe what you see. \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+\lstinputlisting{Oblig2_j.py}
+\includegraphics[width=12.6cm,height=8cm]{C:/Users/Torstein/Documents/UiO/Fys-Mek1110/Python programmer"/Oblig2_j.png}
+Ser en skisse av en ball som faller i en pendelbane, men som spretter opp og ned i pendelbanen på grunn av strikkens elastisitet
+			\end{flushleft}
+		\paragraph{k)}
+			\begin{flushleft}
+What happens if you increase $\Delta t$ to $\Delta t = 0.01$ and $\Delta t = 0.1$? Can you explain this? (Optional: Test what happens if you use Euler’s method with $\Delta t = 0.001$ instead of Euler-Cromer’s method.) \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+\lstinputlisting{Oblig2_k.py}
+\includegraphics[width=12.6cm,height=8cm]{C:/Users/Torstein/Documents/UiO/Fys-Mek1110/Python programmer"/Oblig2_k1.png}
+Etter å ha økt tidssteget ti ganger, ser vi at det ikke er så veldig stor forskjell, men at ballen kanskje går bittelitt mer opp og ned.
+\includegraphics[width=12.6cm,height=8cm]{C:/Users/Torstein/Documents/UiO/Fys-Mek1110/Python programmer"/Oblig2_k2.png}
+Øker vi tidsteget 100 ganger istedenfor får vi bare en strek. dette kommer antageligvis av at inndelingen i tid har blitt for grov.
+\includegraphics[width=12.6cm,height=8cm]{C:/Users/Torstein/Documents/UiO/Fys-Mek1110/Python programmer"/Oblig2_k3.png}
+Bruker du vanlig Euler's metode får du en veldig rar strek med noe greier midt på, antageligvis fordi det er for grov inndeling for vanlig Euler. Skjønner ikke helt hvorfor denne streken er motsatt vei av de andre.
+			\end{flushleft}
+		\paragraph{l)}
+			\begin{flushleft}
+Rerun the program with $k = 20$ and $k = 2000$. Describe the motion in these cases and compare with $k = 200$ case. Are your results reasonable? Based on this, can you suggest how to use this method to model a pendulum in a stiff rope? What do you think would be the limitation of this approach? (Test what happens if you use $k = 2\cdot10^6$ in your program). \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+\lstinputlisting{Oblig2_l.py}
+\includegraphics[width=12.6cm,height=8cm]{C:/Users/Torstein/Documents/UiO/Fys-Mek1110/Python programmer"/Oblig2_l1.png}
+Med $k = 2000$ blir ruta nesten bare en rett strek, fordi stivheten i tråden/strikken er så stiv.
+\includegraphics[width=12.6cm,height=8cm]{C:/Users/Torstein/Documents/UiO/Fys-Mek1110/Python programmer"/Oblig2_l2.png}
+Med $k = 20$ blir strikken veldig elastisk og kula vil sprette opp og ned ganske mye i banen dens.
+Begge disse to svarene over virker som ganske logiske resultater.
+\includegraphics[width=12.6cm,height=8cm]{C:/Users/Torstein/Documents/UiO/Fys-Mek1110/Python programmer"/Oblig2_l3.png}
+Hvis du skulle modelere en kule i et tau, måtte du brukt en ganske høy verdi for k, men som vi ser av bildet over krever dette også en veldig nøyaktig inndeling i tid for ikke å få et helt rart svar.
+			\end{flushleft}
+		\paragraph{m)}
+			\begin{flushleft}
+Rewrite your program to ensure that the rope tension is zero if the spring is compressed, because the rope cannot sustain compression. Use this program to determine the motion with the initial conditions $\vec{v_0} = 6.0\vec{i}m/s$ and $\vec{r_0} = -L_0 \vec{j}$. What happens? Explore various initial conditions and explain what you observe. \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+\lstinputlisting{Oblig2_m.py}
+\includegraphics[width=12.6cm,height=8cm]{C:/Users/Torstein/Documents/UiO/Fys-Mek1110/Python programmer"/Oblig2_m1.png}
+Vi ser at når utgangsfarten var $6m/s$ så har kula slutta å bevege seg i pendel bane og begynt å bevege seg i en krussedull.
+\includegraphics[width=12.6cm,height=8cm]{C:/Users/Torstein/Documents/UiO/Fys-Mek1110/Python programmer"/Oblig2_m2.png}
+Vi ser at når utgangsfarten var $8m/s$ så har kula begynt å bevege seg i en elipsebane, fordi farten er så høy at den ikke blir trukket inn i senter.
+\includegraphics[width=12.6cm,height=8cm]{C:/Users/Torstein/Documents/UiO/Fys-Mek1110/Python programmer"/Oblig2_m3.png}
+Tilslutt prøvde jeg $100m/s$ som utgangsfart fordi det ville være gøy å se, og det ble en veldig kul blomsterish form.
+			\end{flushleft}
+\end{document}

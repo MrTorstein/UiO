@@ -1,0 +1,437 @@
+\documentclass[11pt, A4paper,norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{textcomp}
+\usepackage{float}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/Fysmek1110/Python programmer"}
+\graphicspath{{C:/Users/Torstein/Documents/UiO/Fysmek1110/"Python programmer"/}}
+\hypersetup{colorlinks, urlcolor=url}
+
+\author{Torstein Solheim Ølberg}
+\title{Eksamen Fysmek1110 våren 2016}
+
+
+
+%\lstinputlisting{Filnavn! type kodefil}
+%\includegraphics[width=12.6cm,height=8cm]{Filnavn! type png}
+
+
+
+\begin{document}
+\maketitle
+	\begin{center}
+\Large \textbf{Oppgaver}
+	\end{center}
+
+
+
+
+
+
+
+
+
+		\paragraph{1.}
+			\begin{flushleft}
+Siden spinn er bevart om aksen til treskiven, og spinn er avhengig av treghetsmomentet til skiven som vil bli endret, og også vinkelhastigheten, så vil vinkelhastigheten måtte endre seg.
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+		\paragraph{2.}
+			\begin{flushleft}
+Vest er retningen du får fra kryssproduktet mellom vinkelhastigheten og bevegelsen til telefonen, altså siden korioliskraften er motsatt av det så lander telefornen i øst
+			\end{flushleft}
+
+			
+
+
+
+
+
+
+
+
+		\paragraph{3.}
+			\begin{flushleft}
+Bruker at den mekansiske energien er lagret
+$$0 = m_1 g y - m_2 g y + \frac{1}{2} m_1 v^2 + \frac{1}{2} m_2 v^2 + \frac{1}{2} I \omega^2$$
+$$0 = m g y - 2 m g y + \frac{3}{2} m v^2 + \frac{1}{2} m R^2 \frac{v^2}{R^2}$$
+$$0 = - m g y + 2 m v^2 \Rightarrow v = \sqrt{\frac{gy}{2}}$$
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+		\paragraph{4.}
+			\subparagraph{a)}
+				\begin{flushleft}
+Kreftene som inngår er $G$, $F$, $f$, $N_1$ og $N_2$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{flushleft}
+Gravitasjonen vil være akkurat den samme, $F$ vil jo naturligvis øke siden det er det du gjør. Normalkraften $N$ vil øke siden den må motvirke en komponent av $F$ og tilslutt vil $f$ øke siden normalkraften øker.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+For at hjulet skal komme opp på fortauet må kraftmomentet om punktet som er spissen på fortauskanten være med klokka. Det vil si at
+$$F(R - h) > mgl$$
+der $l = \sqrt{R^2 - (R - h)^2}$ altså får vi at den minste kraften er
+$$F = \frac{mg\sqrt{R^2 - (R - h)^2}}{R - h} = \frac{\sqrt{20^2 - (20 - 8)^2} mg}{20 - 8} = \frac{16mg}{12} = \frac{4}{3}mg$$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+		\paragraph{5.}
+			\subparagraph{a)}
+				\begin{flushleft}
+Treghetsmomentet til stanga om A er da
+$$I = I_{cm} + Md^2 = \frac{1}{12} m l^2 + \frac{1}{4}ml^2 = \frac{1}{3}ml^2$$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{flushleft}
+Kreftene som inngår er $S$ og $G$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{gather*}
+\tau_A = G \sin(\theta) \frac{1}{2}l = I \alpha \\
+\alpha = \frac{3}{2} \frac{mgl \sin(\theta)}{ml^2} = \frac{3}{2} \frac{g \sin(\theta)}{l}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{d)}
+				\begin{gather*}
+\text{Bruker bevaring av energi, siden det ikke er noen friksjon eller luftmotstand} \\
+E = E_{k, \text{rot}} + E_p = 0 \\
+E = \frac{1}{2} I \omega^2 + mg \frac{l}{2} \cos(\theta) = 0 \\
+\frac{1}{2} I \omega^2 = - \frac{l}{2} mg \cos(\theta) \\
+\frac{1}{3} m l^2 \omega^2 = - lmg \cos(\theta) \\
+\omega^2 = - \frac{3g \cos(\theta)}{l} \\
+\omega = \sqrt{\frac{3|g|\cos(\theta)}{l}}
+				\end{gather*}
+
+
+
+
+
+
+			\subparagraph{e)}
+				\begin{flushleft}
+Kraften i hengslet, parallel med stanga, minus gravitasjonskraften må tilsvare sentripetalkraften i hengselent.
+$$F_p - mg \cos(\theta) = \frac{l}{2}m\omega^2$$
+$$F_p = \frac{l}{2}m\omega^2 + mg \cos(\theta) = \frac{3}{2}mg \cos(\theta) + mg \cos(\theta) = \frac{5}{2} mg \cos(\theta)$$
+Bruker at spinnsattsen.
+$$\tau_{cm} = \frac{l}{2} F_n = I_{cm} \alpha = \frac{1}{12} m l^2 \frac{3}{2} \frac{g \sin(\theta)}{l} = \frac{1}{8}mgl \sin(\theta)$$
+$$F_n = \frac{1}{4}mg \sin(\theta)$$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+		\paragraph{6.}
+			\subparagraph{a)}
+				\begin{flushleft}
+Kraften i $x-$retning er
+$$F_x = - \int U dx = \int 3x - x^3 + 2y^2 dx = 3 - 3x^2$$
+Kraften i $y-$retning er
+$$F_y = - \int U dy = \int 3x - x^3 + 2y^2 dy = 4y$$
+Altså blir den fullstendige kraften $F = (3x^2 - 3, - 4y)$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{flushleft}
+Likevektspunktene er der kraften er lik $0$. \\
+disse to punktene er ved $y = 0$ og $x = \pm 1$. Begge punktene er stabile i $y-$retning siden det alltid vil virke en kraft motsatt til bevegelse i denne retningen, men bare $x = - 1$ gir et stabilt punkt.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{gather*}
+\text{Kraftmomentet om massesenteret, for alle kreftene, er gitt ved} \\
+\vec{\tau} = \vec{F}R = F R \vec{z}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{gather*}
+\vec{\tau} = I \vec{\alpha} = FR \vec{z} = \frac{2}{5} m R^2 \left( - \frac{\vec{a}}{R} \right) \\
+FR = - \frac{2}{5} m R \vec{a} \\
+F = - \frac{2}{5} m \vec{a} \\
+\Sigma F = F - G \sin(\theta) = ma \\
+- G \sin(\theta) = ma + \frac{2}{5} ma = \frac{7}{5} ma \\
+- \frac{5}{7} g \sin(\theta) = a
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{d)}
+				\begin{gather*}
+\Sigma F = F - G \sin(\theta) = ma \\
+F = - \frac{5}{7} mg \sin(\theta) + mg \sin(\theta) = \frac{2}{7} mg \sin(\theta)
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{e)}
+				\begin{gather*}
+\text{For at kula skal rulle og ikke skli så må systemet tilfredstille rullebetingelsen} \\
+\text{Da har vi fra tidligere at akselrasjonen er gitt ved} \\
+a = - \frac{5F}{2m} \\
+a = - \frac{5}{7} g \sin(\theta) \\
+\frac{5}{2m} F = \frac{5}{7} g \sin(\theta) \\
+- \mu_s g \cos(\theta) = \frac{2g}{7} \sin(\theta) \\
+\mu_s = - \frac{2}{7} \tan(\theta)
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{f)}
+				\begin{flushleft}
+Hvis starthastigheten er $v_0$ og akselrasjonen er som tidligere så er
+$$v^2 = v_0^2 + 2 a d \Rightarrow d = \frac{v_0^2}{2 a} = \frac{7 v_0^2}{10 g \sin(\theta)}$$
+Det vil si at distansen blir større med kvadratet av starthastigheten, og mindre jo større vinkelen $\theta$ er.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+		\paragraph{6}
+			\subparagraph{a)}
+				\begin{flushleft}
+Kreftene som er med er $R$ og $G$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{gather*}
+r = \sqrt{y^2 + d^2} \\
+F_{k} = - k (r - d) = - k (\sqrt{y^2 + d^2} - d) \\
+F_{k,y} = F_k \sin(\theta) \\
+F_{k,y} = - k (\sqrt{y^2 + d^2} - d) \frac{y}{\sqrt{y^2 + d^2}} \\
+F_{k,y} = - k \left( y - \frac{yd}{\sqrt{y^2 + d^2}} \right) = - ky \left( 1 - \frac{d}{\sqrt{y^2 + d^2}} \right)
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{gather*}
+r = \sqrt{y^2 + d^2} \\
+F_{k} = - k (r - d) = - k (\sqrt{y^2 + d^2} - d) \\
+F_{k,x} = F_k \cos(\theta) \\
+F_{k,x} = - k (\sqrt{y^2 + d^2} - d) \frac{d}{\sqrt{y^2 + d^2}} \\
+F_{k,x} = - k \left( d - \frac{d^2}{\sqrt{y^2 + d^2}} \right) = - kd \left( 1 - \frac{d}{\sqrt{y^2 + d^2}} \right)
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{d)}
+				\begin{flushleft}
+Bruker uttryket for friksjonen, og at normalkraften må tilsvare fjerkraften i $x-$retning
+$$R = - \mu_d N \frac{\vec{v_y}}{|v_y|} = \mu_d F_{k,x} \frac{\vec{v_y}}{|v_y|} = - \mu_d kd \left( 1 - \frac{d}{\sqrt{y^2 + d^2}} \right) \frac{\vec{v_y}}{|v_y|}$$
+Brøken etter uttryket er for å sørge for at kraften alltid er motsatt av hastighetens retning.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{e)}
+				\begin{flushleft}
+for i in xrange(len(t) - 1): \\
+$\hspace{5mm} F\_ky = - k * y[i] * ( 1 - d / sqrt(y[i]^2 + d^2))$ \\
+$\hspace{5mm} F\_kx = - k * d ( 1 - d / sqrt(y[i]^2 + d^2))$ \\
+$\hspace{5mm} a = (F\_ky * linalg.norm(y) + mu\_d * F\_kx * linalg.norm(v[i]) - mg) / m$ \\
+$\hspace{5mm} v[i + 1] = v[i] + a * dt$ \\
+$\hspace{5mm} y[i + 1] = y[i] + v[i + 1] * dt$ \\
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{f)}
+				\begin{flushleft}
+Hvis du nå fester en ny fjær på den andre siden vil det ikke lenger være noen normalkraft som motstår fjærekraften i $x-$retning, og det blir derfor heller ikke noen friksjon. I virkeligheten vil det være litt friksjon siden det er umulig å sikke trekke sylinderen litt mer i en retning enn i den andre, men dette vil være en mye mindre friksjon enn tidligere. Siden vi ser bort i fra luftmotstand vil denne svigningen vare i teorien evig.
+				\end{flushleft}
+\end{document}

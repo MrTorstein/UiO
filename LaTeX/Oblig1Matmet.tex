@@ -1,0 +1,306 @@
+\documentclass[11pt, A4paper, norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/Fys3140/Python programmer"}
+\hypersetup{colorlinks, urlcolor=url}
+
+\author{Torstein Solheim Ølberg}
+\title{Svar på Oblig nr. 1 i Fys3140}
+
+
+
+%\lstinputlisting{Filnavn! type kodefil}
+%\includegraphics[width=12.6cm,height=8cm]{"C:/Users/Torstein/Documents/UiO/Fys3140!/Python programmer"/Filnavn! type png}
+
+
+
+\begin{document}
+\maketitle
+	\begin{center}
+\Large \textbf{Oppgaver}
+	\end{center}
+
+
+
+
+
+
+
+
+
+		\paragraph{1.}
+			\subparagraph{a)}
+				\begin{flushleft}
+For å finne konvergensflaten for summen $\sum_{n = 0}^{\infty} n(n + 1)(z - 2i)$ bruker jeg forholdstesten. 
+				\end{flushleft}
+				\begin{gather}
+\left| \frac{a_{n + 1}}{a_{n}} \right| = \left| \frac{(n + 1)(n + 2)(z - 2i)^{n + 1}}{n(n + 1)(z - 2i)^{n}} \right| \\
+\text{Forkorter brøken} \nonumber \\
+\left| \frac{(n + 2)(z - 2i)}{n} \right| \\
+\left| \frac{nz - 2ni + 2z - 4i}{n} \right| \\
+\rho = \lim_{n \rightarrow \infty} \left| \frac{nz - 2ni + 2z - 4i}{n} \right| \\
+\text{Bruker L'Hopitals regel} \nonumber \\
+\rho = \lim_{n \rightarrow \infty} \left| \frac{z - 2i}{1} \right| = \left| z - 2i \right| \\
+\text{For at summen skal konvergere må $\rho$ være mindre enn $1$. Altså er} \nonumber \\
+\left| z - 2i \right| < 1 \\
+\text{konvergensflaten.} \nonumber
+				\end{gather}
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{flushleft}
+For å finne konvergensflaten til summen $\sum_{n = 1}^{\infty} 2^{n}(z + i - 3)^{2n}$ bruker jeg også forholdstesten.
+				\end{flushleft}
+				\begin{gather}
+\left| \frac{2^{n + 1} (z + i - 3)^{2(n + 1)}}{2^{n}(z + i - 3)^{2n}} \right| = \left| \frac{2(z + i - 3)^{2}}{1} \right| = \left| 2(z + i - 3)^{2} \right| \\
+\rho = \lim_{n \rightarrow \infty} \left| 2(z + i - 3)^{2} \right| \\
+\rho < 1 \Rightarrow \left| 2(z + i - 3)^{2} \right| < 1 \\
+\left| (z + i - 3)^{2} \right| < \frac{1}{2} \Rightarrow \left| z + i - 3 \right| < \frac{1}{\sqrt{2}}
+				\end{gather}
+
+
+
+
+
+
+
+		\paragraph{2.}
+			\subparagraph{a)}
+				\begin{gather}
+z = \sqrt{2} e^{\frac{5i\pi}{4}} \\
+\sqrt{2} = r = \sqrt{x^{2} + y^{2}} \\
+\theta = \frac{5\pi}{4} \\
+x = r \cos\left( \theta \right) , y = r \sin\left( \theta \right) \\
+x = \sqrt{2} \cos \left( \frac{5\pi}{4} \right) = -1 , y = \sqrt{2} \sin \left( \frac{5\pi}{4} \right) = -1 \\
+z = -(1 + i)
+				\end{gather}
+			
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{gather}
+\text{Finner $1 + i$ på formen $re^{i\theta}$} \nonumber \\
+1 + i = \sqrt{2} e^{i\frac{\pi}{4}} \\
+\text{Gjør det samme med $\sqrt{3} - i$} \nonumber \\
+r = \sqrt{3 + 1} = 2 \\
+\sqrt{3} = 2 \cos \left( \theta \right) \\
+\theta = \arccos\left( \frac{\sqrt{3}}{2} \right) = \frac{\pi}{6} \vee \frac{11 \pi}{6} \\
+-1 = 2 \sin \left( \theta \right) \\
+\theta = \arcsin \left( \frac{-1}{2} \right) = \frac{11 \pi}{6} \vee \frac{7 \pi}{6} \\
+z = \frac{\left( \sqrt{2} e^{i \frac{\pi}{4}} \right)^{48}}{\left( 2 e^{i \frac{11 \pi}{6}} \right)^{25}} = \frac{2^{24} e^{i 24 \frac{\pi}{2}}}{2^{25} e^{i 25 \frac{11 \pi}{6}}} = \frac{1}{2} e^{i \frac{72}{6}} \cdot e^{-i\frac{275 \pi}{6}} \\
+z = \frac{1}{2} e^{i \pi \left( \frac{72}{6} - \frac{275}{6} \right)} = \frac{1}{2} e^{-i \pi \frac{203}{6}} \\
+x = r\cos(\theta) = \frac{1}{2}\cos\left( -\frac{203\pi}{6} \right) = \frac{1}{2} \frac{\sqrt{3}}{2} = \frac{\sqrt{3}}{4} \\
+y = \frac{1}{2} \sin \left( -\frac{203 \pi}{6} \right) = \frac{1}{2} \frac{1}{2} = \frac{1}{4} \\
+z = \frac{\sqrt{3}}{4} + i\frac{1}{4}
+				\end{gather}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+For å finne fjerderoten av et komplekst tall er det lettest å finne polarformen til det komplekse tallet, og deretter ta fjerderoten av $r$-verdien. Tilslutt vet jeg at det er fire forskjellige røtter og at de er plassert med like lang avstand fra hverandre rundt enhetssirkelen i det komplekse planet. Så alt jeg trenger å gjøre er å lage en skalar som roterer det komplekse tallet rundt i det komplekse planet.
+				\end{flushleft}
+				\begin{gather}
+z = \left( 8i\sqrt{3} - 8 \right)^{\frac{1}{4}} \\
+r = \sqrt{\left( 8\sqrt{3} \right)^{2} + (-8)^{2}} = \sqrt{64 \cdot 3 + 64} = \sqrt{4 \cdot 64} = 2 \cdot 8 = 16 \\
+-8 = 16 \cos \left( \theta \right) \Rightarrow - \frac{1}{2} = \cos \left( \theta \right) \Rightarrow \theta = \frac{2\pi}{3} \vee \frac{4\pi}{3} \\
+8\sqrt{3} = 16 \sin \left( \theta \right) \Rightarrow \frac{\sqrt{3}}{2} = \sin \left( \theta \right) \Rightarrow \theta = \frac{2\pi}{3} \\
+z' = 16 e^{i\frac{2\pi}{3}} , \omega = e^{i \frac{2\pi}{4}} = e^{i \frac{\pi}{2}} \\
+z_1 = \left( 16 e^{i \frac{2\pi}{3}} \right)^{\frac{1}{4}} = 2 e^{i \frac{2\pi}{12}} = 2 e^{i \frac{\pi}{6}} \\
+z_2 = z_1 \cdot \omega = 2 e^{i \left( \frac{\pi}{6} + \frac{\pi}{2} \right)} = 2 e^{i \frac{2\pi}{3}} \\
+z_3 = z_2 \cdot \omega = 2 e^{i \frac{7\pi}{6}} \\
+z_4 = z_3 \cdot \omega = 2 e^{i \frac{5\pi}{3}} \\
+z = \{ 2 e^{i \frac{\pi}{6}}, 2 e^{i \frac{2\pi}{3}}, 2 e^{i \frac{7\pi}{6}}, 2 e^{i \frac{5\pi}{3}} \}
+				\end{gather}
+
+
+
+
+
+
+
+			\subparagraph{d)}
+				\begin{gather}
+z = \sqrt[3]{8} \\
+z' = 8 = 8 e^{i 2\pi} , \omega = e^{i \frac{2\pi}{3}} \\
+z_1 = 2 e^{i \frac{2\pi}{3}}, z_2 = 2 e^{i \frac{4\pi}{3}}, 2 e^{i 2\pi} \\
+S = z_1 + z_2 + z_3 = 2 \left( e^{i \frac{2\pi}{3}} + e^{i \frac{4\pi}{3}} + e^{i 2\pi} \right) \\
+S = 2 \left( -\frac{1}{2} + i \frac{\sqrt{3}}{2} -\frac{1}{2} - i \frac{\sqrt{3}}{2} + 1 \right) = 2(0) = 0
+				\end{gather}
+				\begin{gather}
+z = (a + ib)^{\frac{1}{n}} = r^{\frac{1}{n}} e^{i \frac{\theta}{n}}, \omega = e^{i \frac{2\pi}{n}} \\
+S = \sum_{t = 1}^{n} r^{\frac{1}{n}} e^{i \frac{\theta}{n}} e^{i \frac{2\pi t}{n}} = r^{\frac{1}{n}} e^{i \frac{\theta}{n}} \sum_{t = 1}^{n} e^{i \frac{2\pi t}{n}}
+				\end{gather}
+				\begin{flushleft}
+Hvis summen $S$ skal være lik $0$ må summen $$\sum_{t = 1}^{n} e^{i \frac{2\pi t}{n}}$$ være lik $0$. \\
+				\end{flushleft}
+				\begin{gather}
+\sum_{t = 1}^{n} e^{i \frac{2\pi t}{n}} \\
+\text{Bruker sammenhengen} \nonumber \\
+\sum_{k = 1}^{n} q^{k - 1} = \frac{1 - q^{n}}{1 - q} \\
+\text{Som står på side $112$ i Rottmann} \nonumber \\
+\sum_{t = 1}^{n} e^{i \frac{2\pi t}{n}} = \sum_{t = 1}^{n} e^{\left(i \frac{2\pi}{n}\right)t} = \sum_{t = 1}^{n} \left(e^{i \frac{2\pi}{n}}\right)^{t} \\
+\frac{\sum_{t = 1}^{n} \left(e^{i \frac{2\pi}{n}}\right)^{t} e^{- i \frac{2\pi}{n}}}{\sum_{t = 1}^{n} e^{- i \frac{2\pi}{n}}} = \frac{\sum_{t = 1}^{n} \left(e^{i \frac{2\pi}{n}}\right)^{t - 1}}{\sum_{t = 1}^{n} e^{- i \frac{2\pi}{n}}} = \frac{\frac{1 - \left(e^{i \frac{2\pi}{n}}\right)^{n}}{1 - e^{i \frac{2\pi}{n}}}}{\sum_{t = 1}^{n} e^{- i \frac{2\pi}{n}}} \\
+\frac{\frac{1 - e^{i 2\pi}}{1 - e^{i \frac{2\pi}{n}}}}{\sum_{t = 1}^{n} e^{- i \frac{2\pi}{n}}} = \frac{\frac{1 - 1}{1 - e^{i \frac{2\pi}{n}}}}{\sum_{t = 1}^{n} e^{- i \frac{2\pi}{n}}} = \frac{\frac{0}{1 - e^{i \frac{2\pi}{n}}}}{\sum_{t = 1}^{n} e^{- i \frac{2\pi}{n}}} = 0
+				\end{gather}
+
+
+
+
+
+
+		\paragraph{3.}
+			\subparagraph{a)}
+				\begin{gather}
+\int_{0}^{2\pi} \sin^2(4x)dx = \int_{0}^{2pi} \left( \frac{e^{i4x} - e^{-i4x}}{2i} \right)^{2} dx \\
+- \frac{1}{4} \int_{0}^{2\pi} \left( e^{i4x} - e^{-i4x} \right)^{2} dx = - \frac{1}{4} \int_{0}^{2\pi} \left( e^{i8x} - 2 + e^{-i8x} \right) dx \\
+- \frac{1}{4} \left( -4\pi + \int_{0}^{i16\pi} (e^{u} + e^{-u}) \frac{du}{8i} \right), u = i8x \\
+\pi - \frac{1}{32i} \left[ e^{u} - e^{-u} \right]_{0}^{i16\pi} = \pi - \frac{1}{32i} \left( e^{i16\pi} - e^{-i16\pi} - e^{0} + e^{-0} \right) \\
+\pi + 0 + 0 = \pi
+				\end{gather}
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{gather}
+\sin(2z) = \frac{e^{i2z} - e^{-i2z}}{2i} = \frac{e^{i2z} + e^{0} - e^{0} - e^{-i2z}}{2i} \\
+\frac{\left(e^{iz} - e^{-iz}\right) \left(e^{iz} + e^{-iz}\right)}{2i} = 2 \frac{e^{iz} - e^{-iz}}{2i} \frac{e^{iz} + e^{-i2z}}{2} \\
+\text{Dette vet vi fra definisjonen av sinus og cosinus på polar form er det samme som:} \nonumber \\
+2 \sin(z) \cos(z)
+				\end{gather}
+
+
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{gather}
+\cosh^{2}(z) - \sinh^{2}(z) = \left(\frac{e^{z} + e^{-z}}{2}\right)^{2} - \left(\frac{e^{z} - e^{-z}}{2}\right)^{2} \\
+\left(\frac{e^{2z} + 2e^{0} + e^{-2z} - e^{2z} + 2e^{0} - e^{-2z}}{4}\right) = \left(\frac{4e^{0}}{4}\right) = 1
+				\end{gather}
+
+
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{d)}
+				\begin{gather}
+\sin\left( i \ln\left( \frac{1 - i}{1 + i} \right) \right) = \frac{e^{i^{2} \ln\left(\frac{1 - i}{1 + i}\right)} - e^{- i^{2} \ln\left(\frac{1 - i}{1 + i}\right)}}{2i} \\
+\frac{\left(\frac{1 - i}{1 + i}\right)^{-1} - \left(\frac{1 - i}{1 + i}\right)}{2i} = \frac{\left(\frac{1 + i}{1 - i}\right) - \left(\frac{1 - i}{1 + i}\right)}{2i} \\
+\frac{\left( 1 + i \right)^{2} - \left( 1 - i \right)^{2}}{2i \left( 1 - i \right) \left( 1 + i \right)} = \frac{1 + 2i - 1 - 1 + 2i + 1}{2i \cdot 2} \\
+\frac{4i}{4i} = 1
+				\end{gather}
+
+
+
+
+
+
+
+
+
+			\subparagraph{e)}
+				\begin{gather}
+\left( -e \right)^{i\pi} = (-1)^{i\pi} \cdot e^{i\pi} = (-1)^{i\pi} (-1) \\
+\text{Fra lemma(?) 14.1, side 73 i Boas får jeg:} \nonumber \\
+e^{i\pi \ln(-1)} (-1) = e^{i\pi \cdot i\pi} (-1) = -e^{-\pi^{2}}
+				\end{gather}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{f)}
+				\begin{flushleft}
+For å finne ut hva $\tanh^{-1}(z)$ er, kaller jeg dette $w$ og regner ut i fra $z = \tanh(w)$
+				\end{flushleft}
+				\begin{gather}
+w = tanh^{-1}(z) \\
+z = tanh(w) = \frac{sinh(w)}{cosh(w)} = \frac{\frac{e^{w} - e^{-w}}{2}}{\frac{e^{w} + e^{-w}}{2}} = \frac{e^{w} - e^{-w}}{e^{w} + e^{-w}} \\
+\text{Ganger teller og nevner i brøken med $e^{w}$} \nonumber \\
+z = \frac{e^{2w} - 1}{e^{2w} + 1} \\
+z \left( e^{2w} + 1 \right) = e^{2w} - 1 \\
+e^{2w}(z - 1) = -1 - z \\
+e^{2w} = \frac{1 + z}{1 - z} \\
+2w = \ln\left( \frac{1 + z}{1 - z} \right) \\
+w = \tanh^{-1}(z) = \frac{1}{2} \ln\left( \frac{1 + z}{1 - z} \right)
+				\end{gather}
+\end{document}

@@ -1,0 +1,313 @@
+\documentclass[11pt, A4paper,norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{textcomp}
+\usepackage{float}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/Fys2140/Python programmer"}
+\graphicspath{{C:/Users/Torstein/Documents/UiO/Fys2140/"Python programmer"/}}
+\hypersetup{colorlinks, urlcolor=url}
+
+\author{Torstein Solheim Ølberg}
+\title{Eksamen våren 2013}
+
+
+
+%\lstinputlisting{Filnavn! type kodefil}
+%\includegraphics[width=12.6cm,height=8cm]{Filnavn! type png}
+
+
+
+\begin{document}
+\maketitle
+	\begin{center}
+\Large \textbf{Oppgaver}
+	\end{center}
+
+
+
+
+
+
+
+
+
+		\paragraph{1.}
+			\begin{flushleft}
+Franck-Hertz eksperiment går ut på at man setter opp en katode, et positivt ladet gitter, og en anode inni en glasstube fylt med kvikksølvatomer. Da vil elektronene på katoden bli akselerert mot gitteret. Da oppnår den en kinetisk energi. Deretter passerer de igjennom gitteret og blir bremset når de beveger seg mot anoden, men ikke helt, slik at du ender opp med en viss mengde kinetisk energi. Denne energien blir mindre hvis elektronet treffer et kvikksølvatom på veien og overfører noe av energien til disse atomene, og dermed eksiterer disse atomene. Det viser seg at istedenfor at det er en kontinuerlig sammenheng mellom hvor stor spenning som blir satt opp mellom gitteret og katoden er, og strømmen gjennom en ledning festet i katoden og anoden, er det topper for noen spesifikke spenninger. Det kan bare forklares ved at energien som ett kvikksølv atom er kvantisert. Dette var det første eksperiemtet som viste tydelig at atomer har stasjonære tilstander.
+			\end{flushleft}
+
+
+
+
+
+
+
+
+		\paragraph{2.}
+			\subparagraph{a)}
+				\begin{gather*}
+- \frac{\hbar^2}{2 m} \nabla^2 \psi(x, y, z) + \frac{1}{2} m \omega^2(x^2 + y^2 + z^2) \psi(x, y, z) = E_n \psi(x, y, z)
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{flushleft}
+Siden sannsynlighet er enhetsløst, og man beregner sannsynlighet ved å integrere opp kvadratet av $\psi$ i alle tre retninger så må enheten til $|\psi(x, y, z)|$ være $[\text{m}^{-3}]$
+				\end{flushleft}
+
+			
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+Normeringsbetingelsen er
+$$\int |\psi(x, y, z)|^2 d^3r = 1$$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{d)}
+				\begin{gather*}
+- \frac{\hbar^2}{2 m} \nabla^2 \psi(x, y, z) + \frac{1}{2} m \omega^2(x^2 + y^2 + z^2) \psi(x, y, z) = E_n \psi(x, y, z) \\
+- \frac{\hbar^2}{2 m} \nabla^2 X(x)Y(y)Z(z) + \frac{1}{2} m \omega^2(x^2 + y^2 + z^2) X(x)Y(y)Z(z) = E_n X(x)Y(y)Z(z) \\
+- \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial x^2} X(x)Y(y)Z(z) + \frac{1}{2} m \omega^2 x^2 X(x)Y(y)Z(z) = E_n X(x)Y(y)Z(z) \\
+- \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial y^2} X(x)Y(y)Z(z) + \frac{1}{2} m \omega^2 y^2 X(x)Y(y)Z(z) = E_n X(x)Y(y)Z(z) \\
+- \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial z^2} X(x)Y(y)Z(z) + \frac{1}{2} m \omega^2 z^2 X(x)Y(y)Z(z) = E_n X(x)Y(y)Z(z) \\
+- Y(y)Z(z) \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial x^2} X(x) = \left( E_n - \frac{1}{2} m \omega^2 x^2 \right) X(x)Y(y)Z(z) \\
+- X(x)Z(z) \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial y^2} Y(y) = \left( E_n - \frac{1}{2} m \omega^2 y^2 \right) X(x)Y(y)Z(z) \\
+- X(x)Y(y) \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial z^2} Z(z) = \left( E_n - \frac{1}{2} m \omega^2 z^2 \right) X(x)Y(y)Z(z) \\
+- \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial x^2} X(x) = \left( E_x - \frac{1}{2} m \omega^2 x^2 \right) X(x) \\
+- \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial y^2} Y(y) = \left( E_y - \frac{1}{2} m \omega^2 y^2 \right) Y(y) \\
+- \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial z^2} Z(z) = \left( E_z - \frac{1}{2} m \omega^2 z^2 \right) Z(z) \\
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{e)}
+				\begin{flushleft}
+Alle disse tre likningene over er endimensjonale likninger av den harmoniske ocillatoren. Det vil si at de alle tre har energien $E_i = \hbar \omega \left( n + \frac{1}{2} \right)$ og $E_n = E_x + E_y + E_z$
+$$E_n = \hbar \omega \left( n_x + \frac{1}{2} \right) + \hbar \omega \left( n_y + \frac{1}{2} \right) + \hbar \omega \left( n_z + \frac{1}{2} \right) = \hbar \omega \left( (n_x + n_y + n_z) + \frac{3}{2} \right)$$ \\
+$$E_n = \hbar \omega \left( n + \frac{3}{2} \right)$$
+der $n \equiv (n_x + n_y + n_z) = 0, 1, 2, \dots$ fordi $n_i = 0, 1, 2, \dots$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{f)}
+				\begin{flushleft}
+Begrepet degenerasjon beskriver når vi har flere tilstander av et system som gira samme energi. I vårt tilfelle så er det antall kombinasjoner av de tre tallene $n_i$ der $i$ kan være $x, y \vee z$. Hvis vi da tenker oss at vi ser på bare de to tallene $n_x$ og $n_y$, som skal gi $n - n_x$. Det er $n - n_x + 1$ antall verdier så degenerasjonen blir gitt av summen
+$$g = \sum_{n_x = 0}^{n} n - n_x + 1 = \sum_{n_x = 0}^{n} n + 1 - \sum_{n_x = 0}^{n} n_x = (n + 1)(n + 1) - \frac{n(n + 1)}{2}$$
+$$g = \frac{1}{2} (n + 1)(n + 2)$$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{g)}
+				\begin{flushleft}
+Løsningen $\psi(x, y, z)$ er ett produkt av de tre løsningene $\psi(i)$. Det gir $\psi(x, y, z) = \psi(x) \psi(y) \psi(z)$, som når vi setter inn utrykket for grunntilstanden til den harmoniske oscillatoren.
+$$\psi_{000} = A_0e^{- \alpha x^2} B_0e^{- \alpha y^2} C_0e^{- \alpha z^2} = A_{000}e^{- \alpha(x^2 + y^2 + z^2)}$$
+$$x^2 + y^2 + z^2 = r^2 \cos^2(\phi) \sin^2(\theta) + r^2 \cos^2(\phi) \sin^2(\theta) + r^2 \cos^2(\theta)$$
+$$r^2(2 \cos^2(\phi) \sin^2(\theta) + \cos^2(\theta)) = r^2$$
+$$\psi_{000} = A_{000} e^{- \alpha r^2}$$
+$$\psi_{001} = A_0e^{- \alpha x^2} B_0e^{- \alpha y^2} C_1ze^{- \alpha z^2} = A_{001} z e^{- \alpha(x^2 + y^2 + z^2)} = A_{001} r \cos(\theta) e^{- \alpha r^2}$$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{h)}
+				\begin{gather*}
+\int |\psi_{0}|^2 dr = \int_{- \infty}^{\infty} A_{0}^2 e^{- 2 \alpha r^2} dr = A_{0}^2 \int_{- \infty}^{\infty} e^{- 2 \alpha r^2} dr = 1 \\
+2 A_{0}^2 \int_{0}^{\infty} e^{- 2 \alpha r^2} dr = A_{0}^2 \sqrt{\frac{\pi}{2 \alpha}} = 1 \\
+A_0 = \sqrt[4]{\frac{2 \alpha}{\pi}} \\
+				\end{gather*}
+				\begin{gather*}
+\int |\psi_{1}|^2 dr = \int_{- \infty}^{\infty} A_{1}^2 r^2 e^{- 2 \alpha r^2} dr = A_{1}^2 \int_{- \infty}^{\infty} r^2 e^{- 2 \alpha r^2} dr = 2 A_{1}^2 \int_{0}^{\infty} r^2 e^{- 2 \alpha r^2} dr = 1 \\
+\text{Bruker likning $(12)$ med $k$ lik $2$} \\
+2 A_{1}^2 \int_{0}^{\infty} r^2 e^{- 2 \alpha r^2} dr = A_{1}^2 (2 \alpha)^{- \frac{3}{2}} \Gamma\left( \frac{3}{2} \right) = A_{1}^2 (2 \alpha)^{- \frac{3}{2}} \frac{1}{2} \sqrt{\pi} = A_{1}^2 \frac{1}{4} \left( \frac{\pi}{2 \alpha^3} \right)^{\frac{1}{2}} = 1 \\
+A_{1} = 2 \left( \frac{2 \alpha^3}{\pi} \right)^{\frac{1}{4}} \\
+				\end{gather*}
+				\begin{gather*}
+A_{000} = \sqrt[4]{\frac{2 \alpha}{\pi}} \sqrt[4]{\frac{2 \alpha}{\pi}} \sqrt[4]{\frac{2 \alpha}{\pi}} = \left( \frac{2 \alpha}{\pi} \right)^{\frac{3}{4}} \\
+A_{001} = \left( \frac{2 \alpha}{\pi} \right)^{\frac{1}{4}} \left( \frac{2 \alpha}{\pi} \right)^{\frac{1}{4}} 2 \left( \frac{2 \alpha^3}{\pi} \right)^{\frac{1}{4}} = 2 \left( \frac{2}{\pi} \right)^{\frac{1}{4} + \frac{1}{4} + \frac{1}{4}} (\alpha)^{\frac{1}{4} + \frac{1}{4} + \frac{3}{4}} = 2^{\frac{7}{4}} \alpha^{\frac{5}{4}} \pi^{- \frac{3}{4}} \\
+\frac{A_{001}}{A_{000}} = 2^{\frac{7}{4}} \alpha^{\frac{5}{4}} \pi^{- \frac{3}{4}} \left( \frac{2 \alpha}{\pi} \right)^{- \frac{3}{4}} = 2^{\frac{7}{4} - \frac{3}{4}} \alpha^{\frac{5}{4} - \frac{3}{4}} \pi^{- \frac{3}{4} + \frac{3}{4}} = 2 \alpha^{\frac{1}{2}} = 2 \alpha^{\frac{1}{2}}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{i)}
+				\begin{gather*}
+\langle r \rangle = \int \psi_{000}^{*} r \psi_{000} d^3r = \int A_{000} e^{- \alpha r^2} r A_{000} e^{- \alpha r^2} r^2 \sin(\theta) dr d\theta d\phi \\
+A_{000}^2 \int r^3 e^{- 2 \alpha r^2} dr d\theta d\phi = A_{000}^2 \frac{1}{8 \alpha^2} \int \sin(\theta) d\theta d\phi = A_{000}^2 \frac{1}{4 \alpha^2} \int d\phi \\
+\langle r \rangle = A_{000} \frac{\pi}{2 \alpha^2} = \left( \frac{2 \alpha}{\pi} \right)^{\frac{3}{2}} \frac{\pi}{2 \alpha^2} = \left( \frac{2}{\pi \alpha} \right)^{\frac{1}{2}} = \left( \frac{4 \hbar}{\pi m \omega} \right)^{\frac{1}{2}}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{j)}
+				\begin{flushleft}
+Hvis vi skal ha at $E_1 - E_0 = \hbar \omega \left( \frac{5}{2} \right) - \hbar \omega \left( \frac{3}{2} \right) = \hbar \omega$ er lik $- \frac{1}{2^2} \cdot 13.6 \text{eV} + 13.6 \text{eV} = \frac{3}{4} \cdot 13.6 \text{eV}$ så må da $\omega$ bli lik
+$$\hbar \omega = \frac{3}{4} \cdot 13.6 \text{eV} \Rightarrow \omega = \frac{3 \cdot 13.6 \text{eV}}{4 \cdot \hbar} = \frac{3 \cdot 13.6 \text{eV} \cdot c}{4 \cdot \hbar \cdot c} = \frac{3 \cdot 13.6 \text{eV} \cdot 3 \cdot 10^{8} \text{nm}/\text{ns}}{4 \cdot 197.3 \text{eVnm}}$$
+$$\omega = \frac{9 \cdot 13.6 \cdot 10^{8}}{4 \cdot 197.3} \cdot 10^{9} \text{s}^{-1} = 1.551 \cdot 10^{16} \text{s}^{-1}$$
+$$\langle r \rangle = \left( \frac{4 \hbar}{\pi m \omega} \right)^{\frac{1}{2}} = \left( \frac{4 \hbar^2 c^2}{\pi m c^2 \cdot 10.2 \text{eV}} \right)^{\frac{1}{2}} = \left( \frac{4 \cdot \left( 197.3 \text{eVnm} \right)^2}{\pi \cdot 0.511 \text{MeV} \cdot 10.2 \text{eV}} \right)^{\frac{1}{2}} \approx 0.0975 \text{nm}$$
+Forventningsverdien til $r$ for hydrogenatomet er oppgitt i oppgaven som $\langle r \rangle = \frac{3}{2} \cdot 0.0529 \text{nm} = 0.07935 \text{nm}$
+Forskjellen mellom disse to radiene er $0.0975 \text{nm} - 0.07935 \text{nm} = 0.01815 \text{nm}$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+			\subparagraph{k)}
+				\begin{flushleft}
+På grunn av Paulis eksklusjonsprinsipp kan bare en partikkel i et system ha en spesifik tilstand. Det vi si at antall partikler hvis vi tar med spinnet, er gitt ved $2n^2$ for hydrogenatomet og $2g(n)$ for systemet vårt. Antall partikler med spinn $- \frac{1}{2}$ som jeg kan putte inn i de to nederste energinivåene til hydrogenet er $g = \frac{2 + 8}{2} = 5$. For vårt system er det $g = \frac{1}{2} (0 + 1)(0 + 2) + \frac{1}{2} (1 + 1)(1 + 2) = 4$. Altså er det flere for hydrogenatomet enn for vårt system. \\
+For bosoner med spinn $-1$ gjelder ikke Paulis prinsipp og dermed kan det være ett vilkårlig antall partikler med samme spinn i samme energitilstand
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{l)}
+				\begin{gather*}
+\hat{L}^2 \psi_{001} = - \hbar^2 \left( \frac{1}{\sin(\theta)} \frac{\partial}{\partial \theta} \left( \sin(\theta) \right) \frac{\partial}{\partial \theta} + \frac{1}{\sin^2(\theta)} \frac{\partial^2}{\partial \phi^2} \right) A_{001} r \cos(\theta) e^{- \alpha r^2} \\
+- \hbar^2 A_{001} r e^{- \alpha r^2} \left( \frac{1}{\sin(\theta)} \frac{\partial}{\partial \theta} \left( \sin(\theta) \frac{\partial}{\partial \theta} \cos(\theta) \right) + \frac{\cos(\theta)}{\sin^2(\theta)} \frac{\partial^2}{\partial \phi^2} \right) \\
+- \hbar^2 A_{001} r e^{- \alpha r^2} \left( \frac{1}{\sin(\theta)} \frac{\partial}{\partial \theta} \left( - \sin^2(\theta) \right) \right) \\
+\hbar^2 A_{001} r e^{- \alpha r^2} 2 \cos(\theta) \\
+\hat{L}^2 \psi_{001} = 2 \hbar^2 A_{001} r \cos(\theta) e^{- \alpha r^2} = 2 \hbar^2 \psi_{001} \\
+\text{Altså er $\psi_{001}$ en egenfunksjon for operatoren, med egenverdi $2 \hbar^2$} \\
+\hat{L}_z \psi_{001} = - i \hbar \frac{\partial}{\partial \phi} A_{001} r \cos(\theta) e^{- \alpha r^2} = - 0 \cdot i \hbar A_{001} r \cos(\theta) e^{- \alpha r^2} = 0 \cdot \psi_{001} \\
+\text{Altså er $\psi_{001}$ egenfunksjon med egenverdi $0$}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{m)}
+				\begin{flushleft}
+Det finnes, men de er to lineær kombinasjoner av $C \psi_{100}$ og $D \psi_{010}$ og ikke bare hver av dem i seg selv, fordi de to tilstandene er avhengig av $\phi$ som gjør at de kan bli annerledes når de deriveres.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{n)}
+				\begin{flushleft}
+Sannsynligheten for å måle en tilstand er gitt ved $P = |c_n|^2$ altså kvadratet av konstanten forran tilstanden. denne konstanten er gitt ved Fouriers triks, altså $\int_{- \infty}^{\infty} \psi_{100} \psi_{000} dx$ som blir et unødvendig vanskelig integral. Istedenfor kan vi inse at uttryket for $\Psi$ kan skrives om til en lineærkombinasjon av $\psi_{100}$ og $\psi_{010}$, med konstantene $\frac{1}{\sqrt{2}}(i)$. Det vil si at $P = \frac{1}{2}$
+				\end{flushleft}
+\end{document}

@@ -1,0 +1,285 @@
+\documentclass[11pt, A4paper,norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{textcomp}
+\usepackage{float}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/Fys2140/Python programmer"}
+\graphicspath{{C:/Users/Torstein/Documents/UiO/Fys2140/"Python programmer"/}}
+\hypersetup{colorlinks, urlcolor=url}
+
+\author{Torstein Solheim Ølberg}
+\title{Svar på Oblig nr. 10 i Fys2140}
+
+
+
+%\lstinputlisting{Filnavn! type kodefil}
+%\includegraphics[width=12.6cm,height=8cm]{Filnavn! type png}
+
+
+
+\begin{document}
+\maketitle
+	\begin{center}
+\Large \textbf{Oppgaver}
+	\end{center}
+
+
+
+
+
+
+
+
+
+		\paragraph{1.}
+			\subparagraph{a)}
+				\begin{flushleft}
+De første tre ligningene kalles egenverdiligninger for henholdsvis hver av operatorene som er med i ligningen, mens ligning fire kalles for ortonormaliseringsbetingelsen for $\psi_{nlm_{l}}$. Ligning $1$ kalles også TUSL, selv om ikke det er en type ligning.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{flushleft}
+Hamilton operatoren $\hat{H}$ representerer klassisk energi. Operatoren $\hat{L}_z$ representerer angulært moment i $z$ retning, og operatoren $\hat{L}^2$ representerer kvadratet av det totale angulære momentet.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+For et hydrogen atom i tilstanden $\psi_{nlm_{l}}$ så er den totale energien skarp, hvis vi ser bort i fra elektronets egenspin. Det samme er også kvadratet av det totale angulære momentet og $z$-komponenten av det angulære momentet, fordi disse tre operatorene kommuterer. De skarpe verdiene er da egenverdiene til disse operatorene, altså $E_n$, $\hbar^2 l ( l + 1 )$ og $\hbar m_l$.
+				\end{flushleft}
+
+			
+
+
+
+
+
+
+
+
+
+			\subparagraph{d)}
+				\begin{flushleft}
+Hvis vi antar en separabel løsning for $\Psi(x, t)$ slik at bølgen er gitt ved $\Psi(\vec{r}, t) = \psi_{nlm_{l}}(\vec{r}) T(t)$ så kan vi finne en løsning. Setter opp TASL
+$$\hat{H}_0 \psi_{nlm_{l}}(\vec{r}) T(t) = i \hbar \frac{\partial }{\partial t} \psi_{nlm_{l}}(\vec{r}) T(t)$$
+$$E_n \psi_{nlm_{l}}(\vec{r}) T(t) = i \hbar \psi_{nlm_{l}}(\vec{r}) \frac{\partial }{\partial t} T(t)$$
+$$\frac{E_n}{i \hbar} T(t) = \frac{\partial }{\partial t} T(t)$$
+Det betyr at løsningen $T(t)$ må være på formen $A e^{\frac{E_n}{i \hbar} t}$, altså er hele tilstandsfunksjonen
+$$\Psi(\vec{r}, t) = \psi_{nlm_{l}} A e^{\frac{E_n}{i \hbar} t}$$
+For å finne konstanten $A$ bruker vi initsialbetingelsen $\Psi(\vec{r}, 0) = \psi_{nlm_{l}}$ og får at da må $A$ være lik $1$. Altså blir tilstanden til slutt
+$$\Psi(\vec{r}, t) = \psi_{nlm_{l}} e^{\frac{E_n}{i \hbar} t}$$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{e)}
+				\begin{flushleft}
+Hvis tilstanden $\Phi(\vec{r})$ er normert skal integralet $\int |\Phi(\vec{r})|^2 d^3\vec{r}$, over alt rom, være lik $1$. Integrer og ser hva jeg får.
+$$\int |\Phi(\vec{r})|^2 d^3\vec{r} = \int \frac{1}{\sqrt{2l + 1}} \sum_{m_l = -l}^{l} \psi_{nlm_{l}}(\vec{r}) \frac{1}{\sqrt{2l + 1}} \sum_{m_l = -l}^{l} \psi_{nlm_{l}}(\vec{r}) d^3\vec{r}$$
+$$\int \Phi(\vec{r}) dr = \frac{1}{2l + 1} \int \sum_{m_l = -l}^{l} \psi_{nlm_{l}}(\vec{r}) \sum_{m_l = -l}^{l} \psi_{nlm_{l}}(\vec{r}) d^3\vec{r}$$
+Dette kan deles opp i masse forskjellige integraler som alle er på formen til likning $(4)$ i oppgavesettet. Derfor bruker jeg denne til å si at det eneste vi får av resultater fra disse integralene er $1$ og $0$ at det er $2l + 1$ av dem som blir $1$ siden begge summene er like, har $2l + 1$ antall ledd og er like bare en gang per verdi. Derfor blir integralet
+$$\int |\Phi(\vec{r})|^2 d^3\vec{r} = \frac{2l + 1}{2l + 1} = 1$$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{f)}
+				\begin{flushleft}
+Siden $\Phi$ er en løsning for $\Psi(\vec{r}, 0)$, er en superposisjon av stasjonære tilstander, altså ikke avhengig av tid, og er normert, vil det si at akkurat de samme premissene gjelder som i oppgave d). Derfor blir løsningen helt lik, bare med $\Phi(\vec{r})$ istedenfor $\psi_{nlm_{l}}(\vec{r})$, altså
+$$\Psi(\vec{r}, t) = \Phi(\vec{r}) e^{\frac{E_n}{i \hbar} t} = \Phi(\vec{r}) e^{- \frac{i}{\hbar} E_n t}$$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{g)}
+				\begin{gather*}
+\langle \hat{H}_0 \rangle = \int \Psi(\vec{r}, t)^{*} \hat{H}_0 \Psi(\vec{r}, t) d^3r = \int_{0}^{\infty} E_n \Phi(\vec{r})^2 d^3r = E_n \int_{0}^{\infty} \Phi(\vec{r})^2 d^3r \\
+\text{Dette integralet har vi vist i oppgave e) at er lik $1$ så forventningsverdien blir} \\
+\langle \hat{H}_0 \rangle = E_n \\
+\langle \hat{L}^2 \rangle = \int \Psi(\vec{r}, t)^{*} \hat{L}^2 \Psi(\vec{r}, t) d^3r = \hbar^2 l(l + 1) \int_{0}^{\infty} \Phi(\vec{r})^2 d^3r = \hbar^2 l(l + 1) \\
+\langle \hat{L}_z \rangle = \int \Psi(\vec{r}, t)^{*} \hat{L}_z \Psi(\vec{r}, t) d^3r \\
+\text{Siden egenverdien til $\hat{L}_z$ er avhengig av $m_l$ blir ikke dette like lett som for de} \\
+\text{tidligere operatorene} \\
+\int \frac{1}{\sqrt{2l + 1}} \sum_{m_l = -l}^{l} \psi_{nlm_{l}}(\vec{r}) \frac{1}{\sqrt{2l + 1}} \sum_{m_l = -l}^{l} \hbar m_l \psi_{nlm_{l}}(\vec{r}) d^3r \\
+\frac{1}{2l + 1} \int \sum_{m_l = -l}^{l} \psi_{nlm_{l}}(\vec{r}) \sum_{m_l = -l}^{l} \hbar m_l \psi_{nlm_{l}}(\vec{r}) d^3r \\
+\frac{1}{2l + 1} \sum_{m_l = -l}^{l} \sum_{m_l = -l}^{l} \hbar m_l \int \psi_{nlm_{l}}^2(\vec{r}) d^3r \\
+\text{Bruker $(4)$} \\
+\frac{1}{2l + 1} \sum_{m_l = -l}^{l} \sum_{m_l = -l}^{l} \hbar m_l \delta_{n, n'} \delta_{l, l'} \delta_{m_l, m_l'} \\
+\text{Siden bare tilfelle som har like kvantetall gir $1$ så forsvinner den ene summen} \\
+\langle \hat{L}_z \rangle = \frac{1}{2l + 1} \sum_{m_l = -l}^{l} \hbar m_l = 0
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{h)}
+				\begin{flushleft}
+Begynner med å finne forventningsverdien til $\langle \hat{H}_0^2 \rangle$
+$$\langle \hat{H}_0^2 \rangle = \int \Psi(\vec{r}, t)^{*} \hat{H}_0^2 \Psi(\vec{r}, t) d^3r = \int_{0}^{\infty} E_n^2 \Phi(\vec{r})^2 d^3r = E_n^2 \int_{0}^{\infty} \Phi(\vec{r})^2 d^3r = E_n^2$$
+Finner så verdien for $\langle (L^2)^2 \rangle$
+$$\langle (L^2)^2 \rangle = \int \Psi(\vec{r}, t)^{*} \hat{H}_0^2 \Psi(\vec{r}, t) d^3r = \hbar^4 l^2(l + 1)^2 \int_{0}^{\infty} \Phi(\vec{r})^2 d^3r = \hbar^4 l^2(l + 1)^2$$ \\
+Begge disse to skarphetene blir $0$ siden kvadraten av forventningsverdien og forventningsverdien til kvadratet er like.
+$$\sigma_{\hat{H}_0} = \sqrt{\langle \hat{H}_0^2 \rangle - \langle \hat{H}_0 \rangle^2} = \sqrt{E_n^2 - E_n^2} = 0$$
+$$\sigma_{\hat{L}^2} = \sqrt{\langle (\hat{L}^2)^2 \rangle - \langle \hat{L}^2 \rangle^2} = \sqrt{\hbar^4 l^2(l + 1)^2 - \hbar^4 l^2(l + 1)^2} = 0$$
+Så tar vi tilslutt for oss forventningsverdien til $L_z$
+$$\langle \hat{L}_z^2 \rangle = \int \Psi(\vec{r}, t)^{*} L_z^2 \Psi(\vec{r}, t) d^3r = \frac{1}{2l + 1} \sum_{m_l = -l}^{l} \sum_{m_l = -l}^{l} \hbar^2 m_l^2 \int \psi_{nlm_{l}}(\vec{r})  \psi_{nlm_{l}}(\vec{r}) d^3r$$
+$$\frac{1}{2l + 1} \sum_{m_l = -l}^{l} \sum_{m_l = -l}^{l} \hbar^2 m_l^2 \delta_{n, n'} \delta_{l, l'} \delta_{m_l, m_l'} = \frac{1}{2l + 1} \sum_{m_l = -l}^{l} \hbar^2 m_l^2 = \frac{2 \hbar^2}{2l + 1} \sum_{m_l = 1}^{l} m_l^2$$
+$$\frac{2 \hbar^2}{2l + 1} \frac{l (l + 1)(2l + 1)}{6} = \frac{\hbar^2 l (l + 1)}{3}$$
+Da blir forventningsverdien til $\hat{L}_z$
+$$\sigma_{\hat{L}_z} = \sqrt{\langle \hat{L}_z^2 \rangle - \langle \hat{L}_z \rangle^2} = \sqrt{\frac{\hbar^2 l (l + 1)}{3}}$$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{i)}
+				\begin{flushleft}
+Sannsynligheten for at en partikkel har verdien $\hbar m_l$ er gitt av konstanten $|c_{nlm_l}|^2$ som i vårt tilfelle er $\frac{1}{2l + 1}$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{j)}
+				\begin{flushleft}
+Nei, det spiller ingen rolle, siden utrykket $\Phi(\vec{r})$ ikke er avhengig av tiden.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{k)}
+				\begin{flushleft}
+For tilstanden $\psi_{nlm_{l}}$ som passer inn med denne Hamilton operatoren er gitt ved den nye TUSLen
+$$\hat{H} \psi_{nlm_{l}} = \hat{H}_0 \psi_{nlm_{l}} + \frac{e}{2m} B \hat{L}_z \psi_{nlm_{l}} = E_n \psi_{nlm_{l}} + \frac{e}{2m} B \hbar m_l \psi_{nlm_{l}}$$
+$$E_{nlm_l} = E_n + \frac{e}{2m} B \hbar m_l$$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+			\subparagraph{l)}
+				\begin{flushleft}
+$$\hat{H} \Phi(\vec{r}) = \hat{H}_0 \frac{1}{\sqrt{2l + 1}} \sum_{m_l = -l}^{l} \psi_{nlm_{l}}(\vec{r}) + \frac{e}{2m} B \hat{L}_z \frac{1}{\sqrt{2l + 1}} \sum_{m_l = -l}^{l} \psi_{nlm_{l}}(\vec{r})$$
+$$\frac{1}{\sqrt{2l + 1}} \sum_{m_l = -l}^{l} \sum_{m_l = -l}^{l} \left(E_n + \frac{e}{2m} B \hbar m_l \right) \psi_{nlm_{l}}(\vec{r})$$
+Dette blir ikke lik en konstant ganget med $\Phi$. Derfor er det ikke en energi-egentilstand.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{m)}
+				\begin{gather*}
+\langle \hat{H} \rangle = \int \Psi(\vec{r}, t)^{*} \hat{H} \Psi(\vec{r}, t) d^3r = \int \Phi(\vec{r}) \hat{H} \Phi(\vec{r}) d^3r \\
+\int \frac{1}{\sqrt{2l + 1}} \sum_{m_l = -l}^{l} \psi_{nlm_{l}}(\vec{r}) \hat{H}_0 \frac{1}{\sqrt{2l + 1}} \sum_{m_l = -l}^{l} \psi_{nlm_{l}}(\vec{r}) + \frac{e}{2m} B \hat{L}_z \frac{1}{\sqrt{2l + 1}} \sum_{m_l = -l}^{l} \psi_{nlm_{l}}(\vec{r}) d^3r \\
+\frac{1}{2l + 1} \sum_{m_l = -l}^{l} \sum_{m_l = -l}^{l} \int \psi_{nlm_{l}}(\vec{r}) \left( \hat{H}_0 \psi_{nlm_{l}}(\vec{r}) + \frac{e}{2m} B \hat{L}_z \psi_{nlm_{l}}(\vec{r}) \right) d^3r \\
+\frac{1}{2l + 1} \sum_{m_l = -l}^{l} \sum_{m_l = -l}^{l} \left( E_n  + \frac{e}{2m} B \hbar m_l  \right) \delta_{n, n'} \delta_{l, l'} \delta_{m_l, m_l'} \\
+\frac{1}{2l + 1} \sum_{m_l = -l}^{l} \left( E_n  + \frac{e}{2m} B \hbar m_l  \right) \\
+E_n + \frac{e B \hbar}{2m} \frac{1}{2l + 1} \sum_{m_l = -l}^{l} m_l \\
+\langle \hat{H} \rangle = E_n + 0 = E_n
+				\end{gather*}
+\end{document}

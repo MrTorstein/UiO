@@ -1,0 +1,12 @@
+Liste over fysiske konstanter og deres verdier:
+Navn:       Verdi:               Enhet:
+
+pi          3.1415926536
+u           1.660539*10**(-27)      [kg]
+G           6.67428*10**(-11)       [m^3 / kg s^2]
+k           1.3806505*10**(-23)     [J / K]
+
+R_earth     6.371*10**(6)           [m]
+M_earth     5.972*10**(24)          [kg]
+R_sol       6.957*10**(8)           [m]
+M_sol       1.988*10**(30)          [kg]

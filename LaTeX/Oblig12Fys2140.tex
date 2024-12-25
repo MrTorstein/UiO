@@ -1,0 +1,264 @@
+\documentclass[11pt, A4paper,norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{textcomp}
+\usepackage{float}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/Fys2140/Python programmer"}
+\graphicspath{{C:/Users/Torstein/Documents/UiO/Fys2140/"Python programmer"/}}
+\hypersetup{colorlinks, urlcolor=url}
+
+\author{Torstein Solheim Ølberg}
+\title{Svar på Oblig nr. 12 i Fys2140}
+
+
+
+%\lstinputlisting{Filnavn! type kodefil}
+%\includegraphics[width=12.6cm,height=8cm]{Filnavn! type png}
+
+
+
+\begin{document}
+\maketitle
+	\begin{center}
+\Large \textbf{Oppgaver}
+	\end{center}
+
+
+
+
+
+
+
+
+
+		\paragraph{1.}
+			\subparagraph{a)}
+				\begin{flushleft}
+For at atomet skal ha minst potensiell energi må potensialet som atomene blir utsatt for være så lite som mulig. Finner denne avstanden ved å derivere potensialet og sette det lik $0$.
+				\end{flushleft}
+				\begin{gather*}
+V(r) = A \left( e^{- 2 a (r - r_0)} - 2 e^{- a (r - r_0)} \right) \\
+V'(r) = - 2 a A \left( e^{- 2 a (r - r_0)} - e^{- a (r - r_0)} \right) \\
+0 = - 2 a A \left( e^{- 2 a (r - r_0)} - e^{- a (r - r_0)} \right) \\
+e^{- a (r - r_0)} = e^{- 2 a (r - r_0)} \\
+- a (r - r_0) = - 2 a (r - r_0) \Rightarrow (r - r_0) = 0 \Rightarrow r = r_0
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{gather*}
+\text{Taylorutviklingen til potensialet rundt $r_0$ er:} \\
+\tilde{V}(r) = V(r_0) + V'(r_0) (r - r_0) + \frac{1}{2} V''(r_0) (r - r_0)^2 \\
+\text{Vet at $V'(r_0)$ er lik $0$, altså kan dette leddet fjernes} \\
+V''(r) = 2 a^2 A \left( 2 e^{2 a (r - r_0)} - e^{- a (r - r_0)} \right) \\
+V''(r_0) = 2 a^2 A \left( 2 - 1 \right) = 2 A a^2 = K \\
+\tilde{V}(r) = V(r_0) + \frac{1}{2} K (r - r_0)^2 \\
+\text{Schrödingerlikningen er gitt i oppgaven som} \\
+- \frac{\hbar^2}{2 \mu} \frac{d^2 \psi(r)}{dr^2} + V(r) \psi(r) = E_{\text{vib}} \psi(r) \\
+- \frac{\hbar^2}{2 \mu} \frac{d^2 \psi(r)}{dr^2} + \left( V(r_0) + \frac{1}{2} K (r - r_0)^2 \right) \psi(r) = E_{\text{vib}} \psi(r) \\
+- \frac{\hbar^2}{2 \mu} \frac{d^2 \tilde{\psi}(y)}{dy^2} + \frac{1}{2} K y^2 \tilde{\psi}(y) = \epsilon \tilde{\psi}(y) \\
+\text{Dette likner veldig på Schrödingerlikningen for den harmoniske ocillatoren.}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+Energispekteret $\epsilon$ er lik $\left( n +  \frac{1}{2} \right) \hbar \omega$. $\omega$ er definert lik $\sqrt{\frac{2 a^2}{\mu}}$ i vårt tilfelle. Setter vi inn verdien får vi at $\epsilon = \left( n +  \frac{1}{2} \right) \hbar \sqrt{\frac{2 a^2}{\mu}} = \left( n +  \frac{1}{2} \right) \hbar a \sqrt{\frac{2}{\mu}}$ \\
+Dette uttrykket er bare gyldig for små utslag, slik som vi forutsatte i starten av oppgaven. Derfor er $n$ nødt til å være liten. Blir $n$ for stor vil ikke lenger potensialet fungere som en pendel.
+				\end{flushleft}
+			
+
+
+
+
+
+
+
+
+
+			\subparagraph{d)}
+				\begin{gather*}
+K = 2 A a^2 = 2 \cdot 5.2 \text{eV} \cdot 27^2 \text{nm}^{-2} = 7600 \text{eVnm}^{-2} \\
+\hbar \omega_0 = \hbar c \sqrt{\frac{K}{\frac{16^2 \text{u}^2}{2 \cdot 16 \text{u}} c^2}} = \hbar c \sqrt{\frac{K}{8 \text{u} c^2}} \\
+\hbar \omega_0 = 197.3 \text{eVnm} \sqrt{\frac{7600 \text{eVnm}^{-2}}{8 \cdot 9.31 \cdot 10^{8} \text{eV}}} = 197.3 \text{eV} \sqrt{\frac{7600}{8 \cdot 9.31 \cdot 10^{8}}} = 0.20 \text{eV} \\
+\text{Dette svaret kan vi se er mye større enn rotasjonsenergien, $100$ ganger så stor.}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+
+
+		\paragraph{2.}
+			\subparagraph{a)}
+				\begin{flushleft}
+Egenfunksjonen for en operator er en funksjon operatoren kan fungere på, hvor det vil fungere som at du bare ganger funksjonen med en konstant.
+				\end{flushleft}
+				\begin{gather*}
+p \psi_n(x) = \frac{\hbar}{i} \frac{\partial}{\partial x} \sqrt{\frac{2}{L}} \sin\left( \frac{n \pi x}{L} \right) = - i \hbar \sqrt{\frac{2}{L}} \frac{n \pi}{L} \cos\left( \frac{n \pi x}{L} \right) \neq A \psi_n(x) \\
+\text{Vi ser at $\psi_n$ ikke er en egenfunksjon for bevegelsesmengden.}
+				\end{gather*}
+				\begin{flushleft}
+Tilstanden i boksen vil ikke kunne ha en skarp bevegelsesmengde fordi vi allerede kan vite noe om posisjonen til partikkelen. Skal partikkelen ha en skarp bevegelsesmengde må posisjonen kunne være over alt ellers.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{gather*}
+\text{Normerer ved å integrer $|\psi|^2$ fra $0$ til $L$ og sette dette lik $1$} \\
+\text{Men først ser jeg bare på $\psi_n$ og beregner den normerte av dette.} \\
+A = \int_{0}^{L} \psi_n^2 dx = \int_{0}^{L} \left( \sqrt{\frac{2}{L}} \sin\left( \frac{n \pi x}{L} \right) \right)^2 dx = \frac{2}{L} \int_{0}^{L} \sin^2\left( \frac{n \pi x}{L} \right) dx \\
+A = \frac{2}{L} \int_{0}^{L} \sin^2\left( \frac{n \pi x}{L} \right) dx = \frac{2}{L} \left[ \frac{x}{2} - \frac{\sin\left( \frac{2 n \pi}{L} x \right)}{\frac{4 n \pi}{L}} \right]_{0}^{L} = \frac{2}{L} \left( \frac{L}{2} - \frac{\sin\left( 2 n \pi \right)}{\frac{4 n \pi}{L}} \right) \\
+A = \frac{2}{L} \left( \frac{L}{2} \right) = 1 \text{, siden $\sin(2 \pi n) = 0$ uansett hvilken $n$} \\
+1 = \int_{0}^{L} \psi^2 dx = \int_{0}^{L} \left( N \left( \psi_2(x) - 2 \psi_4(x) + \psi_6(x) + 2 \psi_8(x) \right) \right)^2 dx \\
+\text{De eneste leddene som ikke blir $0$ er de som ganges med seg selv.} \\
+1 = N^2 \int_{0}^{L} \left( \psi_2^2 + 4 \psi_4^2 + \psi_6^2 + 4 \psi_8^2 \right) dx \\
+\text{Alle disse integralene blir bare $1$ ganget med konstanten forran $\psi$ene} \\
+1 = N^2 \left( 1 + 4 + 1 + 4 \right) = N^2 \cdot 10 \\
+N = \frac{1}{\sqrt{10}}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+Sannsynligheten for å finne partiklene med energi $\frac{4^2 \pi^2 \hbar^2}{2 m L^2}$ er gitt ved konstanten, foran denne tilstanden i uttrykket for $\psi(x)$, i annen.
+$$P_4 = \frac{2^2}{10} = \frac{2}{5}$$
+Grunntilstanden er når $n = 1$, men siden denne tilstanden ikke ligger inne i uttrykket for $\psi$ så vil sannsynligheten for dette være lik $0$.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{d)}
+				\begin{flushleft}
+Siden alle tilstandene i $\psi$ er gitt med $n$ lik et partall. Det gjør at alle disse tilstandene blir $0$ hvis du setter inn $x = \frac{L}{2}$. Det gjør til sammen at sannsynlighetstettheten for å finne partikkelen ved denne posisjonen er $0$.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{e)}
+				\begin{flushleft}
+Den romlige delen $\psi_{\text{rom}}$ er i følge [5.14] i Griffiths lik $\pm \psi(x_1, x_2)$. Dette kan igjen skrives som $A \left( \psi_a(x_1) \psi_b(x_2) \pm \psi_b(x_1) \psi_a(x_2) \right)$, i følge [5.10], der vi bruker $-$ siden vi har med fermioner å gjøre. Da blir dette det samme som determinanten
+$$\left|
+\begin{tabular}{ cc }
+$\psi_a(x_1)$ & $\psi_a(x_2)$ \\
+$\psi_b(x_1)$ & $\psi_b(x_2)$
+\end{tabular}
+\right|$$
+Da får vi at uttrykket blir
+$$\psi_{\text{rom}} = A \left|
+\begin{tabular}{ cc }
+$\psi_a(x_1)$ & $\psi_a(x_2)$ \\
+$\psi_b(x_1)$ & $\psi_b(x_2)$
+\end{tabular}
+\right|$$
+				\end{flushleft}
+				\begin{gather*}
+\text{Normaliserer så for å finne $A$.} \\
+1 = A^2 \int_{0}^{L} \left( \psi_a(x_1) \psi_b(x_2) - \psi_b(x_1) \psi_a(x_2) \right)^2 dx_1 dx_2 \\
+1 = A^2 \int_{0}^{L} \left( \psi_a^2(x_1) \psi_b^2(x_2) - 2 \psi_a(x_1) \psi_b(x_2) \psi_b(x_1) \psi_a(x_2) + \psi_b^2(x_1) \psi_b^2(x_2) \right) dx_1 dx_2 \\
+\text{Vet fra før av at integralene med noe i annen er forskjellig fra $0$.} \\
+\text{Og også at de med noe i annen blir lik $1$.} \\
+1 = A^2 \cdot 2 \Rightarrow A = \frac{1}{\sqrt{2}} = \frac{1}{\sqrt{2!}} \\
+\text{Da har vi det vi trenger.}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{f)}
+				\begin{flushleft}
+Hvis romdelen skal være antisymetrisk betyr det at den endrer fortegn. Bytter vi om en koordinat med en annen er det det samme som å bytte to søyler. Lemma $4.9.7$ fra Flervariabel analyse med linjær algebra sier at hvis vi bytter om to rader vil determinanten bli helt lik, men endre fortegn. Vet også at radoperasjoner er helt like for søyler fordi determinanten ikke endres når en matrise blir transponert, og da er jo søyler rader. Altså vet vi at bølgefunksjonen er antisymmetrisk. \\
+Når det kommer til om funksjonen oppfyller Pauliprinsippet så vet vi fra Lemma $4.9.8$ at hvis to rader i en determinant er lik blir determinanten lik $0$. Dette er akkurat det vi får hvis to av konstantene $a$, $b$ og $c$ er like.
+				\end{flushleft}
+\end{document}

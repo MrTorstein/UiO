@@ -1,0 +1,246 @@
+\documentclass[11pt, A4paper,norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{textcomp}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/Fys2140/Python programmer"}
+\hypersetup{colorlinks, urlcolor=url}
+
+\author{Torstein Solheim Ølberg}
+\title{Svar på Oblig nr. 2 i Fys2140}
+
+
+
+%\lstinputlisting{Filnavn! type kodefil}
+%\includegraphics[width=12.6cm,height=8cm]{"C:/Users/Torstein/Documents/UiO/Fys2140/Python programmer"/Filnavn! type png}
+
+
+
+\begin{document}
+\maketitle
+	\begin{center}
+\Large \textbf{Oppgaver}
+	\end{center}
+
+
+
+
+
+
+
+
+
+		\paragraph{1.}
+			\subparagraph{a)}
+				\begin{flushleft}
+Fotoelektrisk effekt går ut på at elektromagnetisk stråling som sendes inn mot en metallplate vil forårsake at elektroner blir emitert fra metallplata. \\
+Et eksperiment for å måle og observere fotoelektrisk effekt går ut på at du har en krets med en fotokatode (en metallplate) i en ende og en anode i en annen ende, slik at elektronene som blir slått løs fra katoden kan bli dratt over til anoden. I tilleg til dette er det en spenningskilde i kretsen, et ampermeter i serie med spenningskilden og en lyskilde som stråler inn på fotokatoden. Da vil man kunne observere at det går strøm i kretsen når du stråler lys med tilstrekkelig høy nok frekvens mot katoden. Derimot vil det ikke gå strøm i kretsen hvis det ikke stråler lys mot katoden og heller ikke hvis strålingen har for lav frekvens, uansett om du øker intensiteten til strålingen.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{flushleft}
+Stoppepotensialet til fotoelektroner er gitt ved formelen $eV = K = h \nu - \omega$
+				\end{flushleft}
+				\begin{gather}
+eV_0 = K_{maks} = h \nu - \omega_0 \\
+eV_0 = h \frac{c}{\lambda} - \omega_0 = 4.1357 \cdot 10^{-15} eVs \cdot \frac{3 \cdot 10^{8} m/s}{360 \cdot 10^{-9} m} - 2.0 eV \\
+eV_0 = 3.446 eV - 2.0 eV = 1.446 eV \\
+V_0 = 1.446 V \\
+\text{Og den kinetiske energien er:} \nonumber \\
+K_{maks} = 1.446 eV \\
+\text{Hastigheten til disse elektronene blir da:} \nonumber \\
+v_{maks} = \sqrt{2 \frac{K_{maks}}{m_e}} = \sqrt{2 \cdot \frac{1.446 eV}{9.11 \cdot 10^{-31} kg}} = 7.1 \cdot 10^{5} m/s
+				\end{gather}
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+Siden matrialet reflekterer $50 \%$ av strålingen er det $\frac{3.0 \cdot 10^{-9}}{2} W = 1.5 \cdot 10^{-9} W$ som stråler, per kvadratmeter. Og det er igjen $10 \%$ av denne strålingen, altså $\frac{3.0 \cdot 10^{-9}}{10} W/m^2 = 1.5 \cdot 10^{-10} W/m^2$ som er utgangspunktet for emisjon av elektroner. Det betyr at det altså er $1.5 \cdot 10^{-10} J/m^2s = \frac{1.5 \cdot 10^{-10}}{ 1.6 \cdot 10^{-19}} eV/m^2s = 9.375 \cdot 10^8 eV/m^2s$ som fører til emisjon. Vi vet at for matrialet vårt så trengs det en energimengde på $2.0 eV$ for å rive et elektron løs, så derfor får vi $\frac{9.375 \cdot 10^8}{2.0} 1/m^2s = 4.6875 \cdot 10^{8} \frac{elektroner}{m^2 s}$. Disse elektronene har en kinetisk energi lik $h\frac{c}{\lambda} - \omega_0 = 4.1357 \cdot 10^{-15} eVs \cdot \frac{3 \cdot 10^8 m/s}{400 \cdot 10^{-9} m} - 2.0 eV = 1.1 eV$.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+		\paragraph{2.}
+			\subparagraph{a)}
+				\begin{flushleft}
+Energien til et foton er gitt ved $$E = h \frac{c}{\lambda} = 4.1357 \cdot 10^{-15} eVs \frac{3 \cdot 10^{8}m/s}{1.00 \cdot 10^{-11} m} = 124071eV$$ Bevegelsesmengden til fotonene er gitt ved $$p = \frac{h}{\lambda} = \frac{4.1357 \cdot 10^{-15} eVs}{1.00 \cdot 10^{-11} m} = 4.1357 \cdot 10^{-4} eVs/m$$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{flushleft}
+Endringen i bølgelengde, på grunn av "kollisjonen" er gitt ved $$\Delta \lambda = \lambda' - \lambda = \lambda_c (1 - \cos \theta)$$ som kan endres til å gi bølgelengden etter "kollisjonen" $$\lambda' = \lambda_c (1 - \cos \theta) + \lambda = 2.426 \cdot 10^{-12} m(1 - \cos(60^{\circ})) + 1 \cdot 10^{-11} m = 1.121 \cdot 10^{-11} m$$ Den nye bevegelsesmengden blir da $$p = \frac{h}{\lambda'} = \frac{4.1357 \cdot 10^{-15} eVs}{1.121 \cdot 10^{-11} m} = 3.689 \cdot 10^{-4} eVs/m$$ Og den nye kinetiske energien blir $$E_k = h \frac{c}{\lambda'} = 4.1357 \cdot 10^{-15} eVs \frac{3 \cdot 10^{8}m/s}{1.121 \cdot 10^{-11}} m = 110679 eV$$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+Den kinetiske energien i systemet, bestående av fotonet og elektronet, er bevart for en "kollisjon", som gir $$E_{k, foton} = E_{k, foton'} + E_{k, elektron} $$ Som kan endres til $$E_{k, elektron} = E_{k, foton} - E_{k, foton'} = 124071 eV - 110679 eV = 13392 eV$$ Bevegelsesmengden er også bevart, og kan dermed beregnes slik: 
+				\end{flushleft}
+				\begin{gather*}
+\vec{p}_{foton} = \vec{p}_{foton'} + \vec{p}_{elektron} \Rightarrow \vec{p}_{elektron} = \vec{p}_{foton} - \vec{p}_{foton'} = \frac{h}{\lambda} - \frac{h}{\lambda'} \\
+\text{Dette må gjøres hver for seg for rett frem og $90$ grader på kollisjonen} \\
+\vec{p}_{elektron, rett frem} = \frac{h}{\lambda} - \frac{h}{\lambda'} \cos(60^{\circ}) \\
+4.1357 \cdot 10^{-15} eVs \left( \frac{1}{1 \cdot 10^{-11} m} - \frac{1}{1.121 \cdot 10^{-11} m} \cos(60^{\circ}) \right) = 2.291 \cdot 10^{-4} eVs/m \\
+p_{elektron, 90^{\circ}} = - \frac{h}{\lambda'}\sin(60^{\circ}) = - \frac{4.1357 \cdot 10^{-15} eVs}{1.121 \cdot 10^{-11}}\sin(60^{\circ}) = -3.195 \cdot 10^{-4} \\
+\text{Til slutt kan jeg enkelt finne spredningsvinkelen til elektronet ved} \\
+\text{å ta $\arctan$ til $\frac{p_{elektron, rett frem}}{p_{elektron, 90^{\circ}}}$} \\
+\phi = \arctan \left( \frac{2.291 \cdot 10^{-4}}{-3.195 \cdot 10^{-4}} \right) = -35.64^{\circ} = 360^{\circ} - 35.64^{\circ} = 324.36^{\circ}
+				\end{gather*}
+				
+
+
+
+
+
+
+
+
+
+
+
+
+		\paragraph{3.}
+			\subparagraph{a)}
+				\begin{gather*}
+\text{Energien til et lyskvant er gitt ved} \\
+E = h \frac{c}{\lambda} = 4.1357 \cdot 10^{-15} eVs \frac{3 \cdot 10^{8} m/s}{4 \cdot 10^3 \cdot 10^{-10} m} = 3.101775 eV \\
+4.1357 \cdot 10^{-15} eVs \frac{3 \cdot 10^{8} m/s}{7 \cdot 10^3 \cdot 10^{-10} m} = 1.772443 eV \\
+\text{Det vil si at energien til lyskvant som faller i den synlige delen av} \\
+\text{spekteret ligger mellom $1.77eV$ og $3.10eV$}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{gather*}
+\begin{tabular} { |c|c|c|c|}
+$n_f - n_i$ & Atomært hydrogen & $n_f - n_i$ & Enkeltionisert Helium \\
+\hline
+2 - 3 & 656.3 nm & 4 - 6 & 656.0 nm \\
+2 - 4 & 486.1 nm & 4 - 7 & 541.1 nm \\
+2 - 6 & 410.2 nm & 4 - 9 & 455.1 nm
+\end{tabular}
+				\end{gather*}
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+For å finne ut hvilken effekt et foton har på henholdsvis atomært hydrogen og enkeltionisert helium begynner jeg med å regne ut bevegelsesmengden til et av fotonene for atomært hydrogen.
+				\end{flushleft}
+				\begin{gather*}
+%p = \frac{h}{\lambda} = \frac{4.1357 \cdot 10^{-15} eVs}{486.1 \cdot 10^{-9} m} = 8.508 \cdot 10^{-9} eVs/m \\
+%\text{Hvis vi antar at et fotonet blir emitert av hydrogenet vil systemet} \\
+%\text{måtte motvirke bevegesesmengden til fotonet ved å gi negativ} \\
+%\text{bevegelsesmenge til hydrogenatomet.}
+%p_{atom} = - p_{foton} = - 8.508 \cdot 10^{-9} eVs/m \\
+%\text{Da er det også mulig å finne den kinetiske energien til atomet} \\
+%E_k = \frac{1}{2} m_{atom} v_{atom}^2 \\
+%\frac{1}{2} \cdot 1.6737 \cdot 10^{-27} kg \left( \frac{- 8.508 \cdot 10^{-9} eVs/m}{1.6737 \cdot 10^{-27} kg} \right)^2 \\
+%2.1625 \cdot 10^{10} eV^2s^2/m^2kg = 3.4646 \cdot 10^{-9} eV \\
+\frac{1}{\lambda} = \frac{k_e e^2}{2 a_0 h c} \left( \frac{1}{n_f^2} - \frac{1}{n_i^2} \right), a_0 = \frac{\hslash}{m_e k_e e^2}, k_e e^2 = \frac{e^2}{4 \pi \epsilon_0} = 1.44 eV nm \\
+\frac{1}{\lambda} = \frac{k_e e^2}{2 \frac{\hslash}{m_e k_e e^2}} \left( \frac{1}{2^2} - \frac{1}{4^2} \right) = \frac{1.44 eV nm}{\frac{2 \cdot6.582 \cdot 10^{-16} eV s}{9.1094 \cdot 10^{-31} kg \cdot 1.44 eV nm}} \left( \frac{4 - 1}{16} \right) = 2.6905 \cdot 10^{-16} kg eV nm^2/s \\
+\frac{1}{\lambda} = \frac{k_e e^2}{2 a_0 h c} \left( \frac{1}{n_f^2} - \frac{1}{n_i^2} \right), a_0 = \frac{\hslash}{\mu k_e e^2}, k_e e^2 = 1.44 eV nm, \\
+\mu = \frac{m_e m_k}{m_e + m_k} = \frac{9.1094 \cdot 10^{-31} kg \cdot 1.673 \cdot 10^{-27} kg}{9.1094 \cdot 10^{-31} kg + 1.673 \cdot 10^{-27} kg} =  9.1044 \cdot 10^{-31} kg \\
+\frac{1}{\lambda} = \frac{k_e e^2}{2 \frac{\hslash}{\mu k_e e^2}} \left( \frac{1}{2^2} - \frac{1}{4^2} \right) = \frac{1.44 eV nm}{\frac{2 \cdot6.582 \cdot 10^{-16} eV s}{9.1094 \cdot 10^{-31} kg \cdot 1.44 eV nm}} \left( \frac{4 - 1}{16} \right) = 2.6890 \cdot 10^{-16} kg eV nm^2/s \\
+\text{Ser at forskjellen er en størrelsesorden på $1 \cdot 10^{-19}$}
+				\end{gather*}
+				\begin{flushleft}
+Gjør det samme for enkeltionisert Helium
+				\end{flushleft}
+				\begin{gather*}
+%p = \frac{h}{\lambda} = \frac{4.1357 \cdot 10^{-15} eVs}{541.1 \cdot 10^{-9} m} = 7.6431 \cdot 10^{-9} eVs/m \\
+%p_{atom} = - p_{foton} = - 7.6431 \cdot 10^{-9} eVs/m \\
+%\text{Da er det også mulig å finne den kinetiske energien til atomet} \\
+%E_k = \frac{1}{2} m_{atom} v_{atom}^2 = \\
+%\frac{1}{2} \cdot 6.6464 \cdot 10^{-27} kg \left( \frac{- 7.6431 \cdot 10^{-9} eVs/m}{6.6464 \cdot 10^{-27} kg} \right)^2 = \\
+%4.3946 \cdot 10^{9} eV^2s^2/m^2kg = 7.0409 \cdot 10^{-10} eV \\
+\frac{1}{\lambda} = \frac{k_e e^2}{2 a_0 h c} \left( \frac{1}{n_f^2} - \frac{1}{n_i^2} \right) = \frac{k_e e^2}{2 \frac{\hslash}{m_e k_e e^2}} \left( \frac{1}{4^2} - \frac{1}{7^2} \right) \\
+\frac{(1.44 eV nm)^2}{\frac{2 \cdot 6.582 \cdot 10^{-16} eV s}{9.1094 \cdot 10^{-31} kg}} \left( \frac{49 - 16}{784} \right) = 6.0398 \cdot 10^{-17} kg eV nm^2/s \\
+\mu = \frac{m_e m_k}{m_e + m_k} = \frac{9.1094 \cdot 10^{-31} kg \cdot 6.644 \cdot 10^{-27} kg}{9.1094 \cdot 10^{-31} kg + 6.644 \cdot 10^{-27} kg} =  9.1082 \cdot 10^{-31} kg \\
+\frac{1}{\lambda} = \frac{k_e e^2}{2 \frac{\hslash}{\mu k_e e^2}} \left( \frac{1}{4^2} - \frac{1}{7^2} \right) = \frac{1.44 eV nm}{\frac{2 \cdot 6.582 \cdot 10^{-16} eV s}{9.1082 \cdot 10^{-31} kg \cdot 1.44 eV nm}} \left( \frac{49 - 16}{784} \right) = 6.0390 \cdot 10^{-17} kg eV nm^2/s \\
+\text{Ser at forskjellen er en størrelsesorden på $8 \cdot 10^{-21}$}
+				\end{gather*}
+\end{document}

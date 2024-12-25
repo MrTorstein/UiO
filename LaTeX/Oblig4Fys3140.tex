@@ -1,0 +1,178 @@
+\documentclass[11pt, A4paper,norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{textcomp}
+\usepackage{float}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/Fys3140/Python programmer"}
+\graphicspath{{C:/Users/Torstein/Documents/UiO/Fys3140/"Python programmer"/}}
+\hypersetup{colorlinks, urlcolor=url}
+
+\author{Torstein Solheim Ølberg}
+\title{Svar på Oblig nr. 4 i Fys3140}
+
+
+
+%\lstinputlisting{Filnavn! type kodefil}
+%\includegraphics[width=12.6cm,height=8cm]{Filnavn! type png}
+
+
+
+\begin{document}
+\maketitle
+	\begin{center}
+\Large \textbf{Oppgaver}
+	\end{center}
+
+
+
+
+
+
+
+
+
+		\paragraph{1.}
+			\subparagraph{a)}
+				\begin{gather*}
+f(z) = \frac{\sin(z)}{3z} \\
+\frac{\sin(z)}{3z} = \frac{1}{3} - \frac{z^2}{18} + \frac{z^4}{360} \dots \\
+\text{Vi ser at alle $b_n$ blir til null og vi får et regulert punkt i $z = 0$}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{gather*}
+\frac{\cos(z)}{z^4} = \frac{1}{z^4} - \frac{1}{2z^2} + \frac{1}{24} - \frac{z^2}{720} \dots \\
+\text{Vi ser at uttrykket har en fjerde ordens pole} \\
+\text{Dette kan vi se fordi ikke alle $b_n$ blir lik $0$ i uttrykket}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{gather*}
+f(z) = \frac{z^3 - 1}{(z - 1)^3} = \frac{z^3}{(z - 1)^3} - \frac{1}{(z - 1)^3} \\
+f(z) = \frac{1}{1 - \frac{3}{z} + \frac{3}{z^2} - 1} - \frac{1}{z^3 - 3z^2 + 3z - 1} \\
+\frac{z^3 - 3z^2 + 3z - 1 + 3z^2 - 3z}{(z - 1)^3} = \frac{(z - 1)^3}{(z - 1)^3} + \frac{3z(z - 1)}{(z - 1)^3} = 1 + \frac{3z}{(z - 1)^2} \\
+\text{Av dette ser vi at $f(z)$ har en andre ordens pole i punktet $z = 1$}
+				\end{gather*}
+			
+
+
+
+
+
+
+
+
+
+			\subparagraph{d)}
+				\begin{gather*}
+f(z) = \frac{e^z - z - 1}{z^2} = \frac{- 1 - z + 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \dots}{z^2} \\
+f(z) = \frac{1}{2!} + \frac{z}{3!} + \frac{z^2}{4!} + \dots \\
+\text{$f(z)$ er analytisk for $z = 0$ og dette er derfor et regulært punkt}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+		\paragraph{2}
+			\subparagraph{a)}
+				\begin{gather*}
+f(z) = \frac{1}{z(z + 1)} \text{, i punktet $z = 0$}\\
+f(z) = \frac{1}{z} \frac{1}{z + 1} \\
+\text{Har at $\frac{1}{z + 1} = 1 - z + z^2 - z^3 + z^4 - \dots$, noe du kan finne} \\
+\text{fra Taylor utvikling eller Rotmann side $115$, og får da rekka} \\
+f(z) = \frac{1 - z + z^2 - z^3 + z^4 - \dots}{z} = \frac{1}{z} - 1 + z - z^2 + z^3 - \dots \\
+\text{Da kan vi enkelt se at residuen er $1$}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{gather*}
+f(z) = \frac{\sin(z)}{z^4} \text{, i punktet $z = 0$} \\
+f(z) = \frac{1}{z^4} \left( \frac{z}{1!} - \frac{z^3}{3!} + \frac{z^5}{5!} - \frac{z^7}{7!} + \dots \right) = \frac{1}{z^3} - \frac{1}{6z} + \frac{z}{5!} - \frac{z^3}{7!} + \dots \\
+\text{Altså kan vi se at residuen blir $- \frac{1}{6}$}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{gather*}
+f(z) = \frac{1}{z^2 - 5z + 6} \\
+x^2 - 5x + 6 = 0 \\
+x_{1, 2} = \frac{5 \pm \sqrt{5^2 - 4 \cdot 6}}{2} = \frac{5 \pm \sqrt{25 - 24}}{2} = \frac{5 \pm 1}{2} = 3 \vee 2 \\
+f(z) = \frac{1}{(z - 3)(z - 2)} = \frac{1}{z - 3} \frac{1}{z - 2} \\
+\text{Finner Taylor rekka for $\frac{1}{z - 3}$ i punktet $z = 2$} \\
+\frac{1}{z - 3} = - 1 - (z - 2) - (z - 2)^2 - (z - 2)^3 - \dots \\
+f(z) = \frac{1}{z - 2} \left(- 1 - (z - 2) - (z - 2)^2 - (z - 2)^3 - \dots \right) \\
+f(z) = - \frac{1}{z - 2} - 1 - (z - 2) - (z - 2)^2 - \dots \\
+\text{Residuen er $-1$}
+				\end{gather*}
+\end{document}

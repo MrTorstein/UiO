@@ -1,0 +1,424 @@
+\documentclass[11pt, A4paper,norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{
+	frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{
+	inputpath="C:/Users/Torstein/Documents/UiO/Fys-mek1110/Python programmer"
+}
+
+\hypersetup{
+	colorlinks, urlcolor=url
+}
+
+\author{Torstein Solheim Ølberg}
+\title{Svar på Oblig nr. 5 i Fys-Mek1110}
+
+
+
+
+
+
+
+\begin{document}
+\maketitle
+	\begin{center}
+\Large \textbf{Oppgaver}
+	\end{center}
+In this project you will learn about collisions and conservations laws by studying the behavior of Newton’s cradle. Newton’s cradle is a toy consisting of a series of steel balls each suspended by two strings so that the balls form a horizontal line when the cradle is at rest. The balls are initially barely touching each other. You can play with the toy by lifting and releasing a ball on one side. When the moving ball hits the stationary balls, a single ball is ejected on the other side, and the initially moving ball is left stationary. \\
+Here, we will study various aspects of this system, and you will hopefully end up with a non-trivial understanding of the physics hidden in the cradle. \\
+First, we study a cradle consiting of two balls of identical masses $m$ hanging in thin strings as illustrated in figure $0.1$. The left ball is lifted to a vertical height $h_0$ and released. The left ball hits the right ball when the string points directly down.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		\paragraph{a)}
+			\begin{flushleft}
+Find the velocity $v_0$ of the left ball immediately before it hits the right ball. \\
+\vspace{1mm}
+\textbf{Løsning:}
+\vspace{1mm}
+				\begin{align}
+E_p = E_k \nonumber \\
+mgh_0 = \frac{1}{2}mv_0^2 \nonumber \\
+v_0 = \sqrt{2gh_0} \nonumber
+				\end{align}
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		\paragraph{b)}
+			\begin{flushleft}
+Assume the collision between the balls is elastic. Find the velocities $v^A_1$ and $v^B_1$ of the two balls after the collision. How does your result compare with the behavior of Newton’s cradle described above? \\
+\vspace{1mm}
+\textbf{Løsning:}
+\vspace{1mm}
+Siden kollisjonen er elastisk er all energien overført fra kule $A$ til kule $B$ altså er farten til $A$ etter kollisjonen lik $0$. Bruker bevaring av bevegelsesmengde for å løse problemet fordi de ytre kreftene som virker nuller ut hverandre.
+				\begin{align}
+p_0 = p_1 \nonumber \\
+mv_0 = v_1^{B} \nonumber \\
+v_0 = v_1^{B} \nonumber \\
+\sqrt{2gh_0} = v_1^{B} \nonumber \\
+v_1^B = \sqrt{2gh_0} \nonumber
+				\end{align}
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		\paragraph{c)}
+			\begin{flushleft}
+What is the maximum height, $h_1$, of the right ball? \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+Siden all kinetisk energi blir overført fra kule $A$ til kule $B$ blir $h_1 = h_0$
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		\paragraph{d)}
+			\begin{flushleft}
+Assume the collision is perfectly inelastic. Find the maximum height $h_1$ reached by the right ball after the collision. \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+Bruker bevaring av bevegelsesmengde av samme grunn som tidligere. Deretter bruker jeg bevaring av energi for å finne høyden $h_1$.
+				\begin{align}
+p_0 = p_1 \nonumber \\
+mv_0 = 2mv_1 \nonumber \\
+v_0 = 2v_1 \nonumber \\
+I: v_1 = \frac{1}{2}\sqrt{2gh_0} \nonumber \\
+E_k = E_p \nonumber \\
+\frac{1}{2}mv_1^2 = mgh_1 \nonumber \\
+\frac{2gh_0}{4} = 2gh_1 \nonumber \\
+\frac{1}{2}h_0 = 2h_1 \nonumber \\
+h_1 = \frac{1}{2}h_0 \nonumber
+				\end{align}
+Dette er vel egentlig til midten av der de to kulene er smeltet sammen, men har ikke nok informasjon til å regne ut nøyaktig hvor høyt bare kule $B$ går.
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		\paragraph{e)}
+			\begin{flushleft}
+Assume the collision is characterized by a coefficient of restitution, $r$. The relative velocity after the collision is then related to the relative velocity before the colision by:
+$$v^B_1 - v^A_1 = rv_0.$$
+Find the velocities of each of the balls after the collision. \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+				\begin{align}
+I: v_1^B - v_1^A = rv_0 \nonumber \\
+p_0 = p_1 \nonumber \\
+v_0 = v_1^A + v_1^B \nonumber \\
+II: v_1^B = v_0 - v_1^A \nonumber \\
+\text{Setter II inn i I.} \nonumber \\
+v_0 - v_1^A - v_1^A = rv_0 \nonumber \\
+- 2v_1^A = v_0(r - 1) \nonumber \\
+v_1^A = \frac{1}{2}\sqrt{2gh_0}(1 - r) \nonumber \\
+III: v_1^A = v_0 + v_1^B \nonumber \\
+\text{Setter III inn i I.} \nonumber \\
+v_0 + v_1^B + v_1^B = rv_0 \nonumber \\
+v_1^B = \frac{1}{2}v_0(1 + r) \nonumber \\
+v_1^B = \frac{1}{2}\sqrt{2gh_0}(1 + r) \nonumber
+				\end{align}
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		\paragraph{f)}
+			\begin{flushleft}
+We will in the following study a system with three balls, $A$, $B$, and $C$. We will assume that all forces are conservative, so that all collisions are elastic. Initially, immediately before the collision, ball $A$ has a positive velocity $v_0$ and the other balls are not moving. \\
+Let us assume that the balls are seperated by small distances, so that there are two collisions, first between ball $A$ and $B$ and then between $B$ and $C$. What are the velocities of the balls after the first collision? And after the second? \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+Hvis støtene er elastiske så er energien bevart. Det vi si at $v_1^B = v_0$ etter første kollisjon og $v_2^C = v_0$ etter andre kollisjon. I tillegg er $0 = v_1^A$ etter første kollisjon og $0 = v_2^B$.
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		\paragraph{g)}
+			\begin{flushleft}
+Let us now assume that all the balls are initially in contact, so that we cannot assume that there are two seperate, subsequent collision. This is the configuration corresponding to Newton’s cradle. \\
+Find equations relating the initial and final velocities of all three balls. Can you
+solve these equations? \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+				\begin{align}
+p_0 = p_1 \nonumber \\
+mv_0 = mv_A + mv_B + mv_C \nonumber \\
+I: v0 = v_a + v_B + v_C \nonumber \\
+E_{k0} = E_{k1} \nonumber \\
+\frac{1}{2}mv_0^2 = \frac{1}{2}mv_A^2 + \frac{1}{2}mv_B^2 + \frac{1}{2}mv_C^2 \nonumber \\
+II: v_0^2 = v_A^2 + v_B^2 + v_C^2 \nonumber
+				\end{align}
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+		\paragraph{h)}
+			\begin{flushleft}
+In order to understand what happens in Newton’s cradle when all the balls are initially in contact, we will develop a simple, numerical model of the process. In the numerical model we will only address the collision itself, and we will assume that the motion of all the balls is one-dimensional along the $x$-axis during the collision. \\
+We introduce an explicit model for the forces between the balls, and use this to calculate the motion of all the balls throughout the collision using Newton’s second law for each of the balls. \\
+The position of the balls are given as $x_i$, $i = 0$, $1$, $2$. At the beginning of the collision, at $t = 0$, all the balls are just in contact, so that the distance between them is equal to their diameters, $d$, $x_i = i · d$.
+The force on ball i from ball $i + 1$ is modelled using a simple, position-dependent force on the form \\
+$$F_{i, i + 1} =
+\begin{tabular} { cc }
+$- k|x_{i + 1} - x_i - d|^q$ & \text{when} $x_{i + 1} - x_i < d$ \\
+$0$ & \text{when} $x_{i + 1} - x_i \geq d$
+\end{tabular}. $$
+The following program solves the equations of motion from a time $t = 0$ to a time $t = t_1$. You must choose the mass, $m$, the constant $k$, and initial conditions for the simulation yourself. (You can find the Python and Matlab codes on the FYS-MEK website.) \\
+\lstinputlisting{newtonscradle.py}
+Test the program and your parameters by direct comparison with your results above for $N = 2$, where $N$ is the number of balls. Your answer to this and the following questions should include plots of the velocities. Hint: You must ensure that the timestep $dt$ is chosen reasonably compared to the values of $k$ and $m$. \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+Brukte parameterene: \\
+$N = 2$ \\
+$m = 1$ \\
+$k = 20000$ \\
+$q = 1$ \\
+$d = 1$ \\
+$v_0 = 1$ \\
+$time = 0.02$ \\
+$dt = 0.00001$
+\includegraphics[width=12.6cm,height=8cm]{"C:/Users/Torstein/Documents/UiO/Fys-Mek1110/Python programmer"/oblig5_h.png}
+Kan ser at dette er helt i samstemme med det jeg har vist tidligere, altså at de to kulene bytter hastighet.
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		\paragraph{i)}
+			\begin{flushleft}
+Use the program to determine the result of a collision when $N = 3$. What are the velocities of the balls immediately after the collision? Is this result physically reasonable? Does this correspond to the behavior you expect for Newton’s cradle? \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+Brukte parameterene: \\
+$N = 3$ \\
+$m = 1$ \\
+$k = 20000$ \\
+$q = 1$ \\
+$d = 1$ \\
+$v_0 = 1$ \\
+$time = 0.025$ \\
+$dt = 0.00001$
+\includegraphics[width=12.6cm,height=8cm]{"C:/Users/Torstein/Documents/UiO/Fys-Mek1110/Python programmer"/oblig5_i.png}
+Dette resultatet er ikke spesielt fysikalsk korekt fordi kule $B$ som vi ser i grønst fortsetter å ha en positiv fart, mens kule $A$ får en negativ fart. Dette virker ikke spesielt riktig i forhold til det vi forventer fra en Newton huske.
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		\paragraph{j)}
+			\begin{flushleft}
+You know that for contacts between steel spheres, the interaction is according to the Hertz contact law, which correspond to having the contant $q = 3/2$. How does this change the results? \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+Brukte parameterene: \\
+$N = 3$ \\
+$m = 1$ \\
+$k = 20000$ \\
+$q = \cfrac{3}{2}$ \\
+$d = 1$ \\
+$v_0 = 1$ \\
+$time = 0.08$ \\
+$dt = 0.00001$
+\includegraphics[width=12.6cm,height=8cm]{"C:/Users/Torstein/Documents/UiO/Fys-Mek1110/Python programmer"/oblig5_j.png}
+Dette gjør at resultatet nærmer seg riktig, men det er fortsatt negativ fart på kule $A$ og kule $B$ fortsetter også ha frart etter kollisjonen.
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+		\paragraph{k)}
+			\begin{flushleft}
+You are now free to modify the force law as you like by changing $k$ and $q$ freely. (However, you should let $q$ be a reasonably small number, let us say $q \geq 4$.) Can you find parameters that produce a behavior close to what you observe in Newton’s cradle, that is, for which the velocity of the middle ball is close to zero after the collision? \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+Brukte parameterene: \\
+$N = 3$ \\
+$m = 1$ \\
+$k = 200000$ \\
+$q = 4$ \\
+$d = 1$ \\
+$v_0 = 1$ \\
+$time = 0.35$ \\
+$dt = 0.00001$
+\includegraphics[width=12.6cm,height=8cm]{"C:/Users/Torstein/Documents/UiO/Fys-Mek1110/Python programmer"/oblig5_k.png}
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+
+		\paragraph{l)}
+			\begin{flushleft}
+(Optional, and not simple) Can you now provide an explanation for why only one ball is ejected from the left side when one ball is released from the right side of most examples of Newton’s cradle? \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+Kan hende at kollisjonene er perfekt uelastisk, men at kulene bare henger sammen i akkurat det tidspunktet hvor kolliderer, men at de slipper hverandre rett etterpå.
+			\end{flushleft}
+\end{document}

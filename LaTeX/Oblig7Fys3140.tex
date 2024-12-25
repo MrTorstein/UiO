@@ -1,0 +1,266 @@
+\documentclass[11pt, A4paper,norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{textcomp}
+\usepackage{float}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/Fys3140/Python programmer"}
+\graphicspath{{C:/Users/Torstein/Documents/UiO/Fys3140/"Python programmer"/}}
+\hypersetup{colorlinks, urlcolor=url}
+
+\author{Torstein Solheim Ølberg}
+\title{Svar på Oblig nr. 7 i Fys3140}
+
+
+
+%\lstinputlisting{Filnavn! type kodefil}
+%\includegraphics[width=12.6cm,height=8cm]{Filnavn! type png}
+
+
+
+\begin{document}
+\maketitle
+	\begin{center}
+\Large \textbf{Oppgaver}
+	\end{center}
+
+
+
+
+
+
+
+
+		\paragraph{10.5.7}
+			\begin{flushleft}
+Bytter bare ut bokstavene som varierer i likning $(5.8)$ i boka, med de som tilsvarer de i oppgaven.
+			\end{flushleft}
+			\subparagraph{a)}
+				\begin{gather*}
+\epsilon_{ijk} \epsilon_{pjq} = \delta_{ip} \delta_{kq} - \delta_{iq} \delta_{kp}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{gather*}
+\epsilon_{abc} \epsilon_{pqc} = \delta_{ap} \delta_{bq} - \delta_{aq} \delta_{bp}
+				\end{gather*}
+
+
+
+
+
+
+
+
+		\paragraph{10.5.8}
+			\begin{flushleft}
+Tar for meg den første likningen i $(5.10)$
+Hvis $k \neq n$ blir svaret uansett lik $0$, siden en av disse ville være lik en av de andre sifferne $i$ eller $j$. Dette tilsvarer om $k$ og $n$ er forskjelligen i en krönecker delta, og hvis de er like blir dette bare $1$ noe som hjelper oss å komme til det andre alternativet for et tall. Da er det bare to tilfeller som gir noe annet enn $0$ og det er når alle variablene er forskjellige. Da er enten $i$ større enn $j$ eller $j$ større enn $i$. Disse to tilfellene blir begge tilsammen $1$, altså blir summen tilsammen $2$. \\
+For alternativ $2$ vet vi at det er sum over alle variablene og at dette er det samme som $3!$ som alltid er $6$.
+			\end{flushleft}
+			
+
+
+
+
+
+
+
+
+		\paragraph{10.5.10}
+			\subparagraph{a)}
+				\begin{gather*}
+\text{Skalarprodukt er det samme som å summere sammen produktet av indeksene.} \\
+\text{Kryssproduktet får jeg fra $(5.11)$ i boka.} \\
+A \cdot (B \times C) = A_{i} (B \times C)_{i} = A_{i} \epsilon_{ijk} B_{j} C_{k} \\
+\text{Dette kan skrives som $A_{i} B_{j} C_{k} \epsilon_{ijk}$ som vi kjenner igjen fra $(5.5)$ og vet blir lik} \\
+A_{i} B_{j} C_{k} \epsilon_{ijk} =
+\left| \begin{tabular}{c c c}
+$A_{i}$ & $A_{j}$ & $A_{k}$ \\
+$B_{i}$ & $B_{j}$ & $B_{k}$ \\
+$C_{i}$ & $C_{j}$ & $C_{k}$ 
+\end{tabular} \right|
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+		\paragraph{10.5.11}
+			\begin{gather*}
+A \cdot (B \times A) = A_i \epsilon_{ijk} B_j A_k = A_i B_j A_k \epsilon_{ijk} =
+\left| \begin{tabular}{c c c}
+$A_{i}$ & $A_{j}$ & $A_{k}$ \\
+$B_{i}$ & $B_{j}$ & $B_{k}$ \\
+$A_{i}$ & $A_{j}$ & $A_{k}$ 
+\end{tabular} \right| \\
+A \cdot (B \times A) = A_i B_j A_k - A_i B_k A_j - A_j B_i A_k + A_j B_k A_i + A_k B_i A_j - A_k B_j A_i \\
+A \cdot (B \times A) = A_i B_j A_k - A_i B_j A_k + A_i A_j B_k - A_i A_j B_k + B_i A_j A_k - B_i A_j A_k \\
+A \cdot (B \times A) = 0
+			\end{gather*}
+
+
+
+
+
+
+
+
+		\paragraph{10.5.13}
+			\subparagraph{f)}
+				\begin{gather*}
+\boldsymbol{\nabla} \boldsymbol{\cdot} (\phi \boldsymbol{V}) = \nabla_i (\phi V)_i = (\nabla_i \phi) V_i + \phi (\nabla_i V_i) = \phi (\nabla_i V_i) + V_i (\nabla_i \phi) \\
+\boldsymbol{\nabla} \boldsymbol{\cdot} (\phi \boldsymbol{V}) = \phi (\boldsymbol{\nabla} \cdot \boldsymbol{V}) + \boldsymbol{V} \cdot (\boldsymbol{\nabla} \phi)
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{g)}
+				\begin{gather*}
+\boldsymbol{\nabla} \boldsymbol{\times} (\phi \boldsymbol{V}) = \epsilon_{ijk} \frac{\partial}{\partial x_j} \phi V_k = \epsilon_{ijk} \phi \frac{\partial}{\partial x_j} V_k + \epsilon_{ijk} \left(\frac{\partial}{\partial x_j} \phi\right) V_k = \epsilon_{ijk} \phi  \frac{\partial}{\partial x_j} V_k - \epsilon_{ijk} V_k  \frac{\partial}{\partial x_j} \phi \\
+\boldsymbol{\nabla} \boldsymbol{\times} (\phi \boldsymbol{V}) = \phi (\boldsymbol{\nabla} \boldsymbol{\times} \boldsymbol{V}) + \boldsymbol{V} \boldsymbol{\times} (\boldsymbol{\nabla} \phi)
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{h)}
+				\begin{gather*}
+\boldsymbol{\nabla} \boldsymbol{\cdot} (\boldsymbol{U} \boldsymbol{\times} \boldsymbol{V}) = \frac{\partial}{\partial x_i} (\epsilon_{ijk} U_{j} V_{k}) = \epsilon_{ijk} \left(\frac{\partial}{\partial x_i} U_{j}\right) V_{k} + \epsilon_{ijk} U_{j} \left(\frac{\partial}{\partial x_i} V_{k}\right) \\
+\text{Pga. hvordan kryssprodukt er definert blir det siste leddet negativt} \\
+\boldsymbol{\nabla} \boldsymbol{\cdot} (\boldsymbol{U} \boldsymbol{\times} \boldsymbol{V}) = \boldsymbol{V} \boldsymbol{\cdot} (\boldsymbol{\nabla} \boldsymbol{\times} \boldsymbol{U}) - \boldsymbol{U} \boldsymbol{\cdot} (\boldsymbol{\nabla} \boldsymbol{\times} \boldsymbol{V})
+				\end{gather*}
+
+
+
+
+
+
+
+
+		\paragraph{9.2.3}
+			\begin{gather*}
+\int_{x_1}^{x_2} x \sqrt{1 - y'^2} dx = \int_{x_1}^{x_2} F(x, y, y') dx \\
+\text{Euler equation} =: \frac{d}{dx} \frac{\partial F}{\partial y'} - \frac{\partial F}{\partial y} = 0 \\
+\frac{d}{dx} \frac{\partial}{\partial y'} x \sqrt{1 - y'^2} - \frac{\partial}{\partial y} x \sqrt{1 - y'^2} = 0 \\
+- \frac{d}{dx} x \frac{y'}{\sqrt{1 - y'^2}} - 0 = 0 \\
+x \frac{y'}{\sqrt{1 - y'^2}} = C \\
+\frac{y'^2}{1 - y'^2} = \frac{C}{x^2} \\
+y'^2 + \frac{C}{x^2} y'^2 = \frac{C}{x^2} \\
+y'^2 = \frac{C}{x^2\left( 1 + \frac{C}{x^2} \right)} = \frac{C}{x^2 + C} \\
+y(x) = \int \frac{\sqrt{C}}{\sqrt{x^2 + C}} dx = a \sinh^{-1}\left( \frac{x}{a} \right) + D \text{ der $C = a^2$}
+			\end{gather*}
+
+
+
+
+
+
+
+
+
+
+		\paragraph{9.2.5}
+			\begin{gather*}
+\int_{x_1}^{x_2} F(x, y, y') dx = \int_{x_1}^{x_2} y'^2 + y^2 dx \\
+\frac{d}{dx} \frac{\partial}{\partial y'} \left( y'^2 + y^2 \right) - \frac{\partial}{\partial y} \left( y'^2 + y^2 \right) = 0 \\
+\frac{d}{dx} 2y' - 2y = 0 \\
+y'' = y \\
+\text{Et alternativ for dette er:} \\
+y = A e^{x + C}
+			\end{gather*}
+
+
+
+
+
+
+
+
+		\paragraph{9.3.7}
+			\begin{gather*}
+\int_{x_1}^{x_2} F(x, y, y') dx = \int_{x_1}^{x_2} y'^2 + y^2 dx = \int_{x_1}^{x_2} \left( y'^2 + y^2 \right) x' dy \\
+\int_{x_1}^{x_2} F(x, y, y') dx = \int_{x_1}^{x_2} \left( y' + y^2x' \right) dy \\
+\frac{d}{dx} \frac{\partial}{\partial y'} \left( y' + y^2x' \right) - \frac{\partial}{\partial y} \left( y' + y^2x' \right) = 0 \\
+\frac{d}{dx} \frac{\partial}{\partial y'} y' + \frac{d}{dx} \frac{\partial}{\partial y} y^2x' - \frac{\partial}{\partial y} y' - \frac{\partial}{\partial y} y^2 x' = 0 \\
+0 + \frac{d}{x' dy} \frac{\partial}{\partial y} y^2x' - 0 - \frac{\partial}{\partial y} y^2 x' = 0 \\
+2 - 2 y x' = 0 \\
+- \frac{y}{y'} + 1 = 0 \\
+y' - y = 0 \Rightarrow y' = y \\
+\text{Et alternativ for dette er:} \\
+y = A e^{x + C} \\
+\text{Ikke sikker på om dette er riktig, siden jeg får en annen likning enn i forrige oppgaven,} \\
+\text{men samme svar som passer inn, så da kan det være.}
+			\end{gather*}
+
+
+
+
+
+
+		\begin{flushleft}
+Ønsker gjerne, hvis det er mulig, en tilbakemelding på om jeg har forstått dette rett eller om jeg ikke helt har skjønt hva jeg faktisk skal gjøre.
+		\end{flushleft}
+\end{document}

@@ -1,0 +1,241 @@
+\documentclass[8pt, A4paper, norsk]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{textcomp}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage[margin=0.1cm]{geometry}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/Fys2140/Python programmer"}
+\graphicspath{{C:/Users/Torstein/Documents/UiO/Fys2140/"Python programmer"/}}
+\hypersetup{colorlinks, urlcolor=url}
+
+
+
+\begin{document}
+	\begin{center}
+\Huge \textbf{Jukseark}
+	\end{center}
+	\begin{multicols*}{3}
+{\Large \textbf{Fourier}}
+		\begin{gather*}
+f(x) = \frac{a_0}{2} + \sum_{n = 1}^{\infty} \left( a_n \cos\left( \frac{n \pi x}{l} \right) + b_n \sin\left( \frac{n \pi x}{l} \right) \right) \\
+f(x) = \sum_{n = - \infty}^{\infty} c_n e^{\frac{i n\pi x}{l}} \\
+a_n = \frac{1}{l} \int_{- l}^{l} f(x) \cos\left( \frac{n\pi x}{l} \right) dx \\
+b_n = \frac{1}{l} \int_{- l}^{l} f(x) \sin\left( \frac{n\pi x}{l} \right) dx \\
+c_n = \frac{1}{2 l} \int_{- l}^{l} f(x) e^{- \frac{i n\pi x}{l}} dx
+		\end{gather*}
+
+
+{\Large \textbf{Residue theorem}} \\
+\textbf{Teoremet:}
+		\begin{gather*}
+\oint_C f(z) dz = \pi i \cdot \sum_{j} R(r_{0, j}) + 2 \pi i \cdot \sum_{k} R(z_{0, k})
+		\end{gather*}
+
+\textbf{Hvordan finne residuer:} \\
+Gang $f(z)$ med $(z - z_0)^{m}$ der $m \geq n$ hvor $n$ er rangen til polen. Deriver uttrykket $m - 1$ ganger, divider med $(m - 1)!$ og evaluer for $z = z_0$ \\
+
+
+{\Large \textbf{Principal value}}
+		\begin{gather*}
+PV \int_{a}^{b} f(x) dx = \lim_{r \rightarrow 0} \left( \int_{a}^{z_0 - r} f(x) dx + \int_{z_0 - r}^{b} f(x) dx \right)
+		\end{gather*}
+
+
+{\Large \textbf{Lauren serier:}} \\
+\textbf{Serien:}
+		\begin{gather*}
+f(z) = a_0 + \dots + a_n(z - z_0)^{n} + \dots + \frac{b_n}{(z - z_0)^{n}} + \dots
+		\end{gather*}
+
+\textbf{Finne serien:}
+		\begin{gather*}
+\text{Ønsker summer på formen s} \frac{1}{1 - x} \\
+|z - a| < k \Rightarrow x = \frac{z - a}{k} \\
+|z - a| > k \Rightarrow x = \frac{k}{z - a}
+		\end{gather*}
+
+
+{\Large \textbf{Kalkulus for variasjon:}} \\
+\textbf{Euler (Euler-Lagrange) likningen:}
+		\begin{gather*}
+\frac{d}{dx} \frac{\partial F}{\partial y'} - \frac{\partial F}{\partial y} = 0
+		\end{gather*}
+
+\textbf{Sammenhenger:}
+		\begin{gather*}
+y' = \frac{dy}{dx} = \left( \frac{dx}{dy} \right)^{-1} = \frac{1}{x'} \\
+dx = \frac{dx}{dy} dy = x' dy
+		\end{gather*}
+
+
+{\Large \textbf{Harmonisk konjugert:}}
+		\begin{gather*}
+u(x, y) = HC(v(x, y))
+		\end{gather*}
+
+\textbf{Euler-Cauchy:}
+		 \begin{gather*}
+\frac{\partial u}{\partial y} = \frac{\partial v}{\partial x} \wedge \frac{\partial u}{\partial x} = - \frac{\partial v}{\partial y}
+		\end{gather*}
+
+
+{\Large \textbf{Cauchys integral:}}
+		\begin{gather*}
+f(z) = \frac{1}{2 \pi i} \oint_C \frac{f(w)}{w - z} dw
+		\end{gather*}
+
+
+{\Large \textbf{Tensorer:}} \\
+\textbf{Kronecker delta:}
+		\begin{gather*}
+\delta_{ij} = \left\{
+\begin{tabular}{ cc }
+$1$ & hvis $i = j$ \\
+$0$ & ellers
+\end{tabular} 
+\right.
+		\end{gather*}
+
+\textbf{Levi-Cevita:}
+		\begin{gather*}
+\epsilon_{ijk} = \left\{ 
+\begin{tabular}{ cc }
+$1$ & hvis $i,j,k$ er økende \\
+$-1$ & hvis $i,j,k$ er synkende \\
+$0$ & hvis ett tall er repetert
+\end{tabular} 
+\right.
+		\end{gather*}
+
+\textbf{Andre sammenhenger:}
+		\begin{gather*}
+\epsilon_{ijk} \epsilon_{imn} = \delta_{jm} \delta_{kn} - \delta_{jn} \delta_{km} \\
+(\vec{A} \times \vec{B})_{i} = \epsilon_{ijk} A_{j} B_{k}
+		\end{gather*}
+
+
+{\Large \textbf{ODE:}} \\
+\textbf{Første orden:}
+		\begin{gather*}
+y' + Py = Q \Rightarrow y = e^{- I} \int Q e^{I} dx + C e^{I} \text{ der } I = \int P dx \\
+y' + Py = Qy^{n} \Rightarrow z' + (1 - n)Pz = (1 - n) Q \text{ der } z = y^{n - 1} \\
+y' = - \frac{P(x, y)}{Q(x, y)} \text{ der } \frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x} \\
+\text{er svaret } F(x, y) = C \text{ der } P = \frac{\partial F}{\partial x} \wedge Q = \frac{\partial F}{\partial y} \\
+y' = - \frac{P(x, y)}{Q(x, y)} \text{$Q$ og $P$ er homogene av samme grad} \\
+\text{Bytt } y = xv \text{ og } dy = xdv + vdx \text{, løs og bytt tilbake.}
+		\end{gather*}
+
+\textbf{Andre orden:} \\
+\text{Homogene:}
+		\begin{gather*}
+y'' + ay' + by = 0 \Rightarrow r^2 + ar + b = 0 \\
+r_1 = r_2 = r \Rightarrow y = (Ax + B) e^{rx} \\
+r_1 \neq r_2 \Rightarrow y = Ae^{r_1 x} + B e^{r_2 x} \\
+r = c \pm id \Rightarrow y = e^{cx} \left( A e^{idx} + Be^{-idx} \right) \\
+= e^{cx} \left( C \sin(dx) + D \cos(dx) \right) = E e^{cx} \sin(dx + F)
+		\end{gather*}
+\text{Inhomogene:}
+		\begin{gather*}
+y'' + ay' + by = f(x) \Rightarrow r^2 + ar + b = f(x) \\
+y = y_h + y_p \\
+y_p \text{ prøves på samme form som $f(x)$} \\
+\text{Eller } u' - au = f(x) \text{ og så } y' - by = u \\
+\text{Eller hvis $f(x) = ke^{cx}$ } \\
+y_p = \left\{ 
+\begin{tabular}{ cc }
+$Ce^{cx}$ & hvis $c \neq a \vee b$ \\
+$Cxe^{cx}$ & hvis $c = a \vee b \wedge a \neq b$ \\
+$Cx^2e^{cx}$ & hvis $c = a = b$
+\end{tabular} 
+\right. \\
+\text{Eller hvis } f(x) = \left\{ 
+\begin{tabular}{ c }
+$k \sin(cx)$ \\
+$k \cos(cx)$ 
+\end{tabular} 
+\right. \\
+\text{løs med } f(x) = ke^{icx} \text{og ta Im eller Re} \\
+\text{Eller hvis } f(x) = e^{cx} P_n(x) \text{ der $n$ er graden} \\
+y_p = \left\{ 
+\begin{tabular}{ cc }
+$Ce^{cx} Q_n$ & hvis $c \neq a \vee b$ \\
+$Cxe^{cx} Q_n$ & hvis $c = a \vee b \wedge a \neq b$ \\
+$Cx^2e^{cx} Q_n$ & hvis $c = a = b$
+\end{tabular} 
+\right. \\
+\text{Eller gjør $f(x)$ om til en Fourier serie, løs for alle} \\
+\text{komponentene og lag en sum som gir $y_p$.}
+		\end{gather*}
+
+
+\textbf{PDE:}
+		\begin{gather*}
+\text{Laplaces likning } \nabla^2 u = 0 \\
+\text{Poissons likning } \nabla^2 u = f(x, y, z) \\
+\text{Diffusjon eller varme likning } \nabla^2 u = \frac{1}{\alpha^2} \frac{\partial u}{\partial t} \\
+\text{Bølge likning } \nabla^2 u = \frac{1}{v^2} \frac{\partial u}{\partial t} \\
+\text{En PDE kan løses ved å substituere} u = \mathcal{F}(u) \text{, løse} \\
+\text{den nye likningen og invers fourier transformere.}
+		\end{gather*}
+
+
+\textbf{Andre DEer:}
+		\begin{gather*}
+\text{Legendre DE er} (1 - x^2)y'' - 2xy' + l(l + 1)y = 0 \\
+\text{Løsninger for disse er Legendre polynomene $P_l(x)$} \\
+P_0 = 1 \wedge P_1 = x \wedge P_2 = \frac{1}{2}(3x^2 - 1)
+		\end{gather*}
+
+\textbf{Sammenhenger:}
+		\begin{gather*}
+\frac{1}{1 - x} = \sum_{n = 0}^{\infty} x^n \\
+\int_{C_r} (z - z_0)^{n} dz = \left\{ 
+\begin{tabular}{ cc }
+$2 \pi i$,& hvis $n = - 1$ \\
+$0$,& ellers
+\end{tabular} 
+\right. \\
+\left| \int_{C} f(x) dx \right| \leq ML \\
+\text{ der $M = |f(x)|_{\text{max}}$ og $L$ er lengden av $C$.} \\
+\text{En funksjon er homogen hvis den er på formen} \\
+x^{n}f\left( \frac{x}{y} \right) \text{ eks. } x^{3} \left( 1 - \left( \frac{x}{y} \right)^2 \right) \\
+\text{og funksjonen har da grad $n$ eks. $n = 3$ over.} \\
+\mathcal{F}(f'(x)) = ik \mathcal{F}(f(x))
+		\end{gather*}
+	\end{multicols*}
+\end{document}

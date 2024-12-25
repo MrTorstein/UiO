@@ -1,0 +1,205 @@
+\documentclass[11pt, A4paper,norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{textcomp}
+\usepackage{float}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/Fys2140/Python programmer"}
+\graphicspath{{C:/Users/Torstein/Documents/UiO/Fys2140/"Python programmer"/}}
+\hypersetup{colorlinks, urlcolor=url}
+
+\author{Torstein Solheim Ølberg}
+\title{Svar på Oblig nr. 5 i Fys2140}
+
+
+
+%\lstinputlisting{Filnavn! type kodefil}
+%\includegraphics[width=12.6cm,height=8cm]{Filnavn! type png}
+
+
+
+\begin{document}
+\maketitle
+	\begin{center}
+\Large \textbf{Oppgaver}
+	\end{center}
+
+
+
+
+
+
+
+
+
+		\paragraph{1.}
+			\begin{gather*}
+\Psi_n(x, t) = \sqrt{\frac{2}{a}} \sin\left( \frac{n \pi}{a} x \right) e^{-i\left( \frac{n^2 \pi^2 \hbar}{2 m a^2} \right)t} \\
+\text{For å finne forventningsverdien til $x$, $x^2$, $p$ og $p^2$ setter jeg $t = 0$} \\
+\text{Antar også at brønnen har en lengde langs bunnen på a} \\
+\Psi_n(x, 0) = \sqrt{\frac{2}{a}} \sin\left( \frac{n \pi}{a} x \right) \\
+\langle x \rangle = \int_{0}^{a} \Psi_n x \Psi_n^* dx = \int_{0}^{a} \sqrt{\frac{2}{a}} \sin\left( \frac{n \pi}{a} x \right) x \sqrt{\frac{2}{a}} \sin\left( \frac{n \pi}{a} x \right) dx \\
+\langle x \rangle = \frac{2}{a} \int_{0}^{a} x \sin^2\left( \frac{n \pi}{a} x \right) dx = \frac{2}{a} \left[\int \frac{a}{n \pi} \frac{a}{n \pi}u \sin^2(u) du\right]_{0}^{n \pi} \\
+\text{Bruker delvis integrasjon, uttrykk for $\int \sin^2(x)$ kan finnes på side $142$ i Rottmann} \\
+\langle x \rangle = \frac{2}{a} \left(\frac{a}{n \pi}\right)^2 \left[ u \left( \frac{-1}{2} \sin(u)\cos(u) + \frac{u}{2} \right) - \int \left( \frac{-1}{2} \sin(u)\cos(u) + \frac{u}{2} \right) du \right]_{0}^{n \pi} \\
+\langle x \rangle = \frac{2a}{(n \pi)^2} \left[ u \left( \frac{-1}{2} \sin(u)\cos(u) + \frac{u}{2} \right) + \frac{1}{2} \int \sin(u)\cos(u) du - \frac{1}{2} \int u du \right]_{0}^{n \pi} \\
+\text{Her bruker jeg integral $107$ fra Rottmann, side $143$} \\
+\langle x \rangle = \frac{2a}{(n \pi)^2} \left[ u \left( \frac{-1}{2} \sin(u)\cos(u) + \frac{u}{2} \right) + \frac{1}{2} \left( \frac{1}{2} \sin^2(u) \right) - \frac{1}{2} \left( \frac{1}{2} u^2 \right) \right]_{0}^{n \pi} \\
+\text{$\sin(n \pi)$ er alltid lik null så lenge $n$ bare er heltall} \\
+\langle x \rangle = \frac{2a}{(n \pi)^2} \left( \frac{1}{2} (n \pi)^2 - \frac{1}{2} \frac{1}{2} (n \pi)^2 \right) = \frac{2a}{(n \pi)^2} \left( \frac{1}{4} (n \pi)^2 \right)\\
+\langle x \rangle = \frac{2a(n\pi)^2}{4(n\pi)^2} = \frac{a}{2}
+			\end{gather*}
+
+
+
+
+
+
+			\begin{flushleft}
+Gjør det samme for å finne forventningsverdien til $x^2$
+			\end{flushleft}
+			\begin{gather*}
+\langle x^2 \rangle = \int_{0}^{a} \Psi_n x^2 \Psi_n dx = \frac{2}{a} \int_{0}^{a} x^2 \sin^2\left( \frac{n \pi}{a} x \right) dx = \frac{2}{a} \left[ \left( \frac{a}{n \pi} \right)^3 \int u^2 \sin^2(u) du \right]_{0}^{n \pi} \\
+\langle x^2 \rangle = \frac{2}{a} \left( \frac{a}{n \pi} \right)^3 \left[ u^2 \left( \frac{-1}{2} \sin(u)\cos(u) + \frac{u}{2} \right) - \int 2 u \left( \frac{-1}{2} \sin(u)\cos(u) + \frac{u}{2} \right) du \right]_{0}^{n \pi} \\
+\langle x^2 \rangle = \frac{2a^2}{(n \pi)^3}  \left[ u^2 \left( \frac{-1}{2} \sin(u)\cos(u) + \frac{u}{2} \right) + \int u \sin(u)\cos(u) du - \int u^2 du \right]_{0}^{n \pi} \\
+\langle x^2 \rangle = \frac{2a^2}{(n \pi)^3} \left[ \frac{u^3}{2} + u \frac{1}{2} \sin^2(u) - \int \frac{1}{2} \sin^2(u) du  - \int u^2 du \right]_{0}^{n \pi} \\
+\langle x^2 \rangle = \frac{2a^2}{(n \pi)^3} \left[ \frac{u^3}{2} + u \frac{1}{2} \sin^2(u) - \frac{1}{2} \left( \frac{-1}{2} \sin(u)\cos(u) + \frac{u}{2} \right)  - \frac{1}{3} u^3 \right]_{0}^{n \pi} \\
+\langle x^2 \rangle = \frac{2a^2}{(n \pi)^3} \left( \frac{(n \pi)^3}{2} - \frac{1}{2} \frac{n \pi}{2} - \frac{(n \pi)^3}{3} \right) \\
+\langle x^2 \rangle = \frac{2a^2}{(n \pi)^3} \left( \frac{(n \pi)^3}{6} - \frac{n \pi}{4} \right) = \frac{a^2}{3} - \frac{a^2}{2n^2\pi^2}
+			\end{gather*}
+
+
+
+
+
+
+
+			\begin{flushleft}
+Finner $\langle p \rangle$
+			\end{flushleft}
+			\begin{gather*}
+\langle p \rangle = \int_{0}^{a} \Psi_n \frac{\hbar}{i} \frac{\partial}{\partial x} \Psi_n^* dx = \int_{0}^{a} \sqrt{\frac{2}{a}} \sin\left( \frac{n \pi}{a} x \right) \frac{\hbar}{i} \frac{\partial}{\partial x} \sqrt{\frac{2}{a}} \sin\left( \frac{n \pi}{a} x \right) dx \\
+\langle p \rangle = \frac{2 \hbar}{a i} \int_{0}^{a} \sin\left( \frac{n \pi}{a} x \right) \frac{\partial}{\partial x} \sin\left( \frac{n \pi}{a} x \right) dx = \frac{2 \hbar}{a i} \int_{0}^{a} \sin\left( \frac{n \pi}{a} x \right) \frac{n \pi}{a} \cos\left( \frac{n \pi}{a} x \right) dx \\
+\langle p \rangle = \frac{2 \hbar n \pi}{a^2 i} \int_{0}^{a} \sin\left( \frac{n \pi}{a} x \right) \cos\left( \frac{n \pi}{a} x \right) dx = \frac{2 \hbar n \pi}{a^2 i} \int_{0}^{n \pi} \frac{a}{n \pi} \sin(u) \cos(u) du \\
+\langle p \rangle = \frac{2 \hbar}{a i} \left[ \frac{1}{2} \sin^2(u) \right]_{0}^{n \pi} = 0
+			\end{gather*}
+
+
+
+
+
+
+
+			\begin{flushleft}
+Finner til slutt $\langle p^2 \rangle$
+			\end{flushleft}
+			\begin{gather*}
+\langle p^2 \rangle = \int_{0}^{a} \Psi_n \left( \frac{\hbar}{i} \right)^2 \frac{\partial}{\partial x} \Psi_n^* dx = \int_{0}^{a} \sqrt{\frac{2}{a}} \sin\left( \frac{n \pi}{a} x \right) \left( \frac{\hbar}{i} \frac{\partial}{\partial x} \right)^2 \sqrt{\frac{2}{a}} \sin\left( \frac{n \pi}{a} x \right) dx \\
+\langle p^2 \rangle = - \frac{2 \hbar^2}{a} \int_{0}^{a} - \frac{(n \pi)^2}{a^2} \sin^2\left( \frac{n \pi}{a} x \right) dx = \frac{2 (\hbar n \pi)^2}{a^3} \int_{0}^{a} \sin^2\left( \frac{n \pi}{a} x \right) dx \\
+\langle p^2 \rangle = \frac{2 (\hbar n \pi)^2}{a^3} \int_{0}^{n \pi} \frac{a}{n \pi} \sin^2\left( u \right) du = \frac{2 \hbar^2 n \pi}{a^2} \int_{0}^{n \pi} \sin^2\left( u \right) du \\
+\text{Dette integralet vet vi fra tidligere hva er, og da fant vi at det blir} \\
+\text{$\frac{-1}{2} \sin(u)\cos(u) + \frac{u}{2}$, som igjen blir lik $\frac{n \pi}{2}$ når vi setter inn grensene} \\
+\langle p^2 \rangle = \frac{2 \hbar^2 n \pi}{a^2} \left(\frac{n \pi}{2} \right) = \left( \frac{\hbar n \pi}{a} \right)^2
+			\end{gather*}
+
+
+
+
+
+
+
+
+			\begin{flushleft}
+Deretter finner jeg $\sigma_x$ og $\sigma_p$ og ganger disse sammen for å se om de er større enn eller lik $\frac{\hbar}{2}$
+			\end{flushleft}
+			\begin{gather*}
+\sigma_x^2 = \langle x^2 \rangle - \langle x \rangle^2 = \frac{a^2}{3} - \frac{a^2}{2 n^2 \pi^2} - \left( \frac{a}{2} \right)^2 = a^2 \left( \frac{4 n^2 \pi^2 - 6 - 3 n^2 \pi^2}{12 n^2 \pi^2} \right) \\
+\sigma_x = \sqrt{a^2 \left( \frac{n^2 \pi^2 - 6}{12 n^2 \pi^2} \right)} = \sqrt{\frac{a^2}{12} - \frac{a^2}{2 n^2 \pi^2}} \\
+\sigma_p = \sqrt{\langle x^2 \rangle - \langle x \rangle^2} = \sqrt{\left( \frac{\hbar n \pi}{a} \right)^2 - 0} = \sqrt{\left( \frac{\hbar n \pi}{a} \right)^2} = \frac{\hbar n \pi}{a} \\
+\sigma_x \sigma_p \geq \frac{\hbar}{2} \\
+a \left( \frac{\sqrt{n^2 \pi^2 - 6}}{\sqrt{12} n \pi} \right) \frac{\hbar n \pi}{a} = \hbar \left( \frac{\sqrt{n^2 \pi^2 - 6}}{\sqrt{12}} \right) \geq \frac{\hbar}{2} \\
+\frac{2 \sqrt{n^2 \pi^2 - 6}}{\sqrt{12}} \geq 1 \\
+\text{Dette er alltid riktig når $n$ er et heltall og større enn null} \\
+\text{Finner den $n$ verdien som gir nærmest resultat} \\
+\frac{2 \sqrt{n^2 \pi^2 - 6}}{\sqrt{12}} = 1 \\
+\sqrt{n^2 \pi^2 - 6} = \frac{\sqrt{12}}{2} \\
+n^2 \pi^2 - 6 = \frac{12}{4} \\
+n^2 \pi^2 = 3 + 6 \\
+n^2 = \frac{9}{\pi^2} \\
+n = \frac{3}{\pi} = 0.954930 \approx 1
+			\end{gather*}
+
+
+
+		\paragraph{2.}
+			\subparagraph{a)}
+				\begin{flushleft}
+I en uendelig kvadratisk brønn er uttrykket for en partikkel sin posisjon ved tiden $0$ lik $Psi(x, 0)$. Dette utrykket er i vårt tillfelle en konstant for alle $x \in {0, \frac{a}{2}}$ og ellers er den null. Altså der den slik ut:
+$$\Psi(x, 0) = 
+\left\{
+\begin{tabular}{cc}
+$A$ & $0 \leq x \leq \frac{a}{2}$ \\
+$0$ & $\text{ellers}$
+\end{tabular}
+\right.$$
+Vi kan da finne konstanten $A$ ved å normalisere utrykket. Vi vet at partikkelen befinner seg et sted innenfor $0$ og $\frac{a}{2}$ altså kan vi finne $A$ fra integralet $\int_{0}^{\frac{a}{2}} |A|^2 dx = 1$. Dette gir at $A = \sqrt{\frac{2}{a}}$ og vi får at:
+$$\Psi(x, 0) = 
+\left\{
+\begin{tabular}{cc}
+$\sqrt{\frac{2}{a}}$ & $0 \leq x \leq \frac{a}{2}$ \\
+$0$ & $\text{ellers}$
+\end{tabular}
+\right.$$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{flushleft}
+Sannsynligheten for å måle en spesifikk energi tilstand er gitt ved $P_n = |c_n|^2$. Energitilstandene er gitt ved $E_n = \frac{n^2 \hbar^2 \pi^2 }{2 a^2 m}$ som vil si at vi er ute etter tilstanden for $n = 1$
+				\end{flushleft}
+				\begin{gather*}
+P_1 = |c_1|^2 \\
+c_1 = \sqrt{\frac{2}{a}} \int_{0}^{\frac{a}{2}} \sin\left( \frac{\pi}{a} x \right) \sqrt{\frac{2}{a}} dx \text{ Som vi får fra likning $3.27$} \\
+c_1 = \frac{2}{a} \left[- \frac{a}{\pi} \cos\left( \frac{\pi}{a} x \right) \right]_{0}^{\frac{a}{2}} = \frac{2}{a} \frac{a}{\pi}\cos(0) = \frac{2}{\pi} \\
+P_1 = |c_1|^2 = \left|\frac{2}{\pi}\right|^2 = \frac{4}{\pi^2} \approx 0.40528
+				\end{gather*}
+\end{document}

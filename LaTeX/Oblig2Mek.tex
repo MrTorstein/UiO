@@ -1,0 +1,161 @@
+\documentclass[11pt, A4paper,norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/Mek1100/Python programmer"}
+\hypersetup{colorlinks, urlcolor=url}
+
+\author{Torstein Solheim Ølberg}
+\title{Svar på Oblig nr. 2 i Mek1100}
+
+
+
+
+
+
+
+\begin{document}
+\maketitle
+	\begin{center}
+\Large \textbf{Oppgaver}
+	\end{center}
+
+
+
+
+
+
+
+
+
+		\paragraph{a)}
+			\begin{flushleft}
+\lstinputlisting{Oblig2_a.py}
+Som vi ser av programmet så har alle vektorene $194$ elementer i x retning og at x, y, u og v har $201$ elementer i y retning. I tillegg ser vi også at x og y har intervaller på $0.5$ og at y starter i $-50.0$ og slutter i $50.0$, som betyr at den brer seg over hele røret.
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+		\paragraph{b)}
+			\begin{flushleft}
+\lstinputlisting{Oblig2_b.py}
+\includegraphics[width=12.6cm,height=8cm]{"C:/Users/Torstein/Documents/UiO/Mek1100/Python programmer"/Oblig2_b1.png}
+\includegraphics[width=12.6cm,height=8cm]{"C:/Users/Torstein/Documents/UiO/Mek1100/Python programmer"/Oblig2_b2.png}
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+		\paragraph{c)}
+			\begin{flushleft}
+\lstinputlisting{Oblig2_c.py}
+\includegraphics[width=12.6cm,height=8cm]{"C:/Users/Torstein/Documents/UiO/Mek1100/Python programmer"/Oblig2_c.png}
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+		\paragraph{d)}
+			\begin{flushleft}
+\lstinputlisting{Oblig2_d.py}
+\includegraphics[width=12.6cm,height=8cm]{"C:/Users/Torstein/Documents/UiO/Mek1100/Python programmer"/Oblig2_d.png}
+Divergensen til u$i +$ v$j$ er ikke den samme som for $v$, fordi $v$ er med $\omega k$ som ikke vil være $0$ og derfor vil ha noe å si. \\
+Det faktum at gassen er inkompressibel gjør at divergensen er $0$ og vi kan derfor si at $\omega$ må være synkende i z retning.
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+		\paragraph{e)}
+			\begin{flushleft}
+\lstinputlisting{Oblig2_e.py}
+\includegraphics[width=12.6cm,height=8cm]{"C:/Users/Torstein/Documents/UiO/Mek1100/Python programmer"/Oblig2_e.png}
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+		\paragraph{f)}
+			\begin{flushleft}
+\lstinputlisting{Oblig2_f.py}
+Får ca. samme resultater for begge måtene å regne ut sirkulasjonen på. Er en liten forskjell som kan komme av målefeil som gjør større utslag når man regner med Stokes sats en bare med linjeintegral. \\
+Vi kan se stor forskjell i sirkulasjonen til de forskjellige rektanglene, som er naturlig fordi de befinner seg på forskjellige steder i hastighetsfeltet. rektangel 1 befinner seg på et sted der hastighetsfeltet er kraftigere og det er derfor naturlig at sirkulasjonen er stor, men ikke veldig stor siden det er ca. samme gass rundt hele figuren. Rektangel 2 befinner seg derimot i skilleområdet mellom gass og vann, og det er forventa at denne figuren da vi ha en mye større sirkulasjon. Tilslutt er det rektangel 3 som er forventet at skal ha veldig liten sirkulasjon i forhold til de andre fordi den befinner seg bare i vann. \\
+Resultatene passer relativt bra med det man skulle forvente, men for det siste rektangelet er de kanskje litt høye langs side en og side to
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+		\paragraph{g)}
+			\begin{flushleft}
+\lstinputlisting{Oblig2_g.py}
+Siden den stømmen gjennom hver boks går langs rørets retning og den integrerte fluksen orientert i z retning vil si på tvers av rørets retning ville det være naturlig å forvente at den integrerte fluksen i denne retningen er tilnærmet lik null. \\
+For alle firkantene er det naturlig at side to og fire har store, og sirka like, verdier for den integrete fluksen, men at to er positiv og fire er negativ. Det er også naturlig å forvente at verdiene for side en og tre er mye mindre, noe vi ser i resultatene.
+			\end{flushleft}
+
+\end{document}

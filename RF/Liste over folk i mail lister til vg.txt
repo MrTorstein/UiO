@@ -1,0 +1,89 @@
+|E-post Pensjonister:				|Flyttes?:	|Finnes:	|Ferdig:	|
+|-----------------------------------+-----------+-----------+-----------|
+|a.l.garnasjordet@usit.uio			|X			|V			|V			|
+|aardals@gmail.com					|X			|V			|V			|
+|ailaasp@gmail.com					|X			|V			|V			|
+|alexander.fleicher@fys.uio.no		|X			|V			|V			|
+|anderda@student.matnat.uio.no		|X			|V			|V			|
+|anders.dalen@gmail.com				|X			|V			|V			|
+|anders.vinger@usit.uio.no			|X			|V			|V			|
+|arantasbashere@gmail.com			|X			|V			|V			|
+|asgeir.mortensen@gmail.com			|X			|V			|V			|
+|c.m.mohn@hf.uio.no					|X			|V			|V			|
+|darras.celine@gmail.com			|X			|V			|V			|
+|espen@widding.net					|V			|V			|V			|
+|greger.martinussen2@gmail.com		|X			|V			|V			|
+|gunnar.ronning@telenor.com			|X			|V			|V			|
+|havarl@ifi.uio.no					|X			|V			|V			|
+|hein@sv.uio.no						|X			|V			|V			|
+|henning.vangli@gmail.com			|X			|V			|V			|
+|henrik.bohle@usit.uio.no			|X			|V			|V			|
+|ingrielg@student.matnat.uio.no		|X			|V			|V			|
+|johr@student.matnat.uio.no			|X			|X			|V			|
+|jorunra@student.matnat.uio.no		|V			|V			|V			|
+|kristian.rikvold-jess@usit.uio.no	|V			|V			|V			|
+|kristine.wikan@gmail.com			|V			|V			|V			|
+|kristwik@student.matnat.uio.no		|X			|X			|V			|
+|lars@preben.no						|X			|V			|V			|
+|malinbs@student.sv.uio.no			|X			|V			|V			|
+|martbo@ifi.uio.no					|X			|V			|V			|
+|martin.ekre@gmail.com				|X			|V			|V			|
+|mathiasm@ulrik.uio.no				|X			|X			|V			|
+|morten.engelsastro@telenor.com		|V			|V			|V			|
+|nikolaik@gmail.com					|V			|V			|V			|
+|oleap@simula.no					|X			|V			|V			|
+|oysteila@ifi.uio.no				|X			|V			|V			|
+|oysteirs@hf.uio.no					|X			|V			|V			|
+|petter.bockman@nhm.uio.no			|X			|V			|V			|
+|roar.emaus@fys.uio.no				|X			|V			|V			|
+|roberth@ifi.uio.no					|X			|V			|V			|
+|rolvb@student.matnat.uio.no		|X			|X			|V			|
+|s.a.johansen@usit.uio.no			|V			|V			|V			|
+|s.v.h.haugan@astro.uio.no			|V			|V			|V			|
+|sabine.kristiansen@gmail.com		|V			|V			|V			|
+|sigurdd@student.matnat.uio.no		|X			|V			|V			|
+|simenten@student.matnat.uio.no		|X			|V			|V			|
+|susanm0702@hotmail.com				|X			|V			|V			|
+|torgrim.tallerass@hotmail.com		|X			|X			|V			|
+|torsteol@student.matnat.uio.no		|X			|V			|V			|
+|velfundert+uio@gmail.com			|X			|V			|V			|
+|wambam@gmail.com					|X			|V			|V			|
+|-----------------------------------------------------------------------|
+
+
+
+
+
+
+
+
+|E-post Vaktgruppa:					|Finnes:	|Flyttes?:	|Ferdig:	|
+|-----------------------------------+-----------+-----------+-----------|
+|actennoe@gmail.com					|V			|V			|V			|
+|alexander.fleischer@fys.uio.no		|V			|X			|V			|
+|arantasbashere@gmail.com			|V			|X			|V			|
+|aretov@live.com					|V			|X			|V			|
+|aurora.krogstad@gmail.com			|V			|X			|V			|
+|c.m.mohn@hf.uio.no					|V			|V			|V			|
+|cjdarras@student.matnat.uio.no		|V			|V			|V			|
+|eivind@aarnaes.no					|V			|V			|V			|
+|f.s.h.al-hellali@mn.uio.no			|V			|X			|V			|
+|gisleev@online.no					|V			|V			|V			|
+|greger.martinussen2@gmail.com		|V			|X			|V			|
+|gt.ulvik@gmail.com					|V			|V			|V			|
+|helene-aleksandra@hotmail.com		|V			|X			|V			|
+|jakobes@student.matnat.uio.no		|V			|V			|V			|
+|joergen.mundgjel@gmail.com			|V			|X			|V			|
+|kimendre94@gmail.com				|V			|X			|V			|
+|lars.solem.no@gmail.com			|V			|V			|V			|
+|mr.torstein@gmail.com				|V			|X			|V			|
+|o.i.ulven@fys.uio.no				|V			|X			|V			|
+|ragnhild.aalokken@medisin.uio.no	|V			|V			|V			|
+|reidarbrenna@gmail.com				|V			|V			|V			|
+|s.e.sorensen@mn.uio.no				|V			|V			|V			|
+|sabinelk@student.matnat.uio.no		|V			|V			|V			|
+|sandramsreitan@hotmail.com			|V			|X			|V			|
+|susanm0702@hotmail.com				|V			|X			|V			|
+|thomas.hannestad@gmail.com			|V			|V			|V			|
+|torsteol@student.matnat.uio.no		|V			|X			|V			|
+|-----------------------------------------------------------------------|

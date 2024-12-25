@@ -1,0 +1,242 @@
+\documentclass[11pt, A4paper,norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{textcomp}
+\usepackage{float}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/Fys3140/Python programmer"}
+\graphicspath{{C:/Users/Torstein/Documents/UiO/Fys3140/"Python programmer"/}}
+\hypersetup{colorlinks, urlcolor=url}
+
+\author{Torstein Solheim Ølberg}
+\title{Svar på Oblig nr. 5 i Fys3140}
+
+
+
+%\lstinputlisting{Filnavn! type kodefil}
+%\includegraphics[width=12.6cm,height=8cm]{Filnavn! type png}
+
+
+
+\begin{document}
+\maketitle
+	\begin{center}
+\Large \textbf{Oppgaver}
+	\end{center}
+
+
+
+
+
+
+
+
+
+		\paragraph{6)}
+			\begin{flushleft}
+Jeg sjekker resultatene mine på datamaskin ved å skrive dem inn på siden \url{https://www.wolframalpha.com} på måten '' Residue of $f(z)$ at $z = z0$ ''
+			\end{flushleft}
+			\subparagraph{15.}
+				\begin{gather*}
+f(z) = \frac{1}{(1 - 2z)(5z - 4)} \\
+\text{Finner residuen i punktet $z = \frac{1}{2}$, dette er en første ordens pole.} \\
+R\left( \frac{1}{2} \right) = \lim_{z \rightarrow \frac{1}{2}} \left( z - \frac{1}{2} \right) f(z) \\
+\lim_{z \rightarrow \frac{1}{2}} \left( z - \frac{1}{2} \right)  \frac{1}{(1 - 2z)(5z - 4)} = \lim_{z \rightarrow \frac{1}{2}} \frac{\left( z - \frac{1}{2} \right)}{(1 - 2z)(5z - 4)} \\
+\lim_{z \rightarrow \frac{1}{2}} \frac{\left( z - \frac{1}{2} \right)}{-10z^2 + 8z + 5z - 4} \xrightarrow{\text{L'Hôpitals}} \lim_{z \rightarrow \frac{1}{2}} \frac{1}{-20z + 13} = \frac{1}{13 - \frac{20}{2}} \\
+R\left( \frac{1}{2} \right) = \frac{1}{13 - 10} = \frac{1}{3} \\
+\text{Finner for $z = \frac{4}{5}$. Dette er også en førsteordens pole.} \\
+R\left( \frac{4}{5} \right) = \lim_{z \rightarrow \frac{4}{5}} \frac{ z - \frac{4}{5}}{(1 - 2z)(5z - 4)} = \lim_{z \rightarrow \frac{4}{5}} \frac{1}{13 - 20z} = \frac{1}{13 - 16} = - \frac{1}{3}
+				\end{gather*}
+				\begin{flushleft}
+I følge datamaskinen stemmer begge disse svarene.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+			\subparagraph{15'.}
+				\begin{gather*}
+\oint_C f(z) dz = 2 \pi i \cdot \sum_{n = 0}^{N}(R_n( z_n )) \\
+\text{$N$ blir i dette tilfellet $1$ fordi begge singularitetene ligger inni $C$} \\
+\oint_C \frac{1}{(1 - 2z)(5z - 4)} dz = 2 \pi i \cdot \left( \frac{1}{3} - \frac{1}{3} \right) = 0
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{19.}
+				\begin{gather*}
+f(z) = \frac{\sin^2(z)}{2z - \pi} \\
+\text{Finner residue i $z = \frac{\pi}{2}$ som vil være en første ordens pole} \\
+R\left( \frac{\pi}{2} \right) = \lim_{z \rightarrow \frac{\pi}{2}} \frac{\left( z - \frac{\pi}{2} \right) \sin^2(z)}{2z - \pi} \xrightarrow{\text{L'Hôpitals}} \lim_{z \rightarrow \frac{\pi}{2}} \frac{\sin^2(z) + z\sin(2z) - \frac{\pi}{2} \sin(2z)}{2} \\
+R\left( \frac{\pi}{2} \right) = \frac{1}{2}
+				\end{gather*}
+				\begin{flushleft}
+Dette stemmer også i følge datamaskin.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{28.}
+				\begin{gather*}
+f(z) = \frac{z + 2}{(z^2 + 9)(z^2 + 1)} \\
+\text{Finner residue i $z = 3i$ som vil være en første ordens pole} \\
+R( 3i ) = \lim_{z \rightarrow 3i} \frac{( z - 3i ) ( z + 2 )}{( z^2 + 9 )( z^2 + 1 )} \\
+R( 3i ) = \lim_{z \rightarrow 3i} \frac{z^2 + z(2 - 3i) - 6i}{z^4 + 10z^2 + 9} \xrightarrow{\text{L'Hôpitals}} \lim_{z \rightarrow 3i} \frac{2z + 2 - 3i}{4z^3 + 20z} \\
+R( 3i ) = \frac{6i - 3i + 2}{4 \cdot - 27i + 20 \cdot 3i} = \frac{2 + 3i}{60i - 108i} = \frac{2 + 3i}{- 48i} = \frac{i}{24} - \frac{1}{16}
+				\end{gather*}
+				\begin{flushleft}
+Stemmer i følge datamaskin
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{28'.}
+				\begin{gather*}
+\text{Bare residuen ved punktet $z = i$ er innafor sirkelen $C$, så må regne ut denne} \\
+R( i ) = \lim_{z \rightarrow i} \frac{2z + 2 - i}{4z^3 + 20z} = \frac{2i - i + 2}{20i - 4i} = \frac{2 + i}{16i} \\
+\oint_C \frac{z + 2}{(z^2 + 9)(z^2 + 1)} dz = 2 \pi i \cdot R(i) = 2 \pi i \frac{2 + i}{16i} = \frac{2\pi + \pi i}{8}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+		\paragraph{7)}
+			\subparagraph{6.}
+				\begin{gather*}
+I = \int_{0}^{\pi} \frac{d\theta}{(2 + \cos(\theta))^2} \xrightarrow{symmetri} \frac{1}{2} \int_{0}^{2 \pi} \frac{d\theta}{(2 + \cos(\theta))^2} \\
+\text{Løser integralet ved å endre variabel til $z = e^{i\theta}$ og integrer rundt $|z| = 1$} \\
+d\theta = \frac{dz}{iz} \text{ og} \cos(\theta) = \frac{z + \frac{1}{z}}{2} \\
+I = \frac{1}{2} \oint_C \frac{\frac{1}{iz}}{\left( 2 + \frac{z + \frac{1}{z}}{2} \right)^2} = - i \oint_C \frac{2}{z \left( 4 + z + \frac{1}{z} \right)^2} = - i \oint_C \frac{2}{( z^3 + 4z^2 + z )^2} \\
+I = - i \oint_C \frac{2}{( z( z^2 + 4z + 1 ) )^2} = - i \oint_C \frac{2}{z^2( ( z + 2 + \sqrt{3} )( z + 2 - \sqrt{3} ) )^2} \\
+I = - i \oint_C \frac{2}{z^2( z + 2 + \sqrt{3} )^2 ( z + 2 - \sqrt{3} )^2} \\
+\text{Finner residuene i punktene $z = 0$ og $z = \sqrt{3} - 2$, som begger er andre ordens poler} \\
+R(0) = \lim_{z \rightarrow 0}\frac{d}{dz}\left( z^2 f(z) \right) = \lim_{z \rightarrow 0}\frac{d}{dz}\left( \frac{2}{( z + 2 + \sqrt{3} )^2 ( z + 2 - \sqrt{3} )^2} \right) \\
+R(0) = \lim_{z \rightarrow 0} \frac{d}{dz} \left( \frac{2}{( z^2 + 4z + 1 )^2} \right) = \lim_{z \rightarrow 0} \left( \frac{-4( z^2 + 4z + 1 ) (2z + 4 )}{( z^2 + 4z + 1 )^4} \right) \\
+R(0) =  \lim_{z \rightarrow 0} \frac{- 4( 2z + 4 )}{( z^2 + 4z + 1 )^3} = - \frac{16}{1^4} = -16 \\
+R\left( \sqrt{3} - 2 \right) = \lim_{z \rightarrow \sqrt{3} - 2} \frac{d}{dz}\left( ( z + 2 - \sqrt{3} )^2 f(z) \right) = \lim_{z \rightarrow \sqrt{3} - 2} \frac{d}{dz}\left( \frac{2}{z^2 ( z + 2 + \sqrt{3} )^2} \right) \\
+R\left( \sqrt{3} - 2 \right) = \lim_{z \rightarrow \sqrt{3} - 2} \frac{-4( 2z + 2 + \sqrt{3} )}{z^3 ( z + 2 + \sqrt{3} )^3} \\
+R\left( \sqrt{3} - 2 \right) = \frac{-4( 3\sqrt{3} - 2 )}{( \sqrt{3} - 2 )^3 ( 2\sqrt{3} )^3} \\
+R\left( \sqrt{3} - 2 \right) = \frac{8 - 12\sqrt{3}}{( \sqrt{3} - 2 )^3 ( 2\sqrt{3} )^3} \approx 15.99 \\
+\text{Residu teoremet sider da at:} \\
+I = - i \cdot 2 \pi i \cdot (-16 + 15.99) = - 0.02 \pi
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{8.}
+				\begin{gather*}
+I = \int_{0}^{\pi} \frac{\sin^2(\theta) d\theta}{13 - 12\cos(\theta)} = \frac{1}{2} \int_{0}^{2\pi} \frac{\sin^2(\theta) d\theta}{13 - 12\cos(\theta)} \\
+d\theta = \frac{dz}{zi} \text{, } \sin(\theta) = \frac{z - \frac{1}{z}}{2i} \text{ og} \cos(\theta) = \frac{z + \frac{1}{z}}{2} \\
+I = \oint_{C} \frac{\frac{-(z - \frac{1}{z})^2}{4} \frac{dz}{zi}}{13 - 12\left(\frac{z + \frac{1}{z}}{2}\right)} = \frac{i}{24} \oint_{C} \frac{(z - \frac{1}{z})^2 dz}{- z^2 + \frac{13}{6}z + 1} = \frac{i}{24} \oint_{C} \frac{(z - \frac{1}{z})^2 dz}{-(z - \frac{13}{12} + \frac{\sqrt{313}}{12})(z - \frac{13}{12} - \frac{\sqrt{313}}{12})} \\
+\text{Finner residu for $z = \frac{13 - \sqrt{313}}{12}$ som er en enkel pole} \\
+R\left(\frac{13 - \sqrt{313}}{12}\right) = \lim_{z \rightarrow \frac{13 - \sqrt{313}}{12}}\left(z - \frac{13 - \sqrt{313}}{12}\right) f(z) = \lim_{z \rightarrow \frac{13 - \sqrt{313}}{12}} \frac{(z - \frac{1}{z})^2}{- z + \frac{13 + \sqrt{313}}{12}} \approx 1.5921 \\
+I = 2 \pi i \frac{i}{24} (1.5921) = - \frac{1.5921 \pi}{12}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{10.}
+				\begin{gather*}
+I = \int_{- \infty}^{\infty} \frac{1}{x^2 + 4x + 5} dx = \int_{- \infty}^{\infty} \frac{1}{(x + 2 + i)(x + 2 - i)} dx \\
+J = \oint_{C} \frac{1}{(z + 2 + i)(z + 2 - i)} dz \\
+R(- 2 - i) = \lim_{z \rightarrow - 2 - i} (z + 2 + i) \frac{1}{(z + 2 + i)(z + 2 - i)} = \lim_{z \rightarrow - 2 - i} \frac{1}{(z + 2 - i)} \\
+R(- 2 - i) = \frac{1}{-2i} = \frac{i}{2} \\
+J = 2 \pi i \frac{i}{2} = - \pi \\
+J = \lim_{r \rightarrow \infty} I + \int_{0}^{\pi} \frac{1}{r^2e^{2i\theta} + 4re^{i\theta} + 5} d\theta \Rightarrow I = J = -\pi
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{12.}
+				\begin{gather*}
+I = \int_{0}^{\infty} \frac{x^2}{x^4 + 16} dx = \int_{0}^{\infty} \frac{x^2}{(x + 2\sqrt[4]{-1})(x - 2\sqrt[4]{-1})(x + 2\sqrt[4]{-1}^3)(x - 2\sqrt[4]{-1}^3)} dx \\
+J = \oint_{C} \frac{z^2}{(z + 2\sqrt[4]{-1})(z - 2\sqrt[4]{-1})(z + 2\sqrt[4]{-1}^3)(z - 2\sqrt[4]{-1}^3)} dx \\
+R(2\sqrt[4]{-1}) = \lim_{z \rightarrow 2\sqrt[4]{-1}} \frac{z^2}{(z + 2\sqrt[4]{-1})(z + 2\sqrt[4]{-1}^3)(z - 2\sqrt[4]{-1}^3)} \\
+R(2\sqrt[4]{-1}) = \frac{4i}{(4\sqrt[4]{-1})(2(\sqrt[4]{-1} + \sqrt[4]{-1}^3))(2(\sqrt[4]{-1} - \sqrt[4]{-1}^3))} \\
+R = \frac{4i}{4\sqrt[4]{-1} \cdot 2 \cdot 1.4142i \cdot 2 \cdot 1.4142} = \frac{1}{\frac{\sqrt{2} + \sqrt{2}i}{2} \cdot 8} = \frac{1}{4(\sqrt{2} + \sqrt{2}i)}
+				\end{gather*}
+\end{document}

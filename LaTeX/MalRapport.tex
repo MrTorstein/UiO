@@ -1,0 +1,108 @@
+\documentclass[11pt, A4paper, english]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{float}
+\usepackage{multicol}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{
+frame=tb,
+language=Python,
+aboveskip=3mm,
+belowskip=3mm,
+showstringspaces=false,
+columns=flexible,
+basicstyle={\small\ttfamily},
+numbers=none,
+numberstyle=\tiny\color{gray},
+keywordstyle=\color{blue},
+commentstyle=\color{daynineyellow},
+stringstyle=\color{dkgreen},
+breaklines=true,
+breakatwhitespace=true,
+tabsize=3
+}
+
+%The exemples under is for paths in windows
+\lstset{inputpath="Where you get your code files from (f.ex: C:/Users/Torstein/Documents/UiO/Ast2210/Python programmer)"}
+\graphicspath{{Where you get your grafics files from (f.eks: C:/Users/Torstein/Documents/UiO/Faget!/"Python programmer"/)(Folders with whitespace in their name have to be written inside apostrophies)}}
+\hypersetup{colorlinks, urlcolor=url}
+
+%This is how to put in codefiles
+%\lstinputlisting{Filnavn! type kodefil}
+
+%This is how to put in pictures
+%\includegraphics[width=12.6cm,height=8cm]{Filnavn! type png}
+
+
+\author{
+Your Name! \\
+Name of institute!, University! \\
+Mailing address!, Country
+%F.eks:
+%Institute for Theoretical Astrophysics, University of Oslo \\
+%P.O. Box 1029 Blindern 0315 Oslo, Norway
+}
+\title{Title of the report!}
+
+\begin{document}
+
+\maketitle
+
+	\section{Abstract}
+%Here the article is briefly summarized, mentioning some background, the methods and data used as well as notable results - keep it short and to the point.
+
+	\begin{multicols}{2}
+		\section{Introduction}
+%Why are we doing this exercise, what are our assumptions, what do we want to accomplish?
+
+		\section{Data Description}
+
+		\section{Methods}
+%How did you obtain the data, what methods did you use? Describe your work process. If you performed an experiment using specific equipment, describe your setup.
+
+	\end{multicols}
+
+		\section{Results}
+%What were your clear-cut results? - Present them in a clear and concise manner, waiting with the discussion of them for later. Here you present calculations, figures and tables of data, output of code, etc.
+			\begin{tabular}{|l|r|}
+\hline
+Measured & Data \\
+\hline
+%First ting mesured! & First mesurement! \\
+\hline
+			\end{tabular}
+
+	\begin{multicols}{2}
+		\section{Conclusion/Discussion}
+%Were the results what you expected? Are the results significant? - meaning; are the results clear, or are they open to interpretation? How certain can you be of them? What do these results mean in a wider context?
+
+\addcontentsline{toc}{chapter}{Bibliography}
+		\begin{thebibliography}{9}
+%			\bibitem{Name of referance!}
+%Name of Author, Name of Author, ...!; \\
+%Title of article! \\
+%\url{URL!} \\
+%Year of release! \\
+%Downloaded Date you downloaded webpage!
+%			\bibitem{Name of referance!}
+%Name of Author, Name of Author, ...!; \\
+%Title of article!, Pages used! \\
+%Year of release!, Town published!: Publisher! \\
+		\end{thebibliography}
+	\end{multicols}
+\end{document}

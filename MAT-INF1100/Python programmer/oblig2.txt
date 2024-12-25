@@ -1,0 +1,59 @@
+Ved hjelp av en GPS har vi målt farten v til et objekt som 
+beveger seg. Målingene er gjordt ved $N + 1$ tidspunkter 
+$(t_i)_{i=0}^{N}$ slik at resultatet er en følge av tall-par 
+$(t_i, v_i)_{i=0}^{N}$ der $v_i$ angir farten ved tidspunktet 
+$t_i$.
+
+Gi en algoritme for å beregne en tilnærming til objektets 
+aksellerasjon $a(t) = v'(t)$ ut fra de beregnede verdiene 
+$(t_i, v_i)$ av farten.
+
+Gi en algoritme for å beregne en tilnærming til objektets 
+avstand $s(t)$ fra startpunktet ut fra de beregnede verdiene 
+når $v(t) = s'(t)$ og $s(t_0) = 0$
+
+Fila 
+\href{URL}{http://www.uio.no/studier/emner/matnat/math/MAT-INF1100/h16/obliger/running.txt} 
+er en logfil fra en løpetur, der vi på hver linje finner 
+kommaseparerte tid/fart verdier. Du har lært at du kan lese 
+inn verdiene fra denne fila inn i to vektorer $t$ og $v$ ved 
+hjelp av følgende kode:
+\begin{lstlisting}[frame=single]
+t = []
+v = []
+infile = open('running.txt','r')
+for line in infile:
+	tnext, vnext = line.strip().split(',')
+	t.append(float(tnext))
+	v.append(float(vnext))
+infile.close()
+\end{lstlisting}
+Last ned fila running.txt og kjør denne koden, og bruk 
+algoritmen fra a) og b) til å lage to plott: Et der du 
+plotter objektets aksellerasjon mot tid, og et der du plotter 
+objektets avstand fra startpunktet mot tid.
+
+Vi har differensialligningen
+				\begin{align}\label{eq:difflig}
+x' + x^2 = 1, \hspace{4mm} x(0) = 0.
+				\end{align}
+
+Finn løsningen $x(t)$ av differensialligningen analystisk. 
+(Hint: Ligningen er separabel.)
+
+Løs ligningen numerisk på intervallen $[0,2]$ ved å ta $5$ 
+steg med Eulers metode (med kalkulator eller datamaskin). 
+Plott den numeriske løsningen sammen med den eksakte løsningen 
+(for hånd eller ved hjelp av datamaskin). 
+
+Gjenta (b), men bruk Eulers midpunktmetode i steden for 
+Euler's metode. Plott den numeriske løsningen du nå får 
+sammen med løsningene du plottet i (b).
+
+Anta at du vet at $0 \le x(t^{*}) \le 1$ for en verdi $t^{*}$. 
+Bruk differensialligningen \eqref{eq:difflig} til å forklare 
+at da vil $x(t)$ være voksende i $t = t^{*}$. Forsøk å utvide 
+dette til å si noe om hvordan $x(t)$ oppfører seg om $x(t^{*}) > 1$ eller $x(t^{*}) = 1$. 
+
+(Frivillig). Bruk differensialligningen \eqref{eq:difflig} til 
+å vise at $x(t)$ er voksende for alle $t \ge 0$.

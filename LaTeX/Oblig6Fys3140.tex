@@ -1,0 +1,344 @@
+\documentclass[11pt, A4paper,norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{textcomp}
+\usepackage{float}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/Fys3140/Python programmer"}
+\graphicspath{{C:/Users/Torstein/Documents/UiO/Fys3140/"Python programmer"/}}
+\hypersetup{colorlinks, urlcolor=url}
+
+\author{Torstein Solheim Ølberg}
+\title{Svar på Oblig nr. 6 i Fys3140}
+
+
+
+%\lstinputlisting{Filnavn! type kodefil}
+%\includegraphics[width=12.6cm,height=8cm]{Filnavn! type png}
+
+
+
+\begin{document}
+\maketitle
+	\begin{center}
+\Large \textbf{Oppgaver}
+	\end{center}
+
+
+
+
+
+
+
+
+
+		\paragraph{6.1}
+			\subparagraph{a)}
+				\begin{gather*}
+\int_{- \infty}^{\infty} \frac{x \sin(x)}{x^2 + 4x + 5} dx = \int_{- \infty}^{\infty} \frac{x \sin(x)}{(x + 2 + i)(x + 2 - i)} dx \\
+I = \oint_{C} \frac{z e^{i z}}{(z + 2 + i)(z + 2 - i)} dz \\
+R(i - 2) = \lim_{z \rightarrow i - 2} (z + 2 - i) \frac{z e^{i z}}{(z + 2 + i)(z + 2 - i)} = \frac{(i - 2) e^{i (i - 2)}}{2i} \\
+\frac{i e^{-1 - 2i}}{2i} - \frac{2 e^{-1 - 2i}}{2i} = \frac{e^{-1 - 2i}}{2i} (i - 2) \\
+I = 2 \pi i \frac{e^{-1 - 2i}}{2i} (i - 2) = \pi e^{-1 - 2i} (i - 2) = \pi\left( \frac{\cos(2)}{e} - i \frac{\sin(2)}{e} \right) (i - 2) \\
+I = \pi \left( i \frac{\cos(2)}{e} + 2 i \frac{\sin(2)}{e} + \frac{\sin(2)}{e} - 2 \frac{\cos(2)}{e} \right) \\
+\int_{- \infty}^{\infty} \frac{x \sin(x)}{x^2 + 4x + 5} dx = Im(I) = \pi \left(  \frac{\cos(2)}{e} + 2 \frac{\sin(2)}{e} \right) = \frac{2 \pi \sin(2) + \pi \cos(2) )}{e} \approx 1.62
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{gather*}
+\int_{0}^{\infty} \frac{\cos(2x)}{(4x^2 + 9)^2} dx = \int_{0}^{\infty} \frac{\cos(2x)}{\left( 4 \left( x + i \frac{3}{2} \right) \left( x - i \frac{3}{2} \right) \right)^2} dx \\
+I = \oint_{C} \frac{e^{2iz}}{4^2 \left( z + i \frac{3}{2} \right)^2 \left( z - i \frac{3}{2} \right)^2} dz \\
+R\left( i \frac{3}{2} \right) = \lim_{z \rightarrow i \frac{3}{2}} \left( \left( z - i \frac{3}{2} \right)^{2} \frac{e^{i2z}}{16 \left( z + i \frac{3}{2} \right)^2 \left( z - i \frac{3}{2} \right)^2} \right)' \\
+\lim_{z \rightarrow i \frac{3}{2}} \frac{2i e^{2iz}}{16 \left( z + i \frac{3}{2} \right)^2} - \frac{2e^{2iz}}{16 \left( z + i \frac{3}{2} \right)^3} = \lim_{z \rightarrow i \frac{3}{2}} \frac{2i e^{2iz} \left( z + i \frac{3}{2} \right)}{16 \left( z + i \frac{3}{2} \right)^3} - \frac{2e^{2iz}}{16 \left( z + i \frac{3}{2} \right)^3} \\
+\frac{2i e^{- 3} ( 3i ) - 2e^{- 3}}{16 ( 3i )^3} = - \frac{i e^{- 3}}{54} \\
+I = 2 \pi i \left( - \frac{i e^{-3}}{54} \right) = \frac{2 \pi e^{-3}}{54} \\
+\int_{0}^{\infty} \frac{\cos(2x)}{(4x^2 + 9)^2} dx = \frac{1}{2} Re\left( \frac{2 \pi e^{-3}}{54} \right) = \frac{\pi}{54 e^3}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{gather*}
+\int_{- \infty}^{\infty} \frac{x \sin(\pi x)}{1 - x^2} dx = \int_{- \infty}^{\infty} \frac{x \sin(\pi x)}{- (x + 1) (x - 1)} dx \\
+I = \oint_{C} \frac{z e^{i \pi z}}{- (z + 1)(z - 1)} dz \\
+R(1) = \lim_{z \rightarrow 1} (z - 1) \frac{z e^{i \pi z}}{- (z + 1) (z - 1)} = - \frac{e^{i \pi}}{2} \\
+R(- 1) = \lim_{z \rightarrow - 1} (z + 1) \frac{z e^{i \pi z}}{- (z + 1) (z - 1)} = - \frac{e^{- i \pi}}{2} \\
+I = 2 \pi i \sum_{j} R(Im_j) + \pi i \sum_{k} R(Re_k) = - \pi i \left( \frac{e^{i \pi} + e^{- i \pi}}{2} \right) = - \pi i \frac{- 1}{2} = \frac{\pi i}{2} \\
+\int_{- \infty}^{\infty} \frac{x \sin(\pi x)}{1 - x^2} dx = Im(I) = \frac{\pi}{2}
+				\end{gather*}
+			
+
+
+
+
+
+
+
+
+
+			\subparagraph{d)}
+				\begin{gather*}
+\int_{0}^{\infty} \frac{1}{1 - x^4} dx = \int_{0}^{\infty} \frac{1}{- (x + 1) (x - 1) (x + i) (x - i)} dx \\
+I = \oint_{C} \frac{1}{- (z + 1) (z - 1) (z + i) (z - i)} dz \\
+\text{Må finne residuene til de reelle røttene og $i$} \\
+R(1) = \lim_{z \rightarrow 1} (z - 1) \frac{1}{- (z + 1) (z - 1) (z + i) (z - i)} = - \frac{1}{4} \\
+R(- 1) = \lim_{z \rightarrow - 1} (z + 1) \frac{1}{- (z + 1) (z - 1) (z + i) (z - i)} = \frac{1}{4} \\
+R(i) = \lim_{z \rightarrow i} (z - i) \frac{1}{- (z + 1) (z - 1) (z + i) (z - i)} = \frac{1}{4i} \\
+I = 2 \pi i \sum_{j} R(Im_j) + \pi i \sum_{k} R(Re_k) = 2 \pi i \frac{1}{4i} + \pi i \left( \frac{1}{4} - \frac{1}{4} \right) = \frac{\pi}{2} \\
+\int_{0}^{\infty} \frac{1}{1 - x^4} dx = \frac{1}{2} I = \frac{\pi}{4}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{e)}
+				\begin{gather*}
+\text{Vi kan ikke løse integraler med imaginære tall i seg. Gjør derfor om til to integraler} \\
+\int_{- \infty}^{\infty} \frac{\cos(x)}{x + i} dx = \int_{- \infty}^{\infty} \frac{\cos(x) (x - i)}{(x + i) (x - i)} dx \\
+\int_{- \infty}^{\infty} \frac{x \cos(x)}{(x + i) (x - i)} dx - i \int_{- \infty}^{\infty} \frac{\cos(x)}{(x + i) (x - i)} dx \\
+I_1 = \oint_{C_1} \frac{z e^{iz}}{(z + i) (z - i)} dz \\
+R_1(i) = \lim_{z \rightarrow i} (z - i) \frac{z e^{iz}}{(z + i) (z - i)} = \frac{1}{2e} \\
+I_1 = 2 \pi i \frac{1}{2e} = \frac{i \pi}{e} \\
+I_2 = \oint_{C_1} \frac{e^{iz}}{(z + i) (z - i)} dz \\
+R_2(i) = \lim_{z \rightarrow i} (z - i) \frac{e^{iz}}{(z + i) (z - i)} = \frac{1}{2 i e} \\
+I_2 = 2 \pi i \frac{1}{2 i e} = \frac{\pi}{e} \\
+\int_{- \infty}^{\infty} \frac{\cos(x)}{x + i} dx = Re(I_1) - i R(I_2) = - i \frac{\pi}{e}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+		\paragraph{2.}
+			\subparagraph{a)}
+				\begin{gather*}
+I_{x x} = \int (r^2 - x^2) dV \text{ for $r \in [0, 1]$, $\theta \in [0, \pi]$ og $\phi \in [0, 2 \pi]$} \\
+\int_{0}^{1} \int_{0}^{\pi} \int_{0}^{2 \pi} ( r^2 - r^2 \sin^2(\theta) \cos^2(\phi) ) r^2 \sin(\theta) d\phi d\theta dr \\
+\int_{0}^{1} \int_{0}^{\pi} \int_{0}^{2 \pi} r^4 \sin(\theta) - r^4 \sin^3(\theta) \cos^2(\phi) d\phi d\theta dr \\
+\int_{0}^{\pi} \int_{0}^{2 \pi} \frac{1}{5} \sin(\theta) - \frac{1}{5} \sin^3(\theta) \cos^2(\phi) d\phi d\theta \\
+\int_{0}^{2 \pi} \frac{2}{5} - \frac{4}{15} \cos^2(\phi) d\phi \\
+I_{x x} = \frac{4 \pi}{5} - \frac{4 \pi}{15} = \frac{16 \pi}{15}
+				\end{gather*}
+				\begin{gather*}
+I_{x y} = - \int xy dV \text{ for $r \in [0, 1]$, $\theta \in [0, \pi]$ og $\phi \in [0, 2 \pi]$} \\
+\int_{0}^{1} \int_{0}^{\pi} \int_{0}^{2 \pi} r^2 \sin^2(\theta) \cos(\phi) \sin(\phi) r^2 \sin(\theta) d\phi d\theta dr \\
+\int_{0}^{1} \int_{0}^{\pi} \int_{0}^{2 \pi} r^4 \sin^3(\theta) \frac{1}{2} \sin(2 \phi) d\phi d\theta dr \\
+\int_{0}^{\pi} \int_{0}^{2 \pi} \frac{1}{10} \sin^3(\theta) \sin(2 \phi) d\phi d\theta \\
+\int_{0}^{2 \pi} \frac{2}{15} \sin(2 \phi) d\phi \\
+I_{x y} = - \frac{2}{15} 2 (1 - 1) = 0
+				\end{gather*}
+				\begin{gather*}
+I_{x z} = - \int xz dV \text{ for $r \in [0, 1]$, $\theta \in [0, \pi]$ og $\phi \in [0, 2 \pi]$} \\
+\int_{0}^{1} \int_{0}^{\pi} \int_{0}^{2 \pi} r^2 \sin(\theta) \cos(\phi) \cos(\theta) r^2 \sin(\theta) d\phi d\theta dr \\
+\int_{0}^{1} \int_{0}^{\pi} \int_{0}^{2 \pi} r^4 \sin^2(\theta) \cos(\theta) \cos(\phi) d\phi d\theta dr \\
+\int_{0}^{1} \int_{0}^{\pi} r^4 \sin^2(\theta) \cos(\theta) \cdot 0 \cdot d\theta dr \\
+I_{x z} = 0
+				\end{gather*}
+				\begin{gather*}
+I_{y y} = \int (r^2 - y^2) dV \text{ for $r \in [0, 1]$, $\theta \in [0, \pi]$ og $\phi \in [0, 2 \pi]$} \\
+\int_{0}^{1} \int_{0}^{\pi} \int_{0}^{2 \pi} ( r^2 - r^2 \sin^2(\theta) \sin^2(\phi) ) r^2 \sin(\theta) d\phi d\theta dr \\
+\int_{0}^{1} \int_{0}^{\pi} \int_{0}^{2 \pi} r^4 \sin(\theta) - r^4 \sin^3(\theta) \sin^2(\phi) d\phi d\theta dr \\
+\int_{0}^{\pi} \int_{0}^{2 \pi} \frac{1}{5} \sin(\theta) - \frac{1}{5} \sin^3(\theta) \sin^2(\phi) d\phi d\theta \\
+\int_{0}^{2 \pi} \frac{2}{5} - \frac{4}{15} \sin^2(\phi) d\phi \\
+I_{y y} = \frac{4 \pi}{5} - \frac{4 \pi}{15} = \frac{16 \pi}{15}
+				\end{gather*}
+				\begin{gather*}
+I_{y x} = I_{x y} = 0
+				\end{gather*}
+				\begin{gather*}
+I_{y z} = - \int yz dV \text{ for $r \in [0, 1]$, $\theta \in [0, \pi]$ og $\phi \in [0, 2 \pi]$} \\
+\int_{0}^{1} \int_{0}^{\pi} \int_{0}^{2 \pi} r^2 \sin(\theta) \cos(\theta) \sin(\phi) r^2 \sin(\theta) d\phi d\theta dr \\
+\int_{0}^{1} \int_{0}^{\pi} \int_{0}^{2 \pi} r^4 \sin^2(\theta) \cos(\theta) \sin(\phi) d\phi d\theta dr \\
+\int_{0}^{1} \int_{0}^{\pi} r^4 \sin^2(\theta) \cos(\theta) \cdot 0 \cdot d\theta dr \\
+I_{y z} = 0
+				\end{gather*}
+				\begin{gather*}
+I_{z z} = \int (r^2 - z^2) dV \text{ for $r \in [0, 1]$, $\theta \in [0, \pi]$ og $\phi \in [0, 2 \pi]$} \\
+\int_{0}^{1} \int_{0}^{\pi} \int_{0}^{2 \pi} ( r^2 - r^2 \cos^2(\theta) ) r^2 \sin(\theta) d\phi d\theta dr \\
+\int_{0}^{1} \int_{0}^{\pi} \int_{0}^{2 \pi} r^4 \sin(\theta) - r^4 \sin(\theta) \cos^2(\theta) d\phi d\theta dr \\
+\int_{0}^{\pi} \int_{0}^{2 \pi} \frac{1}{5} \sin(\theta) - \frac{1}{5} \sin(\theta) \cos^2(\theta) d\phi d\theta \\
+\int_{0}^{2 \pi} \frac{2}{5} - \frac{4}{15} \frac{2}{3} d\phi \\
+I_{z z} = \frac{4 \pi}{5} - \frac{16 \pi}{45} = \frac{36 \pi - 16 \pi}{45} = \frac{20 \pi}{45} = \frac{4 \pi}{15}
+				\end{gather*}
+				\begin{gather*}
+I_{z x} = I_{x z} = 0
+				\end{gather*}
+				\begin{gather*}
+I_{z y} = I_{y z} = 0
+				\end{gather*}
+				\begin{gather*}
+I = \frac{1}{15} \left(
+\begin{tabular} { ccc }
+$16 \pi$ & $0$ & $0$ \\
+$0$ & $16 \pi$ & $0$ \\
+$0$ & $0$ & $4 \pi$
+\end{tabular}
+\right)
+				\end{gather*}
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{gather*}
+I_{x x} = (1 + 4) + 2 (1 + 1) = 5 + 4 = 9 \\
+I_{x y} = I_{y x} = - (1 + 2) = - 3 \\
+I_{x z} = I_{z x} = - 2 + 2 = 0 \\
+I_{y y} = (1 + 4) + 2 (1 + 1) = 9 \\
+I_{y z} = I_{z y} = - 2 + 2 = 0 \\
+I_{z z} = (1 + 1) + 2 (1 + 1) = 6 \\
+I = \left(
+\begin{tabular} { ccc }
+$9$ & $- 3$ & $0$ \\
+$- 3$ & $9$ & $0$ \\
+$0$ & $0$ & $6$
+\end{tabular}
+\right)
+				\end{gather*}
+				\begin{flushleft}
+Finner egenverdiene på datamaskinen, de er $12$, og $6$, som da er de prinsipale treghetsmomentene. De prinsipale aksene er langs egenvektorene som er $C (1, 1, 0)$, $D (- 1, 1, 0)$ og $(0, 0, 1)$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+a
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{d)}
+				\begin{flushleft}
+a
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{e)}
+				\begin{flushleft}
+a
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{f)}
+				\begin{flushleft}
+a
+				\end{flushleft}
+
+
+
+
+
+
+
+
+			\subparagraph{g)}
+				\begin{flushleft}
+a
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{h)}
+				\begin{flushleft}
+a
+				\end{flushleft}
+\end{document}

@@ -1,0 +1,191 @@
+\documentclass[11pt, A4paper,norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{textcomp}
+\usepackage{float}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/Fys2140/Python programmer"}
+\graphicspath{{C:/Users/Torstein/Documents/UiO/Fys2140/"Python programmer"/}}
+\hypersetup{colorlinks, urlcolor=url}
+
+\author{Torstein Solheim Ølberg}
+\title{Svar på Oblig nr. 7 i Fys2140}
+
+
+
+%\lstinputlisting{Filnavn! type kodefil}
+%\includegraphics[width=12.6cm,height=8cm]{Filnavn! type png}
+
+
+
+\begin{document}
+\maketitle
+	\begin{center}
+\Large \textbf{Oppgaver}
+	\end{center}
+
+
+
+
+
+
+
+
+
+		\paragraph{1.}
+			\subparagraph{a)}
+				\begin{gather*}
+\Psi(x, 0) = Ae^{- a |x|} \\
+\int_{- \infty}^{\infty} |\Psi(x, 0)|^2 dx = 1 \Rightarrow \int_{- \infty}^{\infty} \left|Ae^{- a |x|}\right|^2 dx = 1 \\
+\int_{- \infty}^{\infty} A^2 e^{- 2 a |x|} dx = A^2 \int_{0}^{\infty} 2 e^{- 2 a |x|} dx = 1 \\
+A^2 \left[ - \frac{e^{-2a |x|}}{a} \right]_{0}^{\infty} = A^2 \left[ \frac{1}{a} \right] = 1 \Rightarrow A = \sqrt{a}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{gather*}
+\phi(k) = \frac{1}{\sqrt{2 \pi}} \int_{- \infty}^{\infty} \Psi(x, 0) e^{- i k x} dx \\
+\frac{1}{\sqrt{2 \pi}} \int_{- \infty}^{\infty} \sqrt{a} e^{- a |x|} e^{- i k x} dx \\
+\frac{\sqrt{a}}{\sqrt{2 \pi}} \int_{- \infty}^{\infty} e^{- a |x| - i k x} dx = \frac{\sqrt{a}}{\sqrt{2 \pi}} \left( \int_{- \infty}^{0} e^{a x - i k x} dx + \int_{0}^{\infty} e^{- a x - i k x} dx \right) \\
+\frac{\sqrt{a}}{\sqrt{2 \pi}} \left( \left[ \frac{e^{a x - i k x}}{a - ik} \right]_{- \infty}^{0} + \left[ \frac{e^{- a x - i k x}}{- a - ik} \right]_{0}^{\infty} \right) = \frac{\sqrt{a}}{\sqrt{2 \pi}} \left[ \frac{1}{a - ik} + \frac{1}{a + ik} \right] \\
+\phi(k) = \frac{2 a \sqrt{a}}{\sqrt{2 \pi} (a^2 + k^2)}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{gather*}
+\Psi(x, t) = \Psi(x, 0) \int_{- \infty}^{\infty} \frac{1}{\sqrt{2 \pi}} \phi(k) e^{- \frac{i}{\hbar} E(k) t} dk = \frac{\sqrt{a} e^{-a|x|}}{\sqrt{2 \pi}} \int_{- \infty}^{\infty} \frac{2 a \sqrt{a}}{\sqrt{2 \pi} (a^2 + k^2)} e^{- \frac{i}{\hbar} E(k) t} dk \\
+\Psi(x, t) = \frac{e^{-a|x|}}{\pi} \int_{- \infty}^{\infty} \frac{a^2 e^{- \frac{i}{\hbar} E(k) t}}{a^2 + k^2} dk
+				\end{gather*}
+			
+
+
+
+
+
+
+
+
+
+			\subparagraph{d)}
+				\begin{flushleft}
+Hvis $a$ blir veldig stor så vil sannsynlighetsfunksjonen få en stor topp rundt $0$. Blir $a$ veldig liten vil integralet være tilnærmet lik 
+$$\Psi(x, t) = \frac{1}{\pi} \int_{- \infty}^{\infty} \frac{a^2 e^{- \frac{i}{\hbar} E(k) t}}{k^2} dk $$
+som gir en mye lavere topp rundt null. Uansett vi begge integralene gå mot null når $|x| \rightarrow \infty$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+		\paragraph{2.}
+			\begin{gather*}
+\text{Antar at det finnes to løsninger på den tiduavhengige schrödinger likningen} \\
+\text{$\psi_1$ og $\psi_2$ som har samme energien $E$} \\
+\text{I}: - \frac{\hbar^2}{2m} \frac{d^2 \psi_1}{dx^2} = E \psi_1 \\
+\text{II}: - \frac{\hbar^2}{2m} \frac{d^2 \psi_2}{dx^2} = E \psi_2 \\
+\text{I} \cdot \psi_2: - \frac{\hbar^2}{2m} \frac{d^2 \psi_1}{dx^2} \psi_2 = E \psi_1 \psi_2 \\
+\text{II} \cdot \psi_1: - \frac{\hbar^2}{2m} \frac{d^2 \psi_2}{dx^2} \psi_1 = E \psi_2 \psi_1 \\
+\text{I} \cdot \psi_2 - \text{II} \cdot \psi_1: - \frac{\hbar^2}{2m} \frac{d^2 \psi_1}{dx^2} \psi_2 + \frac{\hbar^2}{2m} \frac{d^2 \psi_2}{dx^2} \psi_1 = E \psi_1 \psi_2 - E \psi_2 \psi_1 \\
+- \frac{\hbar^2}{2m} \frac{d^2 \psi_1}{dx^2} \psi_2 +  \frac{\hbar^2}{2m} \frac{d^2 \psi_2}{dx^2} \psi_1 = E \psi_2 \psi_1 - E \psi_1 \psi_2 \\
+\frac{d^2 \psi_1}{dx^2} \psi_2 - \frac{d^2 \psi_2}{dx^2} \psi_1 = 0 \\
+\int \frac{d^2 \psi_1}{dx^2} \psi_2 - \frac{d^2 \psi_2}{dx^2} \psi_1 dx = \int 0 dx \Rightarrow \psi_2 \frac{d \psi_1}{dx} - \psi_1 \frac{d \psi_2}{dx} = C \\
+\text{Hvis løsningene skal være normaliserbare, noe de må for at de skal være} \\
+\text{bundne, må $\psi_1 \wedge \psi_2$ gå mot $0$. Siden $C$ skal være lik uansett hvor i} \\
+\text{posisjon vi befinner oss, betyr dette at $C = 0$. Da har vi} \\
+\psi_2 \frac{d \psi_1}{dx} = \psi_1 \frac{d \psi_2}{dx} \\
+\text{som bare stemmer hvis $\psi_1 = D \psi_2$. Da vet vi av definisjonen av distinkte at} \\
+\text{de ikke er det, og derfor kan vi ikke finne noen distinkte, bundne og} \\
+\text{normaliserbare løsninger. Altså har vi bevist teoremet.}
+			\end{gather*}
+
+
+
+
+
+
+
+
+
+		\paragraph{3.}
+			\begin{gather*}
+\text{Setter opp TUSL for fri partikkel.} \\
+\frac{d^2 \psi_n}{dx^2} = - \frac{2 m E_n}{\hbar^2} \psi_n = - k^2 \psi_{n} \\
+\text{Den har i vårt tilfelle disse to løsningene} \\
+\psi_{n}^{+}(x) = Ae^{i k x} \wedge \psi_{n}^{-}(x) = Be^{- i k x} \\
+\psi_{n} = \psi_{n}^{+}(x) + \psi_{n}^{-}(x)
+			\end{gather*}
+			\begin{gather*}
+\text{Finner et utrykk for $k(L)$} \\
+\psi_{n}(x) = \psi_{n}(x + L) = Ae^{i k x} + Be^{- i k x} = Ae^{i k (x + L)} + Be^{- i k (x + L)} \\
+\psi_{n}(0) = \psi_{n}(L) = A + B = Ae^{i k L} + Be^{- i k L} \\
+\text{For at dette skal stemme må $k$ være lik $\frac{2 \pi n}{L}$, der $n = 1, 2, 3, \dots$} \\
+\psi_{n}^{+}(x) = Ae^{i \frac{2 \pi n}{L} x} \wedge \psi_{n}^{-}(x) = Be^{- i \frac{2 \pi n}{L} x}
+			\end{gather*}
+			\begin{gather*}
+\text{Normaliserer} \\
+\int_{0}^{L} |\psi_{n}^{+}(x)|^2 dx = \int_{0}^{L} A^2e^{i \frac{2 \pi n}{L} x} e^{- i \frac{2 \pi n}{L} x} dx = 1 \\
+\left[ A^2 x \right]_{0}^{L} = \left( A^2 L - 0 \right) = 1 \Rightarrow A = \frac{1}{\sqrt{L}} \\
+\int_{0}^{L} |\psi_{n}^{-}(x)|^2 dx = \int_{0}^{L} B^2e^{- i \frac{2 \pi n}{L} x} e^{i \frac{2 \pi n}{L} x} dx = \int_{0}^{L} B^2 dx = 1 \\
+\left[ B^2 x \right]_{0}^{L} = \left( B^2 L \right) = 1 \Rightarrow B = \frac{1}{\sqrt{L}}
+			\end{gather*}
+			\begin{gather*}
+\text{Finner tilslutt $E_n$} \\
+k^2 = \frac{2 m E_n}{\hbar^2} = \left( \frac{2 \pi n}{L} \right)^2 \\
+E_n = \frac{2 \pi^2 n^2 \hbar^2}{m L^2}
+			\end{gather*}
+			\begin{flushleft}
+Denne degenereringen kan forklares ved at vi har to forskjellige funksjoner som faktisk er distinkte nå, i motsetning til i oppgave 2. Dette kommer av at i oppgave 2 har vi antatt at funskjonene må gå mot $0$ hvis $x$ går mot $\infty$, noe som ikke er tilfellet nå lenger. Derfor kan vi ikke bruke teoremet fra oppgave 2 i dette tilfellet.
+			\end{flushleft}
+\end{document}

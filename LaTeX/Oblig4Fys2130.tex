@@ -1,0 +1,327 @@
+\documentclass[11pt, A4paper,norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{textcomp}
+\usepackage{float}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/Fys2130/Python programmer"}
+\graphicspath{{C:/Users/Torstein/Documents/UiO/Fys2130/"Python programmer"/}}
+\hypersetup{colorlinks, urlcolor=url}
+
+\author{Torstein Solheim Ølberg}
+\title{Svar på Oblig nr. 4 i Fys2130}
+
+
+
+%\lstinputlisting{Filnavn! type kodefil}
+%\includegraphics[width=12.6cm,height=8cm]{Filnavn! type png}
+
+
+
+\begin{document}
+\maketitle
+	\begin{center}
+\Large \textbf{Oppgaver}
+	\end{center}
+
+
+
+
+
+
+
+
+
+		\paragraph{6.3}
+			\begin{flushleft}
+Du kan se lynet før du hører tordenet fordi lysbølger beveger seg fortere enn lydbølger gjennom luft. Over ganske store avstander som lynet oftest er unna deg vil lyset og lyden, som blir sendt ut ca. sammtidig, bruke såpass forskjellig tid at det er mulig å se lysbølgene før du hører lydbølgene. \\
+For å finne sammenhengen mellom tidsforskjellen på lyd og lys og avstanden fra lynet til meg finner jeg hastighetene til lyd og lys i luft på internett \url{https://no.wikipedia.org/wiki/Lydens_hastighet} \url{https://en.wikipedia.org/wiki/Speed_of_light}. Deretter setter jeg opp sammenhengen mellom avstand fra lynet til meg og tiden de to bølgene bruker til meg. Til slutt setter jeg opp hva tiden vi kan telle er, putter inn tidene som bølgene bruker og regner ut. \\
+Da finner vi at det er $340$ meter mellom oss og der lynet slår ned, per sekund vi teller.
+			\end{flushleft}
+			\begin{gather*}
+c_{\text{luft}} = \frac{299792458}{1.0003} = 299702547 \text{m} / \text{s} \\
+k = 340 \text{m} / \text{s} \\
+x = c_{\text{luft}} \cdot t_1 \Rightarrow t_1 = \frac{x}{c_{\text{luft}}} \\
+x = k \cdot t_2 \Rightarrow t_2 = \frac{x}{k} \\
+t = t_2 - t_1 = \frac{x}{k} - \frac{x}{c_{\text{luft}}} = x \frac{(c_{\text{luft}} - k)}{c_{\text{luft}}k} \\
+x = \frac{tc_{\text{luft}}k}{(c_{\text{luft}} - k)} = \frac{c_{\text{luft}}k}{(c_{\text{luft}} - k)} \cdot t = 340 \cdot t \\
+x(t) = 340t
+			\end{gather*}
+
+
+
+
+
+
+
+
+		\paragraph{6.11}
+			\subparagraph{a)}
+				\begin{flushleft}
+Du kan ikke bestemme hvor bølgen kommer fra fordi målingen din bare er av bevegelse i en dimensjon, altså opp og ned, mens hvor bølgen kommer fra er bevegelse i to andre retninger som står $90^{\circ}$ på det vi måler. Det betyr at vi vil få akkurat samme resultat uansett hvilken retning bølgen kommer fra.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{flushleft}
+Bølgelengde kan bestemmes hvis vi vet hastigheten til bølgen. Vi kan derimot ikke regne ut hastigheten uten å vite noe om bølgelengden så derfor er det ikke mulig så, vidt jeg vet, å finne bølgelengde uten hastighet. Eneste muligheten måtte vært hvis det finnes en måte å uttrykke akselrasjonen til et punkt på bølgen vet hjelp av $g$, noe som vil fungere akkuratt for den spesifikke situasjonen når vi har vanbølger på jorda.
+				\end{flushleft}
+			
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+Ved hjelp av Fouriertransformasjon kan vi finne om det er flere bølger med forskjellige frekvenser som er bakgrunn til utslagene.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+		\paragraph{7.1}
+			\begin{flushleft}
+Lyden som blir reflektert når signalet vi sender ut går fra vev til vann vil være likt som signalet vi sendte ut. Lyden som blir reflektert når signalet vårt møter forteret vil få motsatt fortegn og vi kan derfor tydelig se forskjell på de to signalene. Dette kommer av at den akustiske impedansen minker når vi går fra vev til vann, men øker når vi går fra vann til vev.
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+		\paragraph{7.9}
+			\begin{flushleft}
+Når lyd går fra luft til vann vil ingen av disse egenskapene holdes konstant. Både lydhastigheten, bølgelengden, frekvensen og amplituden til lydbølgen vil endre seg. Dette er min gjettning utfra erfaring og likningen
+$$\lambda = \frac{c}{f}$$
+Jeg vet, og det er enkelt å finne ved et søk på nettet, at lydens hastighet er avhengig av hvilket medie lyden beveger seg i. Av dette ser vi at minst en av størelsene i likningen over også må endre seg, og siden jeg aldri kan se for meg at frekvensen blir høyere når lyd går fra luft til vann, dette strider i hvert fall mot egne erfaringer, vil bølgelengden også endre seg. I tillegg tror jeg av erfaring at lydens styrke og derfor også amplitude blir lavere og dermed endrer seg når lyd går over til vann.
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+		\paragraph{7.13}
+			\begin{flushleft}
+Ja, dette er mulig å si fordi desibel skalaen er logaritmisk i forhold til intensiteten til lydbølgen.
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+		\paragraph{6.15}
+			\begin{flushleft}
+Dette kan være en planbølge fordi bølgevektoren $\vec{k}$ alltid peker i samme retning som bølgen brer seg i, i et punkt. Det vil være en planbølge hvis $\vec{k}$ har samme retning uansett hvilket punkt vi befinner oss i, men hvis den ikke har lik retning ansett hva $\vec{r}$ er vil dette ikke være en planbølge.
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+		\paragraph{6.19}
+			\begin{gather*}
+\lambda = \frac{v}{f} \Rightarrow f = \frac{v}{\lambda} \\
+v = 1500 \text{m/s} \\
+\lambda \leq 1 \text{mm} \\
+f = \frac{1500}{0.001} = 1 500 000 = 1.5 \cdot 10^{6} \text{Hz} = 1.5 \text{MHz}
+			\end{gather*}
+			\begin{flushleft}
+Frekvensen på ultralydsignalet må være høyere enn $1.5$MHz. \\
+I forhold til at ultrafiolett lys vanligvis har en frekvens på $1$PHz eller $1 \cdot 10^{15}$Hz, altså mer enn dobbelt så høy som for ultralyd, så passer ikke dette veldig bra, men ultralyd er en betegnelse på alle lyder med frekvens over det mennesket kan høre, og det er definitivt riktig for $1.5$MHz. I tillegg passer det også fint med at ultralyd er lyd over det vi kan høre og ultrafiolett lys er lys med høyere frekvens enn det vi kan se, selv om det finnes lys med høyere frekvens enn ultrafiolett da.
+			\end{flushleft}
+
+
+
+
+
+
+
+		\paragraph{6.22}
+			\subparagraph{a)}
+				\begin{flushleft}
+For å finne hastigheten setter jeg opp likningen, gitt i læreboka, for hastigheten til transversale bølger. Denne formelen sier at hastigheten er gitt ved kvadratroten til kraften på strengen delt på massetettheten til strengen. Denne kraften er tilnærmet lik kraften fra loddet på strengen.
+				\end{flushleft}
+				\begin{gather*}
+v = \sqrt{\frac{S}{\mu}} \approx \sqrt{\frac{Mg}{\frac{m}{L}}} = \sqrt{\frac{3\text{kg} \cdot 9.81\text{m/s$^2$}}{\frac{3 \cdot10^{-3}\text{kg}}{2\text{m}}}} = 140 \text{m/s}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{flushleft}
+Nei, hastigheten endrer seg ikke hvis mer av strengen befinner seg oppe på bordet. Det kommer av at hastigheten bare er avhengig av kraften på strengen og massetettheten. Massetettheten vil være den samme så lenge hele strengen er like lang, men kraften på strengen vil bli større dersom mer av strengen er utenfor bordet. Dette er derimot en såpass liten forskjell siden strengen er mye, mye lettere enn logget, at det i praksis ikke vil være noen forskjell.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+Dersom frekvensen er gitt ved $f = \frac{v}{\lambda}$ og hastigheten til en bølge er gitt ved $\sqrt{\frac{MgL}{m}}$ så får vi
+				\end{flushleft}
+				\begin{gather*}
+f = \frac{\sqrt{\frac{MgL}{m}}}{\lambda} = \frac{\sqrt{MgL}}{\lambda \sqrt{m}} = \frac{\sqrt{MgL}}{2 l \sqrt{m}} \\
+l = \sqrt{\frac{M g L}{4 f^2 m}} = \sqrt{\frac{3\text{kg} \cdot 9.81\text{m/s$^2$} 2\text{m}}{4 \cdot 280^2\text{Hz$^2$} \cdot 0.003\text{kg}}} = 0.25\text{m} \\
+\text{Når vi antar at lengden til den horrisontale delen av strengen er en halv bølgelengde.}
+				\end{gather*}
+
+
+
+
+
+
+
+
+			\subparagraph{d)}
+				\begin{gather*}
+l = \sqrt{\frac{MgL}{4f^2m}} \Rightarrow M = \frac{4 l^2 f^2 m}{g L} = \frac{4 \cdot 0.25^2\text{m$^2$} \cdot 4 \cdot 280^2\text{Hz$^2$} \cdot 0.003 \text{kg}}{9.81\text{kg} \cdot 2\text{m}} = 11.99\text{kg} \approx 12\text{kg}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+		\paragraph{7.18}
+			\begin{gather*}
+\text{Antar her også at bølgelengden er dobbel så lang som den strengen som er i bruk} \\
+f_1 = \frac{v}{\lambda_1} = \frac{v}{2 l_1} \Rightarrow v = 2f_1l_1 \\
+f_2 = \frac{v}{2 l_2} = \frac{2 f_1 l_1}{2 l_2} = \frac{f_1 l_1}{l_2} \\
+l_2 = \frac{f_1 l_1}{f_2} = \frac{\cdot 196.1\text{Hz} \cdot 0.65\text{m}}{261.7\text{Hz}} = 0.487\text{m} \\
+\text{Altså må det femte båndet være plassert $65\text{cm} - 48.7\text{cm} = 16.3\text{cm}$ unna gitarhodet.}
+			\end{gather*}
+
+
+
+
+
+
+
+
+
+
+		\paragraph{7.19}
+			\begin{flushleft}
+For at tonen på G-strengen( hvis det er lov å si {\tt;)} ) skal bli en halv tone høyere må vi trykke på den i det første båndet. Da øker frekvensen med $1.0595$. Bruker samme antagelse om bølgelengde som tidligere.
+			\end{flushleft}
+			\begin{gather*}
+f_0 = \frac{v}{2l} \\
+f_1 = \frac{v}{2l} \cdot 1.0595 \\
+f_n = \frac{v}{2l} \cdot 1.0595^n \\
+l_1 = \frac{v}{2f_1} = \frac{v}{2 \left( \frac{v}{2l} \cdot 1.0595 \right)} = \frac{2 f_0 l}{2 \left( \frac{2 f_0 l}{2l} \cdot 1.0595 \right)} = \frac{f_0l}{f_0 \cdot 1.0595} \\
+l_n = \frac{f_0 l}{f_0 \cdot 1.0595^n} \\
+l_1 = \frac{196.1\text{Hz} \cdot 0.65\text{m}}{196.1\text{Hz} \cdot 1.0595\text{Hz}} = 0.6138\text{m} \\
+\text{Så posisjonen til bånd $1$ er $0.0362\text{m}$, eller $36.2\text{mm}$, unna gitarhodet.} \\
+l_6 = \frac{f_0 l}{f_0 + 6 \cdot 1.0595} = \frac{196.1\text{Hz} \cdot 0.65\text{m}}{196.1\text{Hz} + 6 \cdot 1.0595\text{Hz}} = 0.4608\text{m} \\
+\text{Altså er posisjonen til bånd $6$ $18.92\text{cm}$ unna gitarthodet.} \\
+l_{n + 1} - l_{n} = \frac{f_0 l}{f_0 \cdot 1.0595^n} - \frac{f_0 l}{f_0 \cdot 1.0595^{n + 1}} = \frac{1.0595 f_0 l - f_0 l}{f_0 \cdot 1.0595^{n + 1}} \\
+l_{n + 1} - l_n = \frac{0.0595}{1.0595} \frac{f_0 l}{f_0 \cdot 1.0595^n} = 0.561 l_n
+			\end{gather*}
+		\paragraph{7.20}
+			\begin{flushleft}
+For å få en nøyaktighet på $3$ desimaler med en fouriertransformasjon er du nødt til å ha tusen punkter per frekvens. Siden vi skal analysere over ett gap på ca. $4200$ frekvenser er vi nødt til å ha $4 200 000$ punkter. tiden vi må analysere over er gitt ved antall punkter over samplingsfrekvensen, som må være minst dobbelt så stor som den høyeste frekvensen vi skal få med. Da får vi at tiden blir:
+$$t = \frac{N}{f_s} = \frac{N}{2f_{\text{maks}}} = \frac{4 200 000}{2 \cdot 4 200\text{Hz}} = 500\text{s} \approx 8.3\text{min}$$
+Dette er en veldig stor datamengde og vil for gå ganske sakte å analysere over. Derfor ville jeg no ikke sagt det var en veldig smart måte å bestemme frekvensen på, men det er mulig. \\
+Det er mer realistisk å oppgi de høyere frekvensene med $5$ siffers nøyaktighet enn de lavere, pga at det er like mange punkter mellom hver frekvens høyt oppe som lavt nede på skalaen.
+			\end{flushleft}
+
+
+
+
+
+
+
+		\paragraph{7.26}
+			\begin{gather*}
+f_o = \frac{1}{1 - \frac{v_k}{v}}f_k \\
+\text{Siden lydhastigheten i luft er ca. $340\text{m/s}$ får vi} \\
+f_{o,1} = \frac{1}{1 - \frac{13.89\text{m/s}}{340\text{m/s}}} \cdot 600\text{Hz} = 626\text{Hz} \\
+f_{o,2} = \frac{1}{1 + \frac{13.89\text{m/s}}{340\text{m/s}}} \cdot 600\text{Hz} = 576\text{Hz}
+			\end{gather*}
+\end{document}

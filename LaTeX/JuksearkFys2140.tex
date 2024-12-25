@@ -1,0 +1,189 @@
+\documentclass[8pt, A4paper, norsk]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{textcomp}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage[margin=11pt]{geometry}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/Fys2140/Python programmer"}
+\graphicspath{{C:/Users/Torstein/Documents/UiO/Fys2140/"Python programmer"/}}
+\hypersetup{colorlinks, urlcolor=url}
+
+
+
+\begin{document}
+	\begin{center}
+\Large \textbf{Jukseark}
+	\end{center}
+	\begin{multicols*}{3}
+		\begin{gather*}
+\text{\textbf{Sfæriske koordinater:}} \\
+x = r \sin(\theta) \cos(\phi) \\
+y = r \sin(\theta) \sin(\phi) \\
+z = r \cos(\theta) \\
+\int A dV = \int_{0}^{2 \pi} \int_{0}^{\pi} \int_{0}^{\infty} A r^2 \sin(\theta) dr d\theta d\phi \\
+\nabla = \frac{1}{r^2} \frac{\partial}{\partial r} r^2 + \frac{1}{r \sin \theta} \frac{\partial}{\partial \phi} + \frac{1}{r \sin \theta} \frac{\partial}{\partial \theta} \sin \theta
+		\end{gather*}
+
+		\begin{gather*}
+\text{\textbf{TUSL i en dimensjon:}} \\
+\hat{H} \psi = E_n \psi \\
+- \frac{\hbar^2}{2m} \frac{\partial^2}{\partial x^2} \psi + V \psi = E_n \psi
+		\end{gather*}
+
+		\begin{gather*}
+\text{\textbf{TASL i en dimensjon:}} \\
+i \hbar \frac{\partial}{\partial t} \Psi = \hat{H} \Psi \\
+i \hbar \frac{\partial}{\partial t} \Psi = - \frac{\hbar^2}{2m} \frac{\partial^2}{\partial x^2} \psi + V \psi \\
+T(t) = e^{- \frac{E_n}{\hbar}t}
+		\end{gather*}
+
+		\begin{gather*}
+\text{\textbf{Harmonisk ocillator:}} \\
+\text{Potensial} \\
+V(x) = \frac{1}{2} m \omega^2 x^2 \\
+\text{Grunntilstand} \\
+\psi_0 = \left( \frac{m \omega}{\pi \hbar} \right)^{\frac{1}{4}} e^{- \frac{m \omega}{2 \hbar} x^2} \\
+\text{Stigeoperator} \\
+\hat{a}_{\pm} = \frac{1}{\sqrt{2 \hbar m \omega}} (\mp i \hat{p} + m \omega \hat{x}) \\
+\text{Energitilstander} \\
+E_n = \hbar \omega \left( n + \frac{1}{2} \right) \text{ for $n = 0, 1, 2, \dots$}
+		\end{gather*}
+
+		\begin{gather*}
+\text{\textbf{Hydrogenatomet:}} \\
+\text{Potensial} \\
+V(r) = - \frac{e^2}{4 \pi \epsilon_0 r} \\
+\text{Energitilstander} \\
+E_n = - \left[ \frac{m}{2 \hbar^2} \left( \frac{e^2}{4 \pi \epsilon_0} \right)^2 \right] \frac{1}{n^2} \\
+E_n = \frac{E_1}{n^2} = - 13.6 \text{eV} \frac{1}{n^2} \text{ for $n = 1, 2, 3, \dots$} \\
+\text{Degenerasjonsgraden uten spinn} \\
+d = n^2
+		\end{gather*}
+
+		\begin{gather*}
+\text{\textbf{Fouriers triks}} \\
+c_n = \int_{- \infty}^{\infty} \psi_n^{*} \psi dx
+		\end{gather*}
+
+		\begin{gather*}
+\text{$\boldsymbol{3}$\textbf{D}} \\
+\hat{H}_0 = - \frac{\hbar^2}{2m} \nabla^2 + V(x) \\
+\hat{L}^2 = - \hbar^2 \left( \frac{1}{\sin\theta} \frac{\partial}{\partial \theta} \sin \theta \frac{\partial}{\partial \theta} + \frac{1}{\sin^2 \theta} \frac{\partial^2}{\partial \phi^2} \right) \\
+= \hbar^2 l(l + 1) \\
+\hat{L}_x = i \hbar \left( \sin(\phi) \frac{\partial}{\partial \theta} + \cos(\phi) \cot(\theta) \frac{\partial}{\partial \phi} \right) \\
+\hat{L}_y = i \hbar \left( - \sin(\phi) \frac{\partial}{\partial \theta} + \sin(\phi) \cot(\theta) \frac{\partial}{\partial \phi} \right) \\
+\hat{L}_z = - i \hbar \frac{\partial}{\partial \phi} = \hbar m
+		\end{gather*}
+
+		\begin{gather*}
+\text{\textbf{Normal Zeeman-effekt}} \\
+\hat{H} = \hat{H}_0 + \frac{e B_z}{2 m_e} \hat{\vec{L}}_z \\
+E_{nm} = - \frac{E_0}{n^2} + \frac{e B}{2 m_e} m \hbar \text{ der} E_0 = 13.6 \text{eV}
+		\end{gather*}
+
+		\begin{gather*}
+\text{\textbf{Formler:}} \\
+\mu = \frac{m_1 m_2}{m_1 + m_2} \\
+E = h \nu = \frac{h c}{\lambda} = \hbar \omega \\
+p = \frac{E}{c} = \frac{h \nu}{c} = \frac{h}{\lambda} = \hbar k \\
+\Delta \lambda = \lambda_C (1 - cos \theta) \\
+2d \sin \theta = m \lambda (\text{Braggs lov}) \\
+\lambda_C = \frac{h}{m_e c} = 2.43 \cdot 10^{-3} \text{nm} (\text{Comptons formel}) \\
+\sigma_a = \sqrt{\langle a^2 \rangle - \langle a \rangle^2} \\
+\sigma_p \sigma_x \geq \frac{\hbar}{2} \\
+v_g = \frac{d \omega}{dk} \\
+\hat{p} = - i \hbar \frac{\partial}{\partial x}
+		\end{gather*}
+
+\centering \textbf{Franck-Hertz} \\
+Her sendes elektroner gjennom en gass av kvikksølvatomer ved hjelp av en påsatt spenning $V_{KG}$ mellom katoden og gitteret. Elektronene bremses så ned av en motspenning $V_{GA}$ mellom gitteret og anoden, $|V_{GA}| < V_{KG}$. Hvis elektronene ikke taper noe energi på veien, vil de komme fram til anoden med en kinetisk energi $K = e(V_{KG} - |V_{GA}|)$. Hvis noen derimot kolliderer med kvikksølvatomer, vil de miste litt av sin kinetiske energi; er dette energitapet stort nok når de ikke frem til katoden. Mengden elektroner som når frem måles ved å måle strømmen som går gjennom kretsen. I klassisk fysikk forventer man at økt total spenningsforskjell mellom katode og anode gir at fler og fler elektroner når anoden, og man burde få en monotont økende strøm som funksjon av spenningen. Dette var ikke tilfelle eksperimentelt. Strømmen som funksjon av potensialet var generelt svakt økende, men viste lokale topper med påfølgende plutselige fall ved heltalls multipler av en spenning på ca. $4.9 \text{V}$. 
+Det som skjer i Franck-Hertz eksperimentet er at ved bestemte spenninger, og dermed kinetiske energier for elektronene, har elektronene en energi som svarer akkurat til energiforskjellen mellom grunntilstanden og den første eksiterte tilstanden i kvikksølvatomet. Når et elektron overfører sin kinetiske energi til kvikksølvatomet slik at dette blir eksitert, bremses det ned og kan ikke nå anoden. Økes spenningen videre, øker strømmen igjen til elektronene har en kinetisk energi på $K = 2 \cdot 4.9 \text{eV}$, hvor det samme skjer igjen bare med to kvikksølvatomer.
+Franck-Hertz eksperimentet demonstrerte at Bohrs stasjonære tilstander, det vil si tilstander med kvantisert energi, virkelig eksisterte i atomer og at man kunne få overganger mellom slike tilstander. Eksperimentet registrerte også stråling fra kvikksølvatomene. \\
+
+\vspace{2mm}
+
+\centering \textbf{Fotoelektrisk effekt} \\
+Essensen i denne effekten er at lys sendes inn mot en metallplate, og elektroner blir emittert fra platen som en følge av dette. Kretsen er satt opp slik at elektronene som frigjøres fra metallpaten (fotokatoden), trekkes mot anoden, slik at det går strøm. Snur en retningen på spenningen, bremser man ned elektronene som beveger seg mot anoden; med sterk nok motspenning kan man da hindre elektronene i å nå anoden. \\
+Resultatet av målingene i et tenkt forsøk viser en skisse av fotostrøm som funksjon av spenning ved to ulike lysintensiteter, men med samme frekvens på lyset. Vi ser at fotostrømmen går til null ved en gitt negativ spenning $-V_0$ som er uavhengig av intensiteten. Dette må bety at det finnes en øvre grense $K_{\text{maks}}$ for den kinetiske energien til elektronene som slås løs fra metallplaten; når $eV_0 = K_{\text{maks}}$, er motspenningen så sterk at selv disse mest energirike elektronene bremses ned før de når anoden. Den maksimale kinetiske energien $K_{maks}$ til de utsendte elektronene er altså uavhengig av intensiteten til strålingen. Videre ser vi at det er en minste frekvens $\nu_0$ den innkommende elektromagnetiske strålingen må ha for at elektroner skal bli sendt ut i det hele tatt, samt at elektronenes maksimale kinetiske energi øker lineært med lysets frekvens.
+
+\vspace{2mm}
+
+\centering \textbf{Compton spredning} \\
+A.H. Compton sendte inn høyenergetiske fotoner (röntgenstråler) mot en grafittplate og observerte at bølgelengden til den spredte (utgående) strålingen var større enn bølgelengden til den innkommende. Siden energien er knyttet til bølgelengden via $E = \frac{hc}{\lambda} = h \nu$, betyr en forandring i bølgelengde en energiforandring. Det er i prinsippet samme oppsett på dette forsøket som for röntgenstråling, men etter at de høyenergetiske fotonene har truffet målet, så bestemmes bølgelengden ved hjelp av et såkalt Bragg-krystallspektrometer. Dette utnytter den klassiske effekten Braggdiffraksjon, hvor et krystall med kjent avstand $d$ mellom atomlagene gir konstruktiv interferens for elektromagnetisk stråling med bølgelengde $\lambda$ når $n \lambda = 2d sin \phi$, hvor $\phi$ er refleksjonsvinkelen og $n = 1, 2, 3, \dots$. Vi skal ikke vise denne formelen her, men den kan enkelt finnes ved å se på forskjellen i veilengde for stråler som treffer forskjellige lag i krystallen. Ved å se på endringen i intensitet som funksjon av vinkelen kan
+bølgelengden så bestemmes. Vi ser at den utgående strålingen har to topper - en ved den opprinnelige bølgelengden $\lambda_0$, og en annen ved en forskjøvet bølgelengde $\lambda'$. (Unntaket er $\theta = 0$, der de to toppene sammenfaller). Vi tar først for oss den forskjøvete strålingen, og utsetter forklaringen av den første toppen til slutten av avsnittet. Bølgelengdeendringen
+$\Delta \lambda = \lambda' - \lambda_0$ viste seg å variere som en funksjon av spredningsvinkelen $\theta$, uavhengig av hvilket materiale man brukte i forsøket. Som vi skal se, kan prosessen beskrives som spredning av fotoner mot (tilnærmet) frie elektroner - den ligner altså på fotoelektrisk effekt - men strålingen som brukes i Comptoneksperimentet har mye større energi enn i fotoelektrisk effekt, slik at elektronenes bindingsenergi (arbeidsfunksjonen) blir neglisjerbar her. Igjen hadde en her et eksperimentelt resultat som ikke kunne forklares fra klassisk teori. Klassisk ville en ikke forventet noen endring av bølgelengden ved spredning av elektromagnetisk stråling mot et elektron. Løsningen er igjen å ta hensyn til lysets partikkelegenskaper. Vi har allerede lært at fotoner tilordnes en energi $E = h \nu = \frac{hc}{\lambda}$.
+
+\vspace{2mm}
+
+\centering \textbf{Davisson-Germers eksperiment} \\
+De sendte elektroner mot et nikkelkrystall. Den innkommende elektronbølgen spres mot atomene i krystallets gitteroverflate, slik at hvert atom effektivt sett fungerer som en punktkilde som sender ut bølgen igjen. Detektoren vil da registrere et interferensmønster, med konstruktiv interferens for vinkler der
+$d \sin \theta = m \lambda$, der $d$ er avstanden mellom atomene og $m$ er et heltall. Dette tilsvarer at forskjellen i veilengde for de deler av bølgen som treffer forskjellige atomer er et helt antall bølgelengder. Igjen vil interferensmønsteret oppstå selv om elektronene sendes inn ett og ett, dvs. elektronbølgen interfererer med seg selv, akkurat som i forrige avsnitt. Vi har ennå ikke sagt hva elektronenes bølgelengde $\lambda$ egentlig er. \\
+Et lignende eksperiment er Braggdiffraksjon med elektroner. Her brukes elektroner med høyere energi enn i Davisson–Germers forsøk, slik at elektronene trenger lengre inn i krystallen og også spres mot dypereliggende lag av atomer. Legg merke til at elektronene nå sendes inn i en vinkel $\theta$ i forhold til overflaten, og detektoren plasseres i samme vinkel på den andre siden av normalen. Vi ser nå at strålen som spres fra atomlag nummer $2$, går en strekning som er $2d \sin \theta$ lengre enn strålen som spres i overflaten osv. Her har vi altså interferens mellom lagene av atomer i krystallen, og kriteriet for konstruktiv interferens er nå $2d \sin \theta = m \lambda$. Denne ligningen er kjent som Braggs lov. Diffraksjonseksperiment av denne typen kan utføres ikke bare med elektroner, men også med f.eks. nøytroner eller røntgenstråling, og er et viktig verktøy i forskningen på faste stoffer/krystaller.
+
+\vspace{2mm}
+
+\centering \textbf{Stern-Gerlach eksperiment} \\
+Sølvatomer ble sendt gjennom et inhomogent magnetfelt hvor tanken var at kvantiseringen burde gi et bestemt mønster etter at atomene hadde passert feltet. Sølv ble brukt, fordi dette atomet har et løst bundet ytre elektron som oppfører seg (er i en tilstand) som om det er i et slags overvektig hydrogenatom, med kjernen og de $46$ andre elektronene innenfor som har en totalladning på $+e$ og en masse på omlag $47$ ganger hydrogenatomet. Forsøket ble senere gjentatt med ordentlige hydrogenatomer i $1927$, men dette er teknisk mer utfordrende. Som vi så da vi løste Schrödingerligningen for sentralsymmetriske potensial i tre dimensjoner, følger det naturlig av formalismen at angulærmomentet for dette elektronet må være kvantisert, med størrelsen på angulærmomentet $L = |L0 | = *l(l + 1)!$, og størrelsen på komponenten langs $z$-aksen $L_z = m!$, der $l = 0, 1, \dots$, og $m = -l, -l + 1, \dots, l - 1, l$. Det en da kan spørre seg, er om denne kvantiseringen kan observeres direkte i et eksperiment. Ideen i Stern-Gerlach-eksperimentet er at et hydrogenatom (eller sølvatomet) må ha et magnetisk dipolmoment som er direkte relatert til elektronets angulærmoment, og dermed er kvantisert. Siden en magnetisk dipol påvirkes av en kraft i et inhomogent magnetfelt, regnet man derfor med å observere en forskjellig grad av avbøyning, avhengig av verdien på $L_z$, når man sendte atomene gjennom et felt. Eksperimentet oppførte seg ikke som forventet, noe som skyldtes eksistensen av en til da ukjent fysisk størrelse: Elektronets egenspinn. Oppdagelsen av dette kom altså som en uventet bieffekt av eksperimentet. Vi forventet at det skulle dukke opp en strek for grunntilstanden, og tre streker for første eksiterte tilstand, men istedenfor fikk man to streker for grunntilstanden, og seks streker for første eksiterte tilstand.
+
+\vspace{2mm}
+
+\centering \textbf{Plancks kvantiseringshypotese} \\
+Så på stråling fra sorte legemer og så at radiansen, $M(T) = \sigma T^4$, fra plancks konstant og temperatur($K$). Pga den ultrafiolette katastrofen i eksperminetet kom de frem til (Planck) $E_n(\nu) = nh \nu$ hvor $n = 0, 1, 2, \dots$
+
+\vspace{2mm}
+
+\centering \textbf{Röngtenstråling} \\
+Elektroner aksellereres til høy spenning og skytes mot et metall, når de treffer metallet bremses de, og sender ut röngtenstråling (bremsestråling). Fant en maks energi (minste $\lambda$) for strålingen.
+		\begin{align*}
+&\text{\textbf{Konstanter}} \\
+hc =& 1240 \text{eVnm} \\
+\hbar c =& 197.3 \text{eVnm} \\
+E_{\text{e}} =& m_e c^2 = 0.511 \text{MeV}
+		\end{align*}
+		\begin{flushleft}
+\textbf{Variabler:} \\
+$E, E_n$ - Energi \\
+$p$ - Bevegelsesmengde \\
+$N$ - Som regel antall \\
+$c$ - Lysets hastighet \\
+$\sigma$ - Skarphet \\
+$v_g$ - Gruppehastighet \\
+$v_f$ - Fasehastighet
+		\end{flushleft}
+\end{multicols*}
+\end{document}

@@ -1,0 +1,209 @@
+\documentclass[11pt, A4paper,norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/Fys3140/Python programmer"}
+\hypersetup{colorlinks, urlcolor=url}
+
+\author{Torstein Solheim Ølberg}
+\title{Svar på Oblig nr. 2 i Fys3140}
+
+
+
+%\lstinputlisting{Filnavn! type kodefil}
+%\includegraphics[width=12.6cm,height=8cm]{"C:/Users/Torstein/Documents/UiO/Fys3140/Python programmer"/Filnavn! type png}
+
+
+
+\begin{document}
+\maketitle
+	\begin{center}
+\Large \textbf{Oppgaver}
+	\end{center}
+
+
+
+
+
+
+
+
+
+		\paragraph{1.}
+			\subparagraph{a)}
+				\begin{gather}
+\frac{-i + 2z}{2 + iz} = \frac{-i + 2x + 2iy}{2 - y + ix} = \frac{(-i + 2x + 2iy)(2 - y - ix)}{(2 - y + ix)(2 - y - ix)} \\
+\frac{-2i + yi - x + 4x - 2xy - 2ix^{2} + 4iy - 2iy^{2} + 2xy}{4 - 2y - 2ix - 2y + y^2 + ixy + 2ix - ixy + x^2} \\
+\frac{(- x + 4x - 2xy + 2xy) + i(- 2 + y - 2x^2 + 4y + 2y^2)}{4 - 4y + y^2 + x^2} \\
+u(x, y) = \frac{3x}{x^2 + y^2 - 4y + 4} \\
+v(x, y) = \frac{- 2x^2 + 2y^2 + 5y - 2}{x^2 + y^2 - 4y + 4}
+				\end{gather}
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{gather}
+e^{iz} = e^{ix - y} = e^{ix}e^{-y} = e^{-y}\cos(x) + ie^{-y}\sin(x) \\
+u(x,y) = e^{-y}\cos(x) \\
+y(x,y) = e^{-y}\sin(x)
+				\end{gather}
+
+
+
+
+
+
+
+
+
+		\paragraph{2.}
+			\begin{gather}
+\frac{df}{dz} = \lim_{\Delta z \rightarrow 0} \frac{\Delta f}{\Delta z} = \lim_{\Delta z \rightarrow 0} \frac{f(z + \Delta z) - f(z)}{\Delta z} \\
+\frac{d}{dz}\left( f(z)g(z) \right) = \lim_{\Delta z \rightarrow 0} \frac{f(z + \Delta z)g(z + \Delta z) - f(z)g(z)}{\Delta z} \\
+\lim_{\Delta z \rightarrow 0} \frac{f(z + \Delta z)g(z + \Delta z) + f(z)g(z + \Delta z) - f(z)g(z + \Delta z) - f(z)g(z)}{\Delta z} \nonumber \\
+\lim_{\Delta z \rightarrow 0} \frac{f(z)\left( g(z + \Delta z) - g(z) \right) + g(z + \Delta z)\left( f(z + \Delta z) - f(z) \right)}{\Delta z} \\
+\lim_{\Delta z \rightarrow 0} \left( f(z) \frac{\Delta g}{\Delta z} + g(z + \Delta z) \frac{\Delta f}{\Delta z} \right) \\
+f(z) \frac{dg}{dz} + \lim_{\Delta z \rightarrow 0} g(z + \Delta z) \lim_{\Delta z \rightarrow 0} \frac{\Delta f}{\Delta z} = f(z) \frac{dg}{dz} + \lim_{\Delta z \rightarrow 0} g(z + \Delta z) \frac{df}{dz} \\
+\text{Siden $\Delta z$ går mot null blir $g(z + \Delta z) = g(z)$} \nonumber \\
+f(z) \frac{dg}{dz} + g(z) \frac{df}{dz}
+			\end{gather}
+
+
+			
+
+
+
+
+
+
+
+
+\clearpage
+		\paragraph{3.}
+			\begin{flushleft}
+Antar at $f$ er en funksjon som er analytisk i et område, og er deriverbar med tanke på $z$ i dette området. Da er $f$ også partisielt deriverbar i området med tanke på $x$ og $y$. Siden $f(z)$ er analytisk kan den alltids skrives på formen $a + ib$ selv om $a$ og $b$ er funksjoner av $r$ og $\theta$
+			\end{flushleft}
+			\begin{gather}
+f(z) = u(r, \theta) + iv(r, \theta) \\
+\frac{\partial f}{\partial r} = \frac{\partial u}{\partial r} + i \frac{\partial v}{\partial r} \vee \frac{\partial f}{\partial \theta} = \frac{\partial u}{\partial \theta} + i \frac{\partial v}{\partial \theta} \\
+\frac{\partial f}{\partial r} = \frac{df}{dz} \frac{\partial z}{\partial r} = \frac{df}{dz} e^{i \theta} \\
+\frac{df}{dz} = \frac{1}{e^{i \theta}} \frac{\partial f}{\partial r} = \frac{1}{e^{i \theta}} \left(\frac{\partial u}{\partial r} + i\frac{\partial v}{\partial r}\right) \\
+\frac{\partial f}{\partial \theta} = \frac{df}{dz} \frac{\partial z}{\partial \theta} = \frac{df}{dz} ire^{i \theta} \\
+\frac{df}{dz} = \frac{1}{ire^{i \theta}} \frac{\partial f}{\partial \theta} = \frac{1}{ire^{i \theta}} \left(\frac{\partial u}{\partial \theta} + i\frac{\partial v}{\partial \theta}\right) \\
+\text{Setter sammen likningen fra linjene (18) og (20)} \nonumber \\
+\frac{1}{e^{i \theta}} \left(\frac{\partial u}{\partial r} + i\frac{\partial v}{\partial r}\right) = \frac{1}{ire^{i \theta}} \left(\frac{\partial u}{\partial \theta} + i\frac{\partial v}{\partial \theta}\right) \\
+\left(\frac{\partial u}{\partial r} + i\frac{\partial v}{\partial r}\right) = \frac{1}{ir} \left(\frac{\partial u}{\partial \theta} + i\frac{\partial v}{\partial \theta}\right) \\
+\frac{\partial u}{\partial r} = \frac{1}{r} \frac{\partial v}{\partial \theta} \vee \frac{\partial v}{\partial r} = - \frac{1}{r} \frac{\partial u}{\partial \theta}
+			\end{gather}
+
+
+
+
+
+
+
+
+
+
+		\paragraph{4.}
+			\subparagraph{a)}
+				\begin{gather}
+u = \frac{y}{(1 - x)^2 + y^2} \\
+\triangledown^2 u = 0 \\
+\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} = 0 \\
+\frac{\partial}{\partial x}\left( \frac{y}{(1 - x)^2 + y^2} \right) + \frac{\partial}{\partial y} \left( \frac{y}{(1 - x)^2 + y^2} \right) = 0 \\
+\frac{y(-1)2(-1)(1 - x)}{\left( (1 - x)^2 + y^2 \right)^2} + \frac{1}{(1 - x)^2 + y^2} + \frac{y(2y)(-1)}{\left( (1 - x)^2 + y^2 \right)^2} = 0\\
+\frac{2y(1 - x)}{\left( (1 - x)^2 + y^2 \right)^2} + \frac{(1 - x)^2 - y^2}{\left( (1 - x)^2 + y^2 \right)^2} = 0 \\
+\frac{\partial}{\partial x} \left( \frac{2y(1 - x)}{\left( (1 - x)^2 + y^2 \right)^2} \right) + \frac{\partial}{\partial y} \left( \frac{-y^2 + (1 - x)^2}{\left( (1 - x)^2 + y^2 \right)^2} \right) = 0 \\
+\frac{2y(1 - x)2(1 - x)(-1)(-2)}{\left( (1 - x)^2 + y^2 \right)^3} + \frac{-2y}{\left( (1 - x)^2 + y^2 \right)^2} + \frac{-2y}{\left( (1 - x)^2 + y^2 \right)^2} + \frac{\left( (1 - x)^2 - y^2 \right)(-2)2y}{\left( (1 - x)^2 + y^2 \right)^3} = 0 \nonumber \\
+\frac{-2y\left( (1 - x)^2 + y^2 \right) + 2y(1 - x)^2(2)(2) - 2y\left( (1 - x)^2 + y^2 \right) - 4y\left( (1 - x)^2 - y^2 \right)}{\left( (1 - x)^2 + y^2 \right)^3} = 0 \nonumber \\
+\frac{-2y(1 - x^2) -2y^3 - 2y(1 - x^2) - 2y^3 + 8y(1 - x)^2 - 4y(1 - x)^2 + 4y^3}{\left( (1 - x)^2 + y^2 \right)^3} = 0 \nonumber \\
+\frac{- 8y(1 - x)^2 + 8y(1 - x)^2 - 4y^3 + 4y^3}{\left( (1 - x)^2 + y^2 \right)^3} = \frac{0}{\left( (1 - x)^2 + y^2 \right)^3} = 0
+				\end{gather}
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{gather}
+\frac{\partial u}{\partial x} = \frac{\partial v_1}{\partial x} \\
+v_1 = \int \frac{\partial u}{\partial x} dy \\
+v_1 = \int \frac{2y(1 - x)}{\left( (1 - x)^2 + y^2 \right)^2} dy \\
+v_1 = - \frac{(1 - x)}{(1 - x)^2 + y^2} + C(x) \\
+\frac{\partial u}{\partial y} = - \frac{\partial v_2}{\partial x} \\
+v_2 = - \int \frac{\partial u}{\partial y} dx \\
+v_2 = - \int \frac{- y^2 + (1 - x)^2}{\left( (1 - x)^2 + y^2 \right)^2} dx \\
+v_2 = - \frac{(1 - x)}{(1 - x)^2 + y^2} + D(y) \\
+\text{Hvis jeg da velger $C(x) = D(y)$ så blir $v_1 = v_2$ og vi har en} \nonumber \\
+\text{funksjon som er den harmonisk konjugerte til $u(x, y)$} \nonumber \\
+f(x, y) = u(x, y) + iv(x, y) = \frac{y}{(1 - x)^2 + y^2} + i \frac{(x - 1)}{(1 - x)^2 + y^2} \\
+f(x, y) = \frac{-x + iy + 1}{i(1 - x)^2 + iy^2} = \frac{-\bar{z} + 1}{i(z\bar{z} - 2x + 1)}
+\text{Vet ikke helt hvordan jeg skal fortsette for å få vekk $-2x$}
+				\end{gather}
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{gather}
+\triangledown^2 v = 0 \\
+\frac{\partial^2 v}{\partial x^2} + \frac{\partial^2 v}{\partial y^2} = 0 \\
+\frac{\partial}{\partial x} \left( \frac{\left( (1 - x)^2 + y^2 \right)}{\left( (1 - x)^2 + y^2 \right)^2} + \frac{(1 - x)^2 2(-1)}{\left( (1 - x)^2 + y^2 \right)^2} \right) + \frac{\partial}{\partial y} \left( \frac{-2y(x - 1)}{\left( (1 - x)^2 + y^2 \right)^2} \right) = 0 \nonumber \\
+\frac{\partial}{\partial x} \left( \frac{y^2 - (1 - x)^2}{\left( (1 - x)^2 + y^2 \right)^2} \right) + \frac{\partial}{\partial y} \left( \frac{-2y(x - 1)}{\left( (1 - x)^2 + y^2 \right)^2} \right) = 0 \\
+\frac{-2(1 - x)(-1)}{\left( (1 - x)^2 + y^2 \right)^2} + \frac{\left( - (1 - x)^2 + y^2 \right)(-2)(1 - x)2(-1)}{\left( (1 - x)^2 + y^2 \right)^3} \nonumber \\
+ + \frac{2(1 - x)}{\left( (1 - x)^2 + y^2 \right)^2} + \frac{-2y(x - 1)(-2)2y}{\left( (1 - x)^2 + y^2 \right)^3} = 0 \\
+\frac{2(1 - x)\left( (1 - x)^2 + y^2 \right) + \left( - (1 - x)^2 + y^2 \right)4(1 - x) + 2(1 - x)\left( (1 - x)^2 + y^2 \right) + 8y^2(x - 1)}{\left( (1 - x)^2 + y^2 \right)^3} = 0 \nonumber \\
+\frac{4(1 - x)\left( (1 - x)^2 + y^2 \right) + 4(1 - x)\left( - (1 - x)^2 + y^2 \right) + 8y^2(x - 1)}{\left( (1 - x)^2 + y^2 \right)^3} = 0 \nonumber \\
+\frac{4(1 - x)\left( 2y^2 + (1 - x)^2 - (1 - x)^2 \right) + 8y^2(x - 1)}{\left( (1 - x)^2 + y^2 \right)^3} = 0 \\
+\frac{8y^2(1 - x) - 8y^2(1 - x)}{\left( (1 - x)^2 + y^2 \right)^3} = \frac{0}{\left( (1 - x)^2 + y^2 \right)^3} = 0
+				\end{gather}
+\end{document}

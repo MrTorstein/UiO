@@ -1,0 +1,3984 @@
+Initialize engine version: 2017.1.0f3 (472613c02cf7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
+    Vendor:   Intel
+    VRAM:     880 MB
+    Driver:   8.15.10.2712
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Torstein\Documents\UiO\Ast2000\mcast\mlp_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Torstein\Documents\UiO\Ast2000\mcast\mlp_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Torstein\Documents\UiO\Ast2000\mcast\mlp_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Torstein\Documents\UiO\Ast2000\mcast\mlp_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Torstein\Documents\UiO\Ast2000\mcast\mlp_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Torstein\Documents\UiO\Ast2000\mcast\mlp_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Torstein\Documents\UiO\Ast2000\mcast\mlp_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Torstein\Documents\UiO\Ast2000\mcast\mlp_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\Torstein\Documents\UiO\Ast2000\mcast\mlp_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Torstein\Documents\UiO\Ast2000\mcast\mlp_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Torstein\Documents\UiO\Ast2000\mcast\mlp_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Torstein\Documents\UiO\Ast2000\mcast\mlp_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Torstein\Documents\UiO\Ast2000\mcast\mlp_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading C:\Users\Torstein\Documents\UiO\Ast2000\mcast\mlp_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: C:\Users\Torstein\Documents\UiO\Ast2000\mcast\mlp_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\Torstein\Documents\UiO\Ast2000\mcast\mlp_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.030 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 4.175429 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: e1c -> priority: 1 
+  Thread -> id: 3364 -> priority: 1 
+Serialization depth limit 7 exceeded at 'LemonSpawn::SerializedMCAstObject.Frames'. There may be an object composition cycle in one or more of your serialized classes.
+
+Serialization hierarchy:
+8: LemonSpawn::SerializedMCAstObject.Frames
+7: LemonSpawn::SerializedMCAstObject.Objects
+6: LemonSpawn::SerializedMCAstObject.Objects
+5: LemonSpawn::SerializedMCAstObject.Objects
+4: LemonSpawn::SerializedMCAstObject.Objects
+3: LemonSpawn::SerializedMCAstObject.Objects
+2: LemonSpawn::SerializedMCAstObject.Objects
+1: LemonSpawn::SerializedWorld.Objects
+0: LemonSpawn::World.szWorld
+
+ 
+(Filename:  Line: 76)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.549758 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 767.
+Total: 0.566932 ms (FindLiveObjects: 0.053367 ms CreateObjectMapping: 0.035304 ms MarkObjects: 0.469227 ms  DeleteObjects: 0.008210 ms)
+
+Ignoring setting skybox 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Platform assembly: C:\Users\Torstein\Documents\UiO\Ast2000\mcast\mlp_Data\Managed\System.Xml.dll (this message is harmless)
+Platform assembly: C:\Users\Torstein\Documents\UiO\Ast2000\mcast\mlp_Data\Managed\System.Xml.Linq.dll (this message is harmless)
+Ignoring setting skybox 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Tag: normal is not defined.
+ 
+(Filename:  Line: 1700)
+
+Ignoring setting skybox 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Tag: normal is not defined.
+ 
+(Filename:  Line: 1700)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at LemonSpawn.SSVAppBase.SelectPlanet (LemonSpawn.DisplayPlanet dp, Boolean trigger) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SSVAppBase.SelectPlanetMenu (System.Object o) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.MenuItem.Render (Vector2 pos) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.MenuItem.Render (Vector2 pos) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.MenuItem.Render (Vector2 pos) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.OnGUI () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at LemonSpawn.SSVAppBase.SelectPlanet (LemonSpawn.DisplayPlanet dp, Boolean trigger) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SSVAppBase.SelectPlanetMenu (System.Object o) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.MenuItem.Render (Vector2 pos) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.MenuItem.Render (Vector2 pos) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.MenuItem.Render (Vector2 pos) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.OnGUI () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at LemonSpawn.SSVAppBase.SelectPlanet (LemonSpawn.DisplayPlanet dp, Boolean trigger) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SSVAppBase.SelectPlanetMenu (System.Object o) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.MenuItem.Render (Vector2 pos) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.MenuItem.Render (Vector2 pos) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.MenuItem.Render (Vector2 pos) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.OnGUI () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at LemonSpawn.SSVAppBase.SelectPlanet (LemonSpawn.DisplayPlanet dp, Boolean trigger) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SSVAppBase.SelectPlanetMenu (System.Object o) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.MenuItem.Render (Vector2 pos) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.MenuItem.Render (Vector2 pos) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.MenuItem.Render (Vector2 pos) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.OnGUI () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at LemonSpawn.SSVAppBase.SelectPlanet (LemonSpawn.DisplayPlanet dp, Boolean trigger) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SSVAppBase.SelectPlanetMenu (System.Object o) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.MenuItem.Render (Vector2 pos) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.MenuItem.Render (Vector2 pos) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.MenuItem.Render (Vector2 pos) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.OnGUI () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at LemonSpawn.SSVAppBase.SelectPlanet (LemonSpawn.DisplayPlanet dp, Boolean trigger) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SSVAppBase.SelectPlanetMenu (System.Object o) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.MenuItem.Render (Vector2 pos) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.MenuItem.Render (Vector2 pos) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.MenuItem.Render (Vector2 pos) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.OnGUI () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at LemonSpawn.SSVAppBase.SelectPlanet (LemonSpawn.DisplayPlanet dp, Boolean trigger) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SSVAppBase.SelectPlanetMenu (System.Object o) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.MenuItem.Render (Vector2 pos) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.MenuItem.Render (Vector2 pos) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.MenuItem.Render (Vector2 pos) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.OnGUI () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at LemonSpawn.SSVAppBase.SelectPlanet (LemonSpawn.DisplayPlanet dp, Boolean trigger) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SSVAppBase.SelectPlanetMenu (System.Object o) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.MenuItem.Render (Vector2 pos) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.MenuItem.Render (Vector2 pos) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.MenuItem.Render (Vector2 pos) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.OnGUI () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at LemonSpawn.SSVAppBase.SelectPlanet (LemonSpawn.DisplayPlanet dp, Boolean trigger) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SSVAppBase.SelectPlanetMenu (System.Object o) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.MenuItem.Render (Vector2 pos) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.MenuItem.Render (Vector2 pos) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.MenuItem.Render (Vector2 pos) [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.OnGUI () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
+  at LemonSpawn.SSVAppBase.Update () [0x00000] in <filename unknown>:0 
+  at LemonSpawn.SolarSystemViewverMain.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+

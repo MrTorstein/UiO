@@ -1,0 +1,422 @@
+\documentclass[11pt, A4paper,norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/Mat1120/Python programmer"}
+\hypersetup{colorlinks, urlcolor=url}
+
+\author{Torstein Solheim Ølberg}
+\title{Svar på Oblig nr. 1 i Mat1120}
+
+
+
+%\lstinputlisting{Oblig1_1c.py}
+%\includegraphics[width=12.6cm,height=8cm]{"C:/Users/Torstein/Documents/UiO/Mat1120/Python programmer"/Oblig1_1c.png}
+
+
+
+\begin{document}
+\maketitle
+	\begin{center}
+\Large \textbf{Oppgaver}
+	\end{center}
+
+
+
+
+		\paragraph{1.}
+			\subparagraph{a)}
+				\begin{flushleft}
+Radreduserer matrisa og finner pivotelementene. De kolonene i matrise A som tilsvarer kollonene med pivoteelementer i matrise B er basisvektorene for kolonerommet til A. \\
+Brukte programmet i oppg. b for å redusere matrisa.
+				\end{flushleft}
+				\begin{align}
+A = \left[
+\begin{tabular} { ccccc }
+$1$ & $2$ & $-1$ & $3$ & $0$ \\
+$2$ & $3$ & $-1$ & $5$ & $4$ \\
+$1$ & $1$ & $0$ & $2$ & $1$ \\
+$4$ & $2$ & $2$ & $6$ & $1$
+\end{tabular}
+\right] \sim B = \left[
+\begin{tabular} { ccccc }
+$1$ & $0$ & $1$ & $1$ & $0$ \\
+$0$ & $1$ & $-1$ & $1$ & $0$ \\
+$0$ & $0$ & $0$ & $0$ & $1$ \\
+$0$ & $0$ & $0$ & $0$ & $0$
+\end{tabular}
+\right] \\
+Basis_{kol} = 
+\left\{
+\left[
+\begin{tabular} { c }
+$1$ \\
+$2$ \\
+$1$ \\
+$4$
+\end{tabular}
+\right]
+,
+\left[
+\begin{tabular} { c }
+$2$ \\
+$3$ \\
+$1$ \\
+$2$
+\end{tabular}
+\right]
+,
+\left[
+\begin{tabular} { c }
+$0$ \\
+$4$ \\
+$1$ \\
+$1$
+\end{tabular}
+\right]
+\right\}
+				\end{align}
+				\begin{flushleft}
+For radrommet har vi at de radene i B som ikke er bare $0$ere vil danne en basis for A 
+				\end{flushleft}
+				\begin{align}
+Basis_{rad} = 
+\left \{
+\left[
+\begin{tabular} { c }
+$1$ \\
+$0$ \\
+$1$ \\
+$1$ \\
+$0$
+\end{tabular}
+\right]
+,
+\left[
+\begin{tabular} { c }
+$0$ \\
+$1$ \\
+$-1$ \\
+$1$ \\
+$0$
+\end{tabular}
+\right]
+,
+\left[
+\begin{tabular} { c }
+$0$ \\
+$0$ \\
+$0$ \\
+$0$ \\
+$1$
+\end{tabular}
+\right]
+\right\}
+				\end{align}
+				\begin{flushleft}
+Ranken til A er dimensjonen til kolonnerommet, altså antall pivotelementer i den radreduserte matrisa B.
+				\end{flushleft}
+				\begin{align}
+rank(A) = 3
+				\end{align}
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{flushleft}
+Bruker funksjonen nullspace i numpy for å finne nullrommet. Dimmensjonen til nullrommet er antall kollonner minus antall kolloner med et pivotelement.
+				\end{flushleft}
+\lstinputlisting{Oblig1_1a.py}
+				\begin{align}
+Basis_{Nul(A)} = 
+\left \{
+\left[
+\begin{tabular} { c }
+$-1$ \\
+$1$ \\
+$1$ \\
+$0$ \\
+$0$
+\end{tabular}
+\right]
+,
+\left[
+\begin{tabular} { c }
+$-1$ \\
+$-1$ \\
+$0$ \\
+$1$ \\
+$0$
+\end{tabular}
+\right]
+\right\} \\
+dim(Nul(A)) = 5 - 3 = 2
+				\end{align}
+
+
+
+
+
+
+
+
+
+
+		\paragraph{2.}
+			\subparagraph{a)}
+				\begin{flushleft}
+Hvis $W = Span \{ \beta \}$ så sier definisjonen fra bok av en basis at hvis $\beta$ er lineært uavhengig så er $\beta$ en basis for $W$. Siden ingen av de funksjonene i $\beta$ kan skrives som en lineærkombinasjon av de andre, så er $\beta$ lineært  uavhengig og $\beta$ er dermed en basis for $W$
+				\end{flushleft}
+				\begin{align}
+x = [0, \frac{\pi}{6}, \frac{\pi}{2}, \pi, 2 \pi]
+\left[
+\begin{tabular} { ccccc }
+$1$ & $0$ & $1$ & $0$ & $1$ \\
+$1$ & $\frac{1}{2}$ & $\frac{\sqrt{3}}{2}$ & $\frac{\sqrt{3}}{2}$ & \frac{1}{2} \\
+$1$ & $1$ & $0$ & $0$ & $-1$ \\
+$1$ & $0$ & $1$ & $0$ & $1$
+\end{tabular}
+\right]
+\sim
+\left[
+\begin{tabular} { cccccc }
+$1$ & $0$ & $1$ & $0$ & $1$ & $0$ \\
+$1$ & $\frac{1}{2}$ & $\frac{\sqrt{3}}{2}$ & $\frac{\sqrt{3}}{2}$ & \frac{1}{2} & $0$ \\
+$1$ & $1$ & $0$ & $0$ & $-1$ & $0$ \\
+$1$ & $0$ & $-1$ & $0$ & $1$ & $0$ \\
+$1$ & $0$ & $1$ & $0$ & $1$ & $0$
+\end{tabular}
+\right]
+				\end{align}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{flushleft}
+For at T skal være en lineæravbildning må den bestå disse testene:
+				\end{flushleft}
+				\begin{align}
+T(f_1) + T(f_2) = T(f_1 + f_2) \\
+T(f_1) + T(f_2) = \left(
+\begin{tabular} { c }
+$f_1(0)$ \\
+$f_1(\frac{\pi}{2})$ \\
+$2 f_1(0) - f_1(\frac{\pi}{2})$
+\end{tabular}
+\right)
++ 
+\left(
+\begin{tabular} { c }
+$f_2(0)$ \\
+$f_2(\frac{\pi}{2})$ \\
+$2 f_2(0) - f_2(\frac{\pi}{2})$
+\end{tabular}
+\right) \nonumber \\
+=
+\left(
+\begin{tabular} { c }
+$f_1(0) + f_2(0)$ \\
+$f_1(\frac{\pi}{2}) + f_2(\frac{\pi}{2})$ \\
+$2 f_1(0) - f_1(\frac{\pi}{2}) + 2 f_2(0) - f_2(\frac{\pi}{2})$
+\end{tabular}
+\right)
+= T(f_1 + f_2) \nonumber \\
+cT(f) = T(cf) \\
+cT(f) = c \left(
+\begin{tabular} { c }
+$f(0)$ \\
+$f(\frac{\pi}{2})$ \\
+$(2 f(0) - f(\frac{\pi}{2}))$
+\end{tabular}
+\right) \\
+\left(
+\begin{tabular} { c }
+$f(0)$ \\
+$f(\frac{\pi}{2})$ \\
+$(2 f(0) - f(\frac{\pi}{2}))$
+\end{tabular}
+\right)
+= 
+\left(
+\begin{tabular} { c }
+$cf(0)$ \\
+$cf(\frac{\pi}{2})$ \\
+$c2 f(0) - f(\frac{\pi}{2})$
+\end{tabular}
+\right)
+= T(cf)
+				\end{align}
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+Ikke besvart
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{d)}
+				\begin{flushleft}
+ikke besvart
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{e)}
+				\begin{flushleft}
+ikke besvart
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{f)}
+				\begin{flushleft}
+ikke besvart
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+		\paragraph{3.}
+			\subparagraph{a)}
+				\begin{align}
+P = \left
+[\begin{tabular} { ccc }
+0.4 & 0.3 & 0.2 \\
+0.5 & 0.5 & 0.2 \\
+0.1 & 0.2 & 0.6
+\end{tabular}
+\right] \nonumber
+				\end{align}
+
+
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{flushleft}
+
+				\end{flushleft}
+				\begin{align}
+P - I = \left[
+\begin{tabular} {ccc}
+-0.6 & 0.3 & 0.2 \\
+0.5 & -0.5 & 0.2 \\
+0.1 & 0.2 & -0.4
+\end{tabular}
+\right] \\
+\text{radreduserer:} \nonumber \\
+\left[
+\begin{tabular} {ccc}
+1 & 0 & -16/15 \\
+0 & 1 & -22/15 \\
+0 & 0 & -0
+\end{tabular}
+\right] \\
+\text{likevektsvektoren blir da:} \nonumber \\
+q = \left[
+\begin{tabular} {c}
+240/585 \\
+330/585 \\
+15/585
+\end{tabular}\right] \\
+lim_{n \rightarrow \infty} v_n = 53000 \cdot q = \left[
+\begin{tabular} {c}
+34051 \\
+29897 \\
+1359
+\end{tabular}\right]
+				\end{align}
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+\lstinputlisting{Oblig1_3c.py}
+\end{document}

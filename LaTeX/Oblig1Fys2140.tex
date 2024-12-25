@@ -1,0 +1,378 @@
+\documentclass[11pt, A4paper,norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/Fys2140/Python programmer"}
+\hypersetup{colorlinks, urlcolor=url}
+
+\author{Torstein Solheim Ølberg}
+\title{Svar på Oblig nr. 1 i Fys2140}
+
+
+
+%\lstinputlisting{Filnavn! type kodefil}
+%\includegraphics[width=12.6cm,height=8cm]{"C:/Users/Torstein/Documents/UiO/Fys2140/Python programmer"/Filnavn! type png}
+
+
+
+\begin{document}
+\maketitle
+	\begin{center}
+\Large \textbf{Oppgaver}
+	\end{center}
+
+
+
+
+
+
+
+
+
+		\paragraph{1.}
+			\subparagraph{a)}
+				\subparagraph{(i)}
+					\begin{gather}
+z = i \\
+z^{*} = -i \\
+|z| = \sqrt{1} = 1 \\
+|z|^{2} = 1^{2} = 1 \\
+zz^{*} = i \cdot -i = -(-1) = 1
+					\end{gather}
+
+
+
+
+
+
+
+
+				\subparagraph{(ii)}
+					\begin{gather}
+z = 3 + 4i \\
+z^{*} = 3 - 4i \\
+|z| = \sqrt{3^{2} + 4^{2}} = \sqrt{25} = 5 \\
+|z|^{2} = 5^{2} = 25 \\
+zz^{*} = (3 + 4i) \cdot (3 - 4i) = 9 - 12i + 12i + 16 = 25
+					\end{gather}
+
+
+
+
+
+
+
+
+
+				\subparagraph{(iii)}
+					\begin{gather}
+z = -3 \\
+z^{*} = -3 \\
+|z| = \sqrt{(-3)^{2}} = 3 \\
+|z|^{2} = 3^{2} = 9 \\
+zz^{*} = -3 \cdot -3 = 9
+					\end{gather}
+
+
+
+
+
+
+
+
+
+
+
+				\subparagraph{(iv)}
+					\begin{gather}
+z = 1 + i \\
+z^{*} = 1 - i \\
+|z| = \sqrt{1^{2} + 1^{2}} = \sqrt{2} \\
+|z|^{2} = \sqrt{2}^{2} = 2 \\
+zz^{*} = (1 + i) \cdot (1 - i) = 1 - i + i + 1 = 2
+					\end{gather}
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\subparagraph{(i)}
+					\begin{gather}
+\frac{3 + 4i}{1 - 2i} = \frac{(3 + 4i)(1 + 2i)}{(1 - 2i)(1 + 2i)} = \frac{3 + 6i + 4i - 8}{1 + 4} = \frac{10i - 5}{5} = 2i - 1
+					\end{gather}
+
+
+
+
+
+
+
+
+				\subparagraph{(ii)}
+					\begin{gather}
+\frac{\sqrt{3} + i}{(1 - i)(\sqrt{3} - i)} = \frac{(\sqrt{3} + i)(1 + i)(\sqrt{3} + i)}{(1 - i)(\sqrt{3} - i)(1 + i)(\sqrt{3} + i)} \\
+\frac{(3 + 2\sqrt{3}i - i)(1 + i)}{(1 + 1)(3 + 1)} = \frac{3 + 2\sqrt{3}i - i + 3i - 2\sqrt{3} + i}{8} \\
+\frac{3 - 2\sqrt{3}}{8} + \frac{3 + 2\sqrt{3}}{8}i
+					\end{gather}
+				
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\subparagraph{(i)}
+					\begin{gather}
+z = 2i \\
+r = \sqrt{2^{2}} = 2 \\
+\theta = \arccos\left(\frac{0}{2}\right) \Rightarrow \theta = \frac{\pi}{2} \vee -\frac{\pi}{2} \\
+\theta = \arcsin\left( \frac{2}{2} \right) = \frac{\pi}{2} \\
+z = 2e^{i\frac{\pi}{2}}
+					\end{gather}
+
+
+
+
+
+
+
+
+				\subparagraph{(ii)}
+					\begin{gather}
+z = -6 + 6\sqrt{3}i \\
+r = \sqrt{(-6)^{2} + (6)^{2}(\sqrt{3})^{2}} = \sqrt{36 + 36 \cdot 3} = 2 \cdot 6 = 12 \\
+\theta = \arccos\left( \frac{-6}{12} \right) = \frac{\pi}{3} \vee -\frac{\pi}{3} \\
+\theta = \arcsin\left( \frac{6\sqrt{3}}{12} \right) = \arcsin\left( \frac{\sqrt{3}}{2} \right) = \frac{\pi}{3} \\
+z = 12e^{i\frac{\pi}{3}}
+					\end{gather}
+
+
+
+
+
+
+
+
+
+				\subparagraph{(iii)}
+					\begin{gather}
+z = -1 \\
+r = 1 \\
+\theta = \pi \\
+z = e^{i\pi}
+					\end{gather}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{d)}
+				\subparagraph{(i)}
+					\begin{gather}
+z_{1}z_{2} = 2e^{-i\pi} \cdot 3e^{i\frac{\pi}{3}} = 6e^{i\left( \frac{\pi}{3} - \pi \right)} = 6e^{-i\frac{2\pi}{3}} \\
+					\end{gather}
+
+
+
+
+
+
+
+
+
+				\subparagraph{(ii)}
+					\begin{gather}
+z_{1}z_{2} = e^{-i\frac{\pi}{5}} \cdot e^{i\frac{\pi}{5}} = e^{i\left( \frac{\pi}{5} - \frac{\pi}{5} \right)} = e^{0} = 1 \\
+					\end{gather}
+				\begin{flushleft}
+Hvis du ganger noe med $e^{i\frac{\pi}{2}} = i$ er det geometrisk det samme som å rotere et komplekst tallet $90$ grader det komplekse planet.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+		\paragraph{2.}
+			\subparagraph{a)}
+				\begin{flushleft}
+Den generelle løsningen av differensiallikningen $$\frac{df(x)}{dx}	= bf(x)$$ hvor $b$ er en konstant, er $$f(x) = ae^{bx}$$ \\
+For å finne den spesifikke løsningen når $f(0) = 1$ og $f'(0) = 3$ setter jeg dette inn i den generelle løsningne og løser for $a$ og $b$
+				\end{flushleft}
+				\begin{gather}
+1 = ae^{b \cdot 0} = ae^{0} = a \\
+3 = be^{b \cdot 0} = be^{0} = b \\
+f(x) = e^{3x}
+				\end{gather}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{gather}
+f(x) = Ae^{\sqrt{a}x} + Be^{-\sqrt{a}x} \\
+f'(x) = \sqrt{a}Ae^{\sqrt{a}x} - \sqrt{a}Be^{-\sqrt{a}x} = \sqrt{a}\left(Ae^{\sqrt{a}x} - Be^{-\sqrt{a}x}\right) \\
+f''(x) = aAe^{\sqrt{a}x} + aBe^{-\sqrt{a}x} = a\left( Ae^{\sqrt{a}x} + Be^{-\sqrt{a}x} \right)
+				\end{gather}
+				\begin{flushleft}
+Hvis $f(x) \rightarrow 0$ når $x \rightarrow \infty$ vet vi at $A$ er $0$. \\
+Om funksjonene $f$ skal gå mot null når $x$ går mot $-\infty$ må $B$ være lik $0$.
+				\end{flushleft}
+				\begin{gather}
+f(x) = Ae^{\sqrt{a}x} + Be^{-\sqrt{a}x} \\
+\text{Vet fra definisjonen av de hyperbolskefunksjonene at} \nonumber \\ \text{$\cosh(x) + \sinh(x) = e^{x}$ og $\cosh(x) - \sinh(x) = e^{-x}$} \nonumber \\
+f(x) = A(\cosh(\sqrt{a}x) + \sinh(\sqrt{a}x)) + B(\cosh(\sqrt{a}x) - \sinh(\sqrt{a}x)) \\
+f(x) = A\cosh(\sqrt{a}x) + A\sinh(\sqrt{a}x) + B\cosh(\sqrt{a}x) - B\sinh(\sqrt{a}x) \\
+f(x) = (A + B)\cosh(\sqrt{a}x) + (A - B)\sinh(\sqrt{a}x)
+				\end{gather}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+Hvis $a$ skal være mindre enn null så blir $\sqrt{a} = \sqrt{|a|}i$, og løsningen fra tidligere blir da med komplekse tall i tillegg til reelle. Da får vi at den generelle løsningne blir
+				\end{flushleft}
+				\begin{gather}
+f(x) = Ae^{i\sqrt{|a|}x} + Be^{-i\sqrt{|a|}x} \\
+A\cos(i\sqrt{|a|}x) + Ai\sin(i\sqrt{|a|}x) + B\cos(i\sqrt{|a|}x) - Bi\sin(i\sqrt{|a|}x) \\
+f(x) = (A + B)\cos(i\sqrt{|a|}x) + (A - B)i\sin(i\sqrt{|a|}x)
+				\end{gather}
+
+
+
+
+
+
+
+
+
+
+		\paragraph{3.}
+			\subparagraph{a)}
+				\subparagraph{(i)}
+					\begin{gather}
+\int_{-\infty}^{\infty} e^{-x^{2} - 4x - 1} dx \\
+\int_{-\infty}^{\infty} e^{-(ax^{2} + 2bx + c)} dx = \sqrt{\frac{\pi}{a}} e^{\frac{b^{2} - ac}{a}} \\
+a = 1, b = 2, c = 1 \\
+\int_{-\infty}^{\infty} e^{-x^{2} - 4x - 1} dx = \sqrt{\pi} e^{\frac{4 - 1}{1}} = \sqrt{\pi} e^{3}
+					\end{gather}
+
+
+
+
+
+
+
+
+
+				\subparagraph{(ii)}
+					\begin{gather}
+\int_{0}^{\infty} xe^{-2x^{2}} dx \\
+\int_{0}^{\infty} x^{k} e^{-\lambda x^{2}} = \frac{1}{2} \lambda^{-\frac{k + 1}{2}} \Gamma \left(\frac{k + 1}{2}\right) \\
+k = 1, \lambda = 2 \\
+\int_{0}^{\infty} x e^{-2 x^{2}} = \frac{1}{2} 2^{-\frac{1 + 1}{2}} \Gamma \left(\frac{1 + 1}{2}\right) = \frac{1}{2} 2^{-1} \Gamma (1) = \frac{\Gamma (1)}{4} = \frac{1}{4}
+					\end{gather}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{gather}
+\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{-2\sqrt{x^{2} + y^{2} + z^{2}}}dxdydz \\
+x = \rho\sin(\phi\cos(\theta)), y = \rho\sin(\phi\sin(\theta)), z = \rho\cos(\phi), x^{2} + y^{2} + z^{2} = \rho^{2} \\
+\int_{0}^{2\pi} \int_{0}^{\pi} \int_{0}^{\infty} e^{-2\sqrt{\rho^{2}}} \rho^{2} \sin(\phi) d\rho d\theta d\phi \\
+\int_{0}^{2\pi} \int_{0}^{\pi} \sin(\phi)  \int_{0}^{\infty} e^{-2\rho} \rho^{2} d\rho d\theta d\phi \\
+\int_{0}^{2\pi} \int_{0}^{\pi} \frac{2!}{2^{3}} \sin(\phi) d\theta d\phi = \frac{1}{4} \int_{0}^{2\pi} [-\cos(\phi)]_{0}^{\pi} d\theta \\
+\frac{1}{4} \left[ \theta \right]_{0}^{2\pi} [-\cos(\phi)]_{0}^{\pi} = \frac{1}{4} 2\pi (1 + 1) = \frac{4 \pi}{4} = \pi
+				\end{gather}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{gather}
+\frac{1}{\sqrt{2\pi\hbar}} \int_{-\infty}^{\infty} \frac{\sqrt{ma}}{\hbar}e^{\frac{-ma|x|}{\hbar^{2}}}e^{\frac{-ipx}{\hbar}}dx \\
+g(p) = \int_{-\infty}^{\infty} e^{ipx}f(x)dx \\
+f(x) = e^{-Bx}e^{iLx} \\
+g(p) = \frac{i}{L + p + iB} \\
+\frac{i}{L + p + iB} = \int_{-\infty}^{\infty} e^{ipx} e^{-Bx}e^{iLx} dx \\
+\frac{1}{\sqrt{2\pi\hbar}} \int_{-\infty}^{\infty} \frac{\sqrt{ma}}{\hbar}e^{\frac{-p_{0}|x|}{\hbar}}e^{\frac{-ipx}{\hbar}}dx \\
+\frac{i}{L + p + iB} = \int_{-\infty}^{\infty} e^{-B|x|} e^{i(p + L)x} dx \\
+\frac{i}{L + p + i\frac{p_{0}}{\hbar}}
+				\end{gather}
+				\begin{flushleft}
+Tror ikke jeg helt skjønner hvordan Fourier Transformasjoner fungerer, klarer i hvertfall ikke å finne en i Rottmann som hjelper meg til å omforme integralet slik at det er mulig å utføre.
+				\end{flushleft}
+\end{document}

@@ -1,0 +1,108 @@
+Høst 2017
+	Kranførerkurs 16.08
+		Antall besøkende:
+			19:00 - 93
+			20:00 - 94
+			21:00 - 138
+			22:00 - 175
+			23:00 - 180
+			00:00 - 150
+			01:00 - 83
+			01:30 - 25
+			01:53 - tomt
+
+
+Høst 2016
+	Forkursgrilling 12.08
+		Antall besøkende:
+			16.30 puben åpner
+			17.00 - 39 gjester i kjelleren og 3 arbeidende
+			18.00 - 43 gjester i kjelleren og 4 arbeidende
+			19.00 - 48 gjester i kjelleren og 4 arbeidende
+			20.00 - 34 gjester i kjelleren og 4 arbeidende
+			21.00 - 42 gjester i kjelleren og 4 arbeidende
+			21.29 - dørene er låst og resten av kvelden er Mandag.
+	
+	Fadderaften 15.08
+		Antall besøkende:
+			18:00 - 0
+			19:00 - 2
+			20:00 - 126
+			21:00 - 180 i kjeller og lang kø
+			22:00 - 180 i kjeller og fortsatt lang kø
+			23:00 - 150
+			00:00 - 80
+			01:00 - 40
+			01:30 - 25
+			01:54 - tomt
+
+	Kranførerkurs 16.08
+		Antall besøkende:
+			19:00 - 25
+			20:00 - 77
+			21:00 - 168
+			22:00 - 180 + en del i kø + hånballgjester
+			23:00 - 200 + håndballgjester
+			00:00 - 110
+			01:00 - 69
+			01:30 - 41
+			01:49 - tomt
+
+	Kranførerkurs 17.08
+		Antall besøkende:
+			18.04 - 20 gjester
+			19.00 - 47 gjester
+			20.00 - 41 gjester
+			21.08 - 180 gjester (fullt)
+			22.05 - 155 gjester (Det var nok bortimot 15 til i resten av bygget, pluss lang kø)
+			23.00 - 185 gjester
+			00.00 - 174 gjester +/- std.dev.
+			01.00 - 60-70-ish gjester
+			01.30 - 51 gjester
+			
+	Semesterstart 19.08
+		Antall besøkende:
+			19:15 - 166
+			19:30 - 198
+			20:05 - 288
+			20:30 - 292 (302 rett før)
+			21:15 - 373
+			21:30 - 389
+			22:00 - 450 (over 50 i kø) 
+			22:12 - Fullt i bygget (500) + 94 i kø 
+			22:30 - Fullt + 114 i kø
+			(resten av tellinga mangler)
+			01:55 - Alle ute
+
+	
+	Pub til pub 22.08
+		Antall besøkende:
+			19:00 - 240 (totalt besøkende 292)
+			19:55 - 402 (totalt 747)
+			20:31 - 370 (totalt 1021)
+			21:00 - 395 (totalt 1230)
+			21:40 - 354 (totalt 1462)
+			22:00 - 340 (totalt 1573)
+			Telleren ble vridd... 
+			22:30 - Ca. 400 (totalt ca. 1700)
+			23:00 - Ca. 400 (totalt ca. 1900)
+			23:30 - Ca. 340 (totalt ca. 2000)
+			00:00 - Ca. 300 (totalt ca. 2100)
+			00:30 - Ca. 180 (totalt ca. 2150)
+			01:00 - Ca. 150 (totalt ca. 2200)
+			01:30 - Ca. 100 (totalt ca. 2200 + noen)
+			01:45 - Tomt
+
+	
+	Første fredag 26.08
+		Antall besøkende:
+			18:04: kø med folk som vil ha medlemsskap 
+			19:00: 100 gjester 
+			20:00: 120
+			21:00: 110
+			22:00: ca 80
+			23:00: 100
+			24:00: 74
+			01:00: 54
+			01:30: 50
+			02:00: tomt

@@ -1,0 +1,160 @@
+\documentclass[11pt, A4paper,norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{textcomp}
+\usepackage{float}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/Fys2140/Python programmer"}
+\graphicspath{{C:/Users/Torstein/Documents/UiO/Fys2140/"Python programmer"/}}
+\hypersetup{colorlinks, urlcolor=url}
+
+\author{Torstein Solheim Ølberg}
+\title{Svar på Oblig nr. 9 i Fys2140}
+
+
+
+%\lstinputlisting{Filnavn! type kodefil}
+%\includegraphics[width=12.6cm,height=8cm]{Filnavn! type png}
+
+
+
+\begin{document}
+\maketitle
+	\begin{center}
+\Large \textbf{Oppgaver}
+	\end{center}
+
+
+
+
+
+
+
+
+
+		\paragraph{1.}
+			\subparagraph{a)}
+				\begin{flushleft}
+Den fysiske betydningen til $n$ som et kvantetall er hvilket energitilstand hydrogenatomet befinner seg i, i følge Griffiths. I følge wikipedia \cite{wiki_n} er det også ett tall som bestemmer hvilken tilstand elektronet også er i. $l$ beskriver, i følge wikipedia \cite{wiki_l}, formen på orbitalen til elektronet. Det siste kvantetallet, $m$, er i følge wikipedia \cite{wiki_m} brukt til å skille mellom orbitalene i underskallene til elektronene.
+Når det gjelder hva verdiene til disse tre tallene kan være så kan ingen av de være noe annet en heltall. $n$ kan være alle heltall over $0$. $l$ kan være alle heltall fra og med $0$ og opp, men er begrenset av sammenhengen $l \leq n - 1$. Altså kan $l$ ha $n$ antall verdier. Til slutt er det $m$ som kan ha alle heltall, men er begrenset av $|m| \leq l$. Det vil si at $m$ kan ha $2 l + 1$ antall verdier.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{flushleft}
+Et sentralsymmetrisk potensial er et potensial som er symetrisk om et fast punkt. Altså at det bare er avhengig av avstanden mellom objektet som potensialet skal virke på og det faste punktet. Et eksempel på dette er potensialet jorda får fra å gå rundt Sola og bli påvirket av Sola sin gravitasjonskraft. \\
+Vinkeldelen av bølgefunksjonen er lik for et hydrogenatom og for en fri partikkel fordi hydrogenatomet kan beskrives som et sentralsymetrisk potensial, altså gjør ikke potensialet noe i forskjellige retninger, bare i forskjellig avstand.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{gather*}
+\text{Setter opp den radielle schödingerlikningen} \\
+- \frac{\hbar^2}{2 m_e} \frac{d^2}{dr^2} \left( r R(r) \right) + \left( - \frac{k e^2}{r} + \frac{\hbar^2 l (l + 1)}{2 m_e r^2} \right) \left( r R(r) \right) = E \left( r R(r) \right) \\
+\text{Setter inn løsningene $R(r) = r e^{- \gamma r}$ og $E = - \frac{(ke^2)^2 m_e}{2 \hbar^2 n^2}$} \\
+- \frac{\hbar^2}{2 m_e} \frac{d^2}{dr^2} \left( r^2 e^{- \gamma r} \right) + \left( - \frac{k e^2}{r} + \frac{\hbar^2 l (l + 1)}{2 m_e r^2} \right) r^2 e^{- \gamma r} = - \frac{(ke^2)^2 m_e}{2 \hbar^2 n^2} r^2 e^{- \gamma r} \\
+- \frac{\hbar^2}{2 m_e} \left( 2 - 2 \gamma r - 2 \gamma r + \gamma^2 r^2 \right) e^{- \gamma r} - k r e^2 e^{- \gamma r} + \frac{\hbar^2 l (l + 1)}{2 m_e} e^{- \gamma r} = - \frac{(ke^2)^2 m_e}{2 \hbar^2 n^2} r^2 e^{- \gamma r} \\
+\left( - \frac{\hbar^2}{m_e} + \frac{2 \hbar^2 \gamma}{m_e} r - \frac{\hbar^2 \gamma^2}{2 m_e} r^2 - k r e^2 + \frac{\hbar^2 l (l + 1)}{2 m_e} \right) e^{- \gamma r} = - \frac{(ke^2)^2 m_e}{2 \hbar^2 n^2} r^2 e^{- \gamma r} \\
+\left( - \frac{\hbar^2 \gamma^2}{2 m_e} r^2 + \frac{2 \hbar^2 \gamma - k e^2 m_e}{m_e} r + \frac{\hbar^2 (l (l + 1) - 2)}{2 m_e} \right) e^{- \gamma r} = - \frac{(ke^2)^2 m_e}{2 \hbar^2 n^2} r^2 e^{- \gamma r} \\
+\text{Dette betyr at likningen må være løsbar for hver r-potens separat} \\
+I : - \frac{\hbar^2 \gamma^2}{2 m_e} r^2 e^{- \gamma r} = - \frac{(ke^2)^2 m_e}{2 \hbar^2 n^2} r^2 e^{- \gamma r} \Rightarrow \frac{\hbar^2 \gamma^2}{2 m_e} = \frac{(ke^2)^2 m_e}{2 \hbar^2 n^2} \Rightarrow \gamma = \frac{ke^2 m_e}{\hbar^2 n} \\
+II : \frac{2 \hbar^2 \gamma - k e^2 m_e}{m_e} r e^{- \gamma r} = 0 \\
+III : \frac{\hbar^2 (l (l + 1) - 2)}{2 m_e} e^{- \gamma r} = 0 \\
+\text{Setter inn likningen av $\gamma$ i $II$} \\
+\frac{2 \hbar^2 \frac{ke^2 m_e}{\hbar^2 n} - k e^2 m_e}{m_e} r = 0 \Rightarrow \frac{\frac{2}{n} ke^2 m_e - k e^2 m_e}{m_e} r = 0 \\
+\text{Dette stemmer hvis $n$ er lik $2$} \\
+\text{Deretter ser vi på situasjonen i $III$} \\
+\frac{\hbar^2 (l (l + 1) - 2)}{2 m_e} e^{- \gamma r} = 0 \Rightarrow (l^2 + l - 2) = 0 \\
+\text{Da får vi at $l = 1 \vee -2$, og vi vet at $l$ er begrenset av $l \leq n - 1 = 1$} \\
+\text{Altså får vi at $l = 1$ er det eneste svaret som kan stemme.}
+				\end{gather*}
+			
+
+
+
+
+
+
+
+
+
+			\subparagraph{d)}
+				\begin{flushleft}
+Den radielle likningen er gitt med $(r R(r))$ og ikke $R(r)$, og er identisk med den en-dimensjonelle Schrödinger likningen. Siden sannsynligheten for å finne en partikkel, i et punkt, vanligvis er gitt ved $|\Psi(x, t)|^2$ så vil det i dette tilfelle være slik at sannsynligheten for å finne elektronet en viss avstand fra kjernen være gitt med $|r R(r)|^2$ og siden hverken $r$ eller $R(r)$ er komplekse, blir dette lik $r^2 R^2(r)$.
+				\end{flushleft}
+				\begin{gather*}
+\text{Finner forventningsverdien til partikkelen i radiell retning. Detter er gitt ved} \\
+\langle r \rangle = \int_{0}^{\infty} r P(r) dr = \int_{0}^{\infty} r r^2 r^2 e^{- 2 \gamma r} dr = \int_{0}^{\infty} r r^2 r^2 e^{- 2 \gamma r} dr = \int_{0}^{\infty} r^5 e^{- 2 \gamma r} dr \\
+\text{Vet fra oblig $1$ at $\int_{0}^{\infty} x^{n} e^{-ax} dx = \frac{1}{a^{n + 1}} n!$, altså får vi} \\
+\langle r \rangle = \frac{5!}{2^6 \gamma^6} \\
+\text{Og siden $\gamma = \frac{1}{2 a_0}$ hvis vi setter inn Bohrradien i uttrykket fra} \\
+\text{tidligere, får vi} \\
+\langle r \rangle = \frac{120}{64} \cdot 64 a_0^6 = 120 a_0^6  
+				\end{gather*}
+
+
+
+
+
+
+
+
+\addcontentsline{toc}{chapter}{Bibliografi}
+		\begin{thebibliography}{9}
+			\bibitem{wiki_n}
+\url{https://en.wikipedia.org/wiki/Principal_quantum_number}
+
+			\bibitem{wiki_l}
+\url{https://en.wikipedia.org/wiki/Azimuthal_quantum_number}
+
+			\bibitem{wiki_m}
+\url{https://en.wikipedia.org/wiki/Azimuthal_quantum_number}
+		\end{thebibliography}
+\end{document}

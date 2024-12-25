@@ -1,0 +1,440 @@
+\documentclass[11pt, A4paper,norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{textcomp}
+\usepackage{float}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/Fysmek1110/Python programmer"}
+\graphicspath{{C:/Users/Torstein/Documents/UiO/Fysmek1110/"Python programmer"/}}
+\hypersetup{colorlinks, urlcolor=url}
+
+\author{Torstein Solheim Ølberg}
+\title{Eksamen Fysmek1110 våren 2017}
+
+
+
+%\lstinputlisting{Filnavn! type kodefil}
+%\includegraphics[width=12.6cm,height=8cm]{Filnavn! type png}
+
+
+
+\begin{document}
+\maketitle
+	\begin{center}
+\Large \textbf{Oppgaver}
+	\end{center}
+
+
+
+
+
+
+
+
+
+		\paragraph{1.}
+			\subparagraph{a)}
+				\begin{gather*}
+\text{Bevegelseesmengde bevart} \\
+p_1 = p_2 \Rightarrow m_1 v_1 = m_2 v_2 \\
+v_2 = \frac{m_1 \cdot v_1}{m_2} = \frac{20 \text{kg} \cdot 1 \text{m$/$s}}{25 \text{kg}} = \frac{4}{5} \text{m$/$s} = 0.8 \text{m$/$s}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{flushleft}
+Potensiell energi er ikke endret, men kinetisk er det.
+$$E_1 = \frac{1}{2} m_1 v_1^2 = \frac{1}{2} \cdot 20 \text{kg} \cdot 1^2 \text{m$^2/$s$^2$} = 10 \text{J}$$
+$$E_2 = \frac{1}{2} m_2 v_2^2 = \frac{1}{2} \cdot 25 \text{kg} \cdot 0.8^2 \text{m$^2/$s$^2$} = 8 \text{J}$$
+Altså mister fisken $E_1 - E_2 = 10 \text{J} - 8 \text{J} = 2 \text{J}$
+				\end{flushleft}
+
+			
+
+
+
+
+
+
+
+
+		\paragraph{2.}
+			\subparagraph{a)}
+				\begin{gather*}
+x' = \frac{x}{\gamma} = x \sqrt{1 - \frac{u^2}{c^2}} \\
+\left( \frac{x'}{x} \right)^2 = 1 - \frac{u^2}{c^2} \\
+u = c \sqrt{1 - \left( \frac{x'}{x} \right)^2} \\
+v_1 = c \sqrt{1 - \left( \frac{60}{100} \right)^2} = 0.8c \\
+v_2 = c \sqrt{1 - \left( \frac{80}{100} \right)^2} = 0.6c
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{gather*}
+v' = \frac{v - u}{1 - \frac{u}{c^2}v} \\
+v'_2 = \frac{0.6c - 0.8c}{1 - \frac{0.6c \cdot 0.8c}{c^2}} = \frac{0.6 - 0.8}{1 - 0.6 \cdot 0.8}c = - 0.38 \\
+v'_1 = \frac{0.8c - 0.6c}{1 - \frac{0.8c \cdot 0.6c}{c^2}} = \frac{0.8 - 0.6}{1 - 0.8 \cdot 0.6}c = 0.38
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+		\paragraph{3.}
+			\subparagraph{a)}
+				\begin{flushleft}
+Kreftene som inngår er $S$, $R$, $G$, $F$ og $N$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{gather*}
+\Sigma F_x = 0 = F - R - S \sin (\theta) \\
+\frac{1}{2} F - R = 0 \\
+0 = F - \frac{1}{2} F - S \sin (\theta) = \frac{1}{2} F - S \sin (\theta) \\
+S = \frac{F}{2 \sin(\theta)}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+Hvis en stanga ikke skal bevege seg så må
+$$F = 2 R = 2 \mu_s N = 2 \mu_s (mg + S \cos(\theta)) = 2 \mu_s \left( mg + \frac{F}{2 \sin(\theta)} \cos(\theta) \right)$$ \\
+$$F \left( 1 - \frac{\mu_s}{\tan(\theta)} \right) = 2 \mu_s mg \Rightarrow F = \frac{2 \mu_s mg}{\left( 1 - \frac{\mu_s}{\tan(\theta)} \right)} $$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+		\paragraph{4}
+			\subparagraph{a)}
+				\begin{flushleft}
+Massesenteret er gitt ved $\vec{R} = \frac{1}{M}(m \cdot \frac{1}{2}L + m \cdot L) = \frac{\frac{3}{2}mL}{2m} = \frac{3}{4}L$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{flushleft}
+Bruker Parallelakseteoremet:
+$$I = I_{cm} + I_s + I_{bt} = \frac{1}{12}mL^2 + m \cdot \frac{1}{2}^2L^2 + mL^2 = \left( \frac{1}{12} + \frac{1}{4} + 1 \right)mL^2$$
+$$\left( \frac{1 + 3 + 12}{12} \right)mL^2 = \frac{16}{12} mL^2 = \frac{4}{3} mL^2$$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+Bruker N2L for rotasjon
+$$\tau = I \alpha = G_x \frac{3}{4} L = \frac{3}{4} 2mgL \sin(\theta)$$
+$$\alpha = \frac{\frac{3}{2} mgL}{\frac{4}{3}mL^2} \sin(\theta) = \frac{9g}{8L} \sin(\theta)$$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+			\subparagraph{d)}
+				\begin{flushleft}
+Bruker N2L for rotasjon
+$$\tau = I \alpha = G_x \frac{1}{4} L = \frac{1}{2} mgL \sin(\theta)$$
+Bruker Parallelakseteoremet:
+$$I = I_{cm} + I_s + I_{bt} = \frac{1}{12}mL^2 + m \cdot \frac{1}{2}^2L^2 = \frac{1 + 3}{12}mL^2 = \frac{1}{3}mL^2$$
+$$\alpha = \frac{\frac{1}{2} mgL}{\frac{1}{3}mL^2} \sin(\theta) = \frac{3g}{2L} \sin(\theta)$$
+vinkelakselrasjonen er større nå en tidligere, altså vil staven falle fortere hvis blytuppen ligger på bordet
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{e)}
+				\begin{flushleft}
+Det er enklere å balansere staven med den tynne delen nederst fordi staven da vil bruke lengre tid på å falle enn hvis det var omvendt, noe som vil gjøre at du får bedre tid til å rette opp ubalansen.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+		\paragraph{5.}
+			\subparagraph{a)}
+				\begin{flushleft}
+Kreftene som virker er $F$, $G$ og $N$.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{gather*}
+\text{Kraftmomentet om massesenteret, for alle kreftene, er gitt ved} \\
+\vec{\tau} = \vec{F}R = F R \vec{z}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{gather*}
+\vec{\tau} = I \vec{\alpha} = FR \vec{z} = \frac{2}{5} m R^2 \left( - \frac{\vec{a}}{R} \right) \\
+FR = - \frac{2}{5} m R \vec{a} \\
+F = - \frac{2}{5} m \vec{a} \\
+\Sigma F = F - G \sin(\theta) = ma \\
+- G \sin(\theta) = ma + \frac{2}{5} ma = \frac{7}{5} ma \\
+- \frac{5}{7} g \sin(\theta) = a
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{d)}
+				\begin{gather*}
+\Sigma F = F - G \sin(\theta) = ma \\
+F = - \frac{5}{7} mg \sin(\theta) + mg \sin(\theta) = \frac{2}{7} mg \sin(\theta)
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{e)}
+				\begin{gather*}
+\text{For at kula skal rulle og ikke skli så må systemet tilfredstille rullebetingelsen} \\
+\text{Da har vi fra tidligere at akselrasjonen er gitt ved} \\
+a = - \frac{5F}{2m} \\
+a = - \frac{5}{7} g \sin(\theta) \\
+\frac{5}{2m} F = \frac{5}{7} g \sin(\theta) \\
+- \mu_s g \cos(\theta) = \frac{2g}{7} \sin(\theta) \\
+\mu_s = - \frac{2}{7} \tan(\theta)
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{f)}
+				\begin{flushleft}
+Hvis starthastigheten er $v_0$ og akselrasjonen er som tidligere så er
+$$v^2 = v_0^2 + 2 a d \Rightarrow d = \frac{v_0^2}{2 a} = \frac{7 v_0^2}{10 g \sin(\theta)}$$
+Det vil si at distansen blir større med kvadratet av starthastigheten, og mindre jo større vinkelen $\theta$ er.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+		\paragraph{6}
+			\subparagraph{a)}
+				\begin{flushleft}
+Kreftene som er med er $R$ og $G$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{gather*}
+r = \sqrt{y^2 + d^2} \\
+F_{k} = - k (r - d) = - k (\sqrt{y^2 + d^2} - d) \\
+F_{k,y} = F_k \sin(\theta) \\
+F_{k,y} = - k (\sqrt{y^2 + d^2} - d) \frac{y}{\sqrt{y^2 + d^2}} \\
+F_{k,y} = - k \left( y - \frac{yd}{\sqrt{y^2 + d^2}} \right) = - ky \left( 1 - \frac{d}{\sqrt{y^2 + d^2}} \right)
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{gather*}
+r = \sqrt{y^2 + d^2} \\
+F_{k} = - k (r - d) = - k (\sqrt{y^2 + d^2} - d) \\
+F_{k,x} = F_k \cos(\theta) \\
+F_{k,x} = - k (\sqrt{y^2 + d^2} - d) \frac{d}{\sqrt{y^2 + d^2}} \\
+F_{k,x} = - k \left( d - \frac{d^2}{\sqrt{y^2 + d^2}} \right) = - kd \left( 1 - \frac{d}{\sqrt{y^2 + d^2}} \right)
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{d)}
+				\begin{flushleft}
+Bruker uttryket for friksjonen, og at normalkraften må tilsvare fjerkraften i $x-$retning
+$$R = - \mu_d N \frac{\vec{v_y}}{|v_y|} = \mu_d F_{k,x} \frac{\vec{v_y}}{|v_y|} = - \mu_d kd \left( 1 - \frac{d}{\sqrt{y^2 + d^2}} \right) \frac{\vec{v_y}}{|v_y|}$$
+Brøken etter uttryket er for å sørge for at kraften alltid er motsatt av hastighetens retning.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{e)}
+				\begin{flushleft}
+for i in xrange(len(t) - 1): \\
+$\hspace{5mm} F\_ky = - k * y[i] * ( 1 - d / sqrt(y[i]^2 + d^2))$ \\
+$\hspace{5mm} F\_kx = - k * d ( 1 - d / sqrt(y[i]^2 + d^2))$ \\
+$\hspace{5mm} a = (F\_ky * linalg.norm(y) + mu\_d * F\_kx * linalg.norm(v[i]) - mg) / m$ \\
+$\hspace{5mm} v[i + 1] = v[i] + a * dt$ \\
+$\hspace{5mm} y[i + 1] = y[i] + v[i + 1] * dt$ \\
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{f)}
+				\begin{flushleft}
+Hvis du nå fester en ny fjær på den andre siden vil det ikke lenger være noen normalkraft som motstår fjærekraften i $x-$retning, og det blir derfor heller ikke noen friksjon. I virkeligheten vil det være litt friksjon siden det er umulig å sikke trekke sylinderen litt mer i en retning enn i den andre, men dette vil være en mye mindre friksjon enn tidligere. Siden vi ser bort i fra luftmotstand vil denne svigningen vare i teorien evig.
+				\end{flushleft}
+\end{document}

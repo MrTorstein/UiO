@@ -1,0 +1,252 @@
+\documentclass[11pt, A4paper,norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{textcomp}
+\usepackage{float}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/Fys3140/Python programmer"}
+\graphicspath{{C:/Users/Torstein/Documents/UiO/Fys3140/"Python programmer"/}}
+\hypersetup{colorlinks, urlcolor=url}
+
+\author{Torstein Solheim Ølberg}
+\title{Eksamen Fys3140 våren 2017}
+
+
+
+%\lstinputlisting{Filnavn! type kodefil}
+%\includegraphics[width=12.6cm,height=8cm]{Filnavn! type png}
+
+
+
+\begin{document}
+\maketitle
+	\begin{center}
+\Large \textbf{Oppgaver}
+	\end{center}
+
+
+
+
+
+
+
+
+
+		\paragraph{1.}
+			\subparagraph{a)}
+			\begin{gather*}
+f(x) = \sum_{n = - \infty}^{\infty} c_n e^{\frac{i n\pi x}{l}} \\
+\text{Ganger sammen to funksjoner der den ene er transponert} \\
+f(x) f(x)^{*} = \sum_{m = - \infty}^{\infty} \sum_{n = - \infty}^{\infty} c_n e^{\frac{i n\pi x}{l}} c_m^{*} e^{\frac{- i m\pi x}{l}} \\
+\text{Integrerer slik som oppgaven vil} \\
+\frac{1}{2l} \int_{-l}^{l} |f(x)|^2 dx = \frac{1}{2l} \int_{-l}^{l} \sum_{m = - \infty}^{\infty} \sum_{n = - \infty}^{\infty} c_n c_m^{*} e^{\frac{i (n - m)\pi x}{l}} dx \\
+\text{Dette er det samme som} \\
+\frac{1}{2l} \int_{-l}^{l} |f(x)|^2 dx = \sum_{m = - \infty}^{\infty} \sum_{n = - \infty}^{\infty} c_n c_m^{*} \frac{\sin(n \pi)}{n \pi} \\
+\frac{1}{2l} \int_{-l}^{l} |f(x)|^2 dx = \sum_{m = - \infty}^{\infty} \sum_{n = - \infty}^{\infty} c_n c_m^{*} \delta_{nm} = \sum_{n = - \infty}^{\infty} |c_n|^2
+			\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{gather*}
+c_n = \frac{1}{2 l} \int_{- l}^{l} f(x) e^{- \frac{i n\pi x}{l}} dx = \frac{1}{2 \pi} \int_{- \pi}^{\pi} x e^{- i n x} dx = \frac{1}{2 \pi} \left[ \frac{1}{- i n} x e^{- i n x} - \int e^{- i n x} dx \right]_{- \pi}^{\pi} \\
+c_n = \frac{1}{2 \pi} \left[ \frac{i}{n} x e^{- i n x} - \frac{i}{n} e^{- i n x} \right]_{- \pi}^{\pi} = \frac{1}{2 \pi} \left( \frac{i}{n} \pi (-1)^{n} - \frac{i}{n} (-1)^{n} + \frac{i}{n} \pi (-1)^{n} + \frac{i}{n} (-1)^{n} \right) \\
+c_n = \frac{1}{2 \pi} \frac{2 i}{n} \pi (-1)^{n} = \frac{(-1)^{n} i}{n} \text{ der $n \neq 0$} \\
+c_0 = \frac{1}{2 \pi} \int_{- \pi}^{\pi} x e^{0} dx = \frac{1}{2 \pi} \int_{- \pi}^{\pi} x dx = \pi^2 - \pi^2 = 0
+				\end{gather*}
+
+			
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{gather*}
+\sum_{n = - \infty, n \neq 0}^{\infty} |c_n|^2 = \frac{1}{2 \pi} \int_{- \pi}^{\pi} x^2 dx = \frac{1}{2 \pi} \frac{2 \pi^3}{3} = \frac{\pi^2}{3} \\
+|c_n|^2 = \frac{1}{c^2} \\
+\sum_{k = - \infty, n \neq 0}^{\infty} \frac{1}{k^2} = 2 \sum_{k = 1}^{\infty} \frac{1}{k^2} \\
+2 \sum_{k = 1}^{\infty} \frac{1}{k^2} = \frac{\pi^2}{3} \Rightarrow \sum_{k = 1}^{\infty} \frac{1}{k^2} = \frac{\pi^2}{6}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+		\paragraph{2.}
+			\subparagraph{a)}
+				\begin{flushleft}
+Dette blir ikke definert for $x = - 3, - \sqrt{3}i \text{ og } \sqrt{3}i$. Dette er første ordens poler. Hvis vi tenker oss en kontur i det komplekse planet, som er en halvsirkel med radius uendelig og som akkurat hopper over de reelle punktene $f(x)$ ikke er definert for, så kan vi itegrere funksjonen vår rundt dette konturet. Da vil vi få svaret $PV = \pi i R(-3) + 2 \pi i R(\sqrt{3}i)$, siden funksjonen er definert for $x = \infty$ og den øvre delen som forlater den reelle linja ikke vil gi noe bidrag.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{gather*}
+R(-3) = \lim_{x \rightarrow -3} \frac{1}{(x^2 + 3)(x + 3)} \cdot (x + 3) = \frac{1}{9 + 3} = \frac{1}{12} \\
+R(\sqrt{3}i) = \lim_{x \rightarrow \sqrt{3}i} \frac{1}{(x^2 + 3)(x + 3)} \cdot (x - \sqrt{3}i) = \lim_{x \rightarrow \sqrt{3}i} \frac{1}{(x + \sqrt{3}i)(x + 3)} \\
+R(\sqrt{3}i) = \frac{1}{(2 \sqrt{3}i)(\sqrt{3}i + 3)} = \frac{1}{6 (\sqrt{3}i - 1)} = \frac{(- \sqrt{3}i - 1)}{6 (\sqrt{3}i - 1)(- \sqrt{3}i - 1)} \\
+R(\sqrt{3}i) = \frac{(- \sqrt{3}i - 1)}{6 (3 + 1)} = - \frac{(\sqrt{3}i + 1)}{24} \\
+PV \int_{- \infty}^{\infty} \frac{1}{(x^2 + 3)(x + 3)} dx = \pi i \frac{1}{12} + 2 \pi i \left( - \frac{(\sqrt{3}i + 1)}{24} \right) = \pi i \left( \frac{- \sqrt{3}i}{12} \right) \\
+PV = \frac{\sqrt{3} \pi}{12} \\
+				\end{gather*}
+
+
+
+
+
+
+
+
+		\paragraph{3.}
+			\begin{gather*}
+\text{Må være av orden $z + 1$ siden den skal være gyldig for $|x + 1| > 1$.} \\ \text{Siden dette skal være rundt et negativt tall må disse ordene være negative.} \\
+\frac{1}{z^2 + z} = \frac{1}{z + 1} \frac{1}{z} = \frac{1}{z + 1} \frac{1}{z + 1} \frac{1}{1 - \frac{1}{z + 1}} \\
+\frac{1}{z^2 + z} = \frac{1}{z + 1} \frac{1}{z + 1} \sum_{n = 0}^{\infty} \frac{1}{(z + 1)^n}  = \sum_{n = 2}^{\infty} \frac{1}{(z + 1)^n} \\
+			\end{gather*}
+
+
+
+
+
+
+
+
+
+
+
+		\paragraph{4.}
+			\subparagraph{a)}
+				\begin{gather*}
+\nabla^2 u(r, \theta) = \left( \frac{\partial^2}{\partial r^2} + \frac{1}{r} \frac{\partial}{\partial r} + \frac{1}{r^2} \frac{\partial}{\partial \theta^2} \right) u(r, \theta) = 0 \\
+\frac{\partial^2}{\partial r^2} R(r) \Theta(\theta) + \frac{1}{r} \frac{\partial}{\partial r} R(r) \Theta(\theta) + \frac{1}{r^2} \frac{\partial}{\partial \theta^2} R(r) \Theta(\theta) = 0 \\
+\Theta(\theta) \frac{\partial^2}{\partial r^2} R(r) + \Theta(\theta) \frac{1}{r} \frac{\partial}{\partial r} R(r) = - R(r) \frac{1}{r^2} \frac{\partial}{\partial \theta^2} \Theta(\theta) \\
+\frac{1}{R(r)} \frac{\partial^2}{\partial r^2} R(r) + \frac{1}{R(r)} \frac{1}{r} \frac{\partial}{\partial r} R(r) = - \frac{1}{\Theta(\theta)} \frac{1}{r^2} \frac{\partial}{\partial \theta^2} \Theta(\theta) \\
+\frac{r^2}{R(r)} \frac{\partial^2}{\partial r^2} R(r) + \frac{r}{R(r)} \frac{\partial}{\partial r} R(r) = - \frac{1}{\Theta(\theta)} \frac{\partial}{\partial \theta^2} \Theta(\theta) \\
+\text{De to sidene må være konstanter siden de er funksjoner av forskjellige variable} \\
+\frac{r^2}{R(r)} \frac{\partial^2}{\partial r^2} R(r) + \frac{r}{R(r)} \frac{\partial}{\partial r} R(r) = \lambda^2 \\
+r^2 \frac{\partial^2}{\partial r^2} R(r) + r \frac{\partial}{\partial r} R(r) - \lambda^2 R(r) = 0 \\
+r^2 R''(r) + r R'(r) - \lambda^2 R(r) = 0 \\
+\Theta''(\theta) + \lambda^2 \Theta(\theta) = 0 \\
+\Theta(\theta) = A \cos(\lambda \theta) + B \sin(\lambda \theta) \\
+\text{Siden $\Theta$ skal være periodisk må $\lambda$ være positiv eller 0.}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{gather*}
+r^2 R''(r) + r R'(r) - \lambda^2 R(r) = 0 \\
+\text{Ser på situasjonen hvor $\lambda = 0$} \\
+R''(r) = - \frac{1}{r} R'(r) \\
+S'(r) = - \frac{1}{r} S(r) \\
+S(r) = \frac{E}{r} \\
+R(r) = \int S(r) dr = E \int \frac{1}{r} dr \\
+R(r) = E \ln(r) + F \\
+\text{Ser så på $\lambda \neq 0$} \\
+r^2 R''(r) + r R'(r) - \lambda^2 R(r) = 0 \\
+R''(r) + \frac{1}{r} R'(r) - \frac{\lambda^2}{r^2} R(r) = 0 \\
+\text{Vet at dette har løsningen $R(r) = Cr^{\lambda} + Dr^{- \lambda}$}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+$$\Theta(\theta) = A \cos(\lambda \theta) + B \sin(\lambda \theta)$$
+Dette betyr at $\theta$ må være lik $\theta + 2 \pi$, altså kan bare $\lambda$ være ett heltall.
+$$R(r) = Cr^{\lambda} + Dr^{- \lambda}$$
+Dette og at vi ønsker at funksjonen skal være ett tall i origo, gjør at vi ikke trenger de negative heltallene. Det vil si at $\lambda = 0, 1, 2, \dots$. I tillegg må vi sette $D$ og $E$ lik $0$ for at funksjonen skal være endelig for $r = 0$.
+Altså får vi
+$$u(r, \theta) = r^{\lambda} \left( A_{\lambda} \cos(\lambda \theta) + B_{\lambda} \sin(\lambda \theta) \right)$$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{d)}
+				\begin{gather*}
+u(a, \theta) = f(\theta) \\
+a^{\lambda} \left( A_{\lambda} \cos(\lambda \theta) + B_{\lambda} \sin(\lambda \theta) \right) = f(\theta) \\
+A_{\lambda} \cos(\lambda \theta) + B_{\lambda} \sin(\lambda \theta) = \frac{1}{a^{\lambda}} f(\theta) \\
+\theta = 0 \Rightarrow A_{\lambda} = \frac{f(0)}{a^{\lambda}} \\
+\frac{\partial}{\partial \theta} \left( A_{\lambda} \cos(\lambda \theta) + B_{\lambda} \sin(\lambda \theta) \right) = \frac{\partial}{\partial \theta} \frac{1}{a^{\lambda}} f(\theta) \\
+- A_{\lambda} \sin(\lambda \theta) + B_{\lambda} \cos(\lambda \theta) = \frac{1}{a^{\lambda}} f'(\theta) \\
+\theta = 0 \Rightarrow B_{\lambda} = \frac{f'(0)}{a^{\lambda}} \\
+				\end{gather*}
+\end{document}

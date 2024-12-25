@@ -1,0 +1,323 @@
+\documentclass[11pt, A4paper,norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{textcomp}
+\usepackage{float}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/Fys3140/Python programmer"}
+\graphicspath{{C:/Users/Torstein/Documents/UiO/Fys3140/"Python programmer"/}}
+\hypersetup{colorlinks, urlcolor=url}
+
+\author{Torstein Solheim Ølberg}
+\title{Svar på Oblig nr. 9 i Fys3140}
+
+
+
+%\lstinputlisting{Filnavn! type kodefil}
+%\includegraphics[width=12.6cm,height=8cm]{Filnavn! type png}
+
+
+
+\begin{document}
+\maketitle
+	\begin{center}
+\Large \textbf{Oppgaver}
+	\end{center}
+
+
+
+
+
+
+
+
+
+		\paragraph{9.1}
+			\subparagraph{8.6.6)}
+				\begin{gather*}
+y'' + 6y' + 9y = 12 e^{-x} \\
+D \equiv \frac{d}{dx} \\
+D^2 y + 6 D y + 9 y = 12 e^{-x} \\
+(D + 3)^2 y = 12 e^{-x} \\
+\text{Bruker sammenheng $(6.18)$ fra læreboka, på side 420} \\
+y_p = Ce^{cx} \\
+C c^2 e^{cx} + 6 C c e^{cx} + 9 C e^{cx} = 12 e^{-x} \\
+\text{Velger $c = -1$, og bruker dette til å finne $C$} \\
+C - 6C + 9C = 12 \Rightarrow 4C = 12 \Rightarrow C = 3 \\
+y_p = 3 e^{-x} \\
+\text{Finner den homogene løsningen ved å sette likningen lik $0$ og løse for $y$} \\
+(D + 3)^2 y_h = 0 \\
+\text{For å løse dette bruker jeg $(5.15)$ i Boas} \\
+y_h = (A x + B)e^{- 3 x} \\
+y = y_h + y_p = (A x + B)e^{- 3 x} + 3 e^{-x} \\
+\text{Fra Wolfram Alpha finner jeg at datamaskinen er helt enig med min løsning}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{8.6.12)}
+				\begin{gather*}
+(D^2 + 4D + 12)y = 80 \sin(2x) \\
+\text{Ser heller på situasjonen} \\
+(D^2 + 4D + 12)y = 80 e^{i2x} \\
+\text{Antar en løsning på formen $y_p = Ce^{dx}$ slik som i forrige oppgave, siden ingen} \\
+\text{av røttene til $D^2 + 4D + 12$ er lik $2i$, og prøve med $d = 2i$} \\
+C (2i)^2 e^{i2x} + 4C(2i)e^{i2x} + 12Ce^{i2x} = 80 e^{i2x} \\
+- 4 C + 8 C i + 12 C = 80 \\
+C = \frac{80}{8 + 8i} = \frac{10(1 - i)}{(1 + i)(1 - i)} = \frac{10(1 - i)}{1 + 1} = 5 - 5i \\
+y_{p, \text{temp}} = (5 - 5i) e^{i2x} = (5 - 5i)(\cos(2x) + i\sin(2x)) \\
+y_{p, \text{temp}} = 5 ( \cos(2x) + \sin(2x) ) + 5i ( \sin(2x) - \cos(2x) ) \\
+\text{For å finne det svaret vi egentlig er ute etter må vi ta imaginerdelen av dette} \\
+y_p = \text{Im}(y_{p,temp}) = 5 ( \sin(2x) - \cos(2x) ) \\
+\text{Finner den homogene løsningen} \\
+(D^2 + 4D + 12)y = 0 \\
+D = \frac{-4 \pm \sqrt{4^2 - 4 \cdot 12}}{2} = -2 \pm \sqrt{4 - 3 \cdot 4} = - 2 \pm 2 i \sqrt{2} \\
+\text{Siden røttene er komplekse så blir svaret på formen $y_h = e^{ax}(Ae^{ibx} + Be^{-ibx})$} \\
+y_h = e^{-2 x}( A \sin(2 \sqrt{2} x) + B\cos(2 \sqrt{2} x) ) \\
+y = y_h + y_p = e^{-2 x}\left( A \sin(2 \sqrt{2} x) + B\cos(2 \sqrt{2} x) \right) + 5 \left( \sin(2x) - \cos(2x) \right) \\
+\text{Denne løsningen er ikke det samme som det jeg får fra Wolfram Alpha. Der får} \\
+\text{jeg at den homogene løsningen stemmer, men at den partikulære løsningen blir} \\
+\text{ett kjempelangt uttrykk bestående av en masse sinus og kosinus utrykk med} \\
+\text{forskjellige konstanter foran.}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{8.6.23)}
+				\begin{gather*}
+y'' + y = 2xe^{x} \\
+(D^2 + 1) y = (D + 1)(D - 1) y = 2xe^{x} \\
+\text{Finner homogen løsning ved å sette lik $0$} \\
+(D + 1)(D - 1) y = 0 \\
+\text{Da er den generelle løsningen på formen $y_h = A e^{ax} + B e^{bx}$} \\
+y_h = A e^{-x} + Be^{x} \\
+\text{Finner den partikulære løsningen ved å prøve en løsning på formen} \\
+\text{$y_p = Q(x) e^{cx}$, der $Q(x)$ er et polynom av grad $1$} \\
+((Cx + D) e^{x})'' + (Cx + D) e^{x} = 2C e^{x} + 2(Cx + D)e^{x} = 2xe^{x} \\
+2C + 2(Cx + D) = 2Cx + 2C + 2D = 2x \\
+\text{Hvis dette skal stemme får vi dette likningssettet} \\
+2(C + D) = 0 \\
+2Cx = 2x \\
+\text{Altså får vi rett svar hvis $C = - D = 1$} \\
+y_p = (x - 1) e^{x} \\
+y = y_h + y_p = A e^{-x} + Be^{x} + (x - 1) e^{x} = A e^{-x} + (x - 1 + B) e^{x} \\
+\text{Her får jeg at datamaskinen vil ha den homogene løsnigen gitt ved sinus} \\
+\text{pluss kosinus, men teoretisk spiller ikke dette noen rolle.}
+				\end{gather*}
+			
+
+
+
+
+
+
+
+			\subparagraph{8.7.19)}
+				\begin{gather*}
+x^2 y'' - 5 x y' + 9 y = 2 x^3 \\
+\text{Hvis vi endrer variabel fra $x$ til $e^{z}$ får vi} \\
+\frac{d^2 y}{dz^2} - \frac{dy}{dz} - 5 \frac{dy}{dz} + 9y = 2 (e^{z})^3 \\
+y''(z) - 6 y'(z) + 9 y(z) = 2 e^{3 z} \\
+(D - 3)^2 y(z) = 2 e^{3 z} \\
+\text{Finner homogen løsning ved å sette lik $0$} \\
+(D - 3)^2 y(z) = 0 \\
+\text{Da er den generelle løsningen på formen $y_h = (Ax + B)e^{bx}$} \\
+y_h = (Ax + B) e^{3x} \\
+\text{Finner den partikulære løsningen ved å prøve en løsning på formen} \\
+\text{$y_p = C x^2 e^{cx}$} \\
+(C x^2 e^{3x})'' - 6 (C x^2 e^{3x})' + 9 C x^2 e^{3x} = 2 e^{3 z} \\
+C ( 2e^{3x} + 6xe^{3x} + 6xe^{3x} + 9x^2e^{3x} ) - 6 C ( 2xe^{3x} + 3x^2e^{3x} ) + 9 C x^2 e^{3x} = 2 e^{3x} \\
+C ( 2 + 12x + 9x^2 - 12x - 18x^2 + 9 x^2 ) = 2 \\
+2 C = 2 \Rightarrow C = 1 \\
+y_p = x^2 e^{3x} \\
+y = y_h + y_p = (Ax + B)e^{3x} + x^2 e^{3x} = (x^2 + Ax + B) e^{3x}
+				\end{gather*}
+\clearpage
+
+
+
+
+
+
+
+
+
+
+
+
+		\paragraph{9.2}
+			\subparagraph{a)}
+				\begin{gather*}
+x^2 y'' - 2 x y' + 2 y = x \ln(x) \text{; } y_1 = x \text{, } y_2 = x^2 \text{, } y_h = x + x^2 \\
+y'' - \frac{2}{x} y' + \frac{2}{x^2} = \frac{\ln(x)}{x} \\
+\text{Da er den partikkulære løsningen gitt av formelen} \\
+y_p = - y_1 \int \frac{y_2 R}{W} dx + y_2 \int \frac{y_1 R}{W} dx \\
+\text{hvor $W$ er determinaneten bestående av $y_1$, $y_2$, $y_1'$ og $y_2'$} \\
+W = \left|
+\begin{tabular}{ cc }
+$y_1$ & $y_2$ \\
+$y_1'$ & $y_2'$
+\end{tabular}
+\right| = \left|
+\begin{tabular}{ cc }
+$x$ & $x^2$ \\
+$1$ & $2x$
+\end{tabular}
+\right| = 2x^2 - x^2 = x^2 \\
+y_p = - x \int \frac{x^2 \ln(x)}{x (x^2)} dx + x^2 \int \frac{x \ln(x)}{x (x^2)} dx \\
+y_p = - x \int \frac{\ln(x)}{x} dx + x^2 \int \frac{\ln(x)}{x^2} dx = - x \frac{1}{2} \ln^2(x) \\
+\text{Bruker delvis integrasjon med $u = \ln(x)$ og $v' = \frac{1}{x^2}$} \\
+y_p = - \frac{1}{2} x \ln^2(x) + x^2 \left( - \frac{\ln(x)}{x} + \int \frac{1}{x^2} dx \right) = - \frac{1}{2} x \ln^2(x) + x^2 \left( - \frac{\ln(x)}{x} - \frac{1}{x} \right) \\
+y_p = - \frac{1}{2} x \ln^2(x) - x (\ln(x) + 1) \\
+y = y_h + y_p = x^2 + x - \frac{1}{2} x \ln^2(x) + x \ln(x) + x = x^2 + 2 x - \frac{1}{2} x \ln^2(x) + x \ln(x)
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{gather*}
+(x^2 + 1) y'' - 2 x y' + 2 y = (x^2 + 1)^2 \text{; } y_1 = x \text{, } y_2 = 1 - x^2 \text{, } y_h = x + 1 - x^2 \\
+y'' - \frac{2 x}{(x^2 + 1)} y' + \frac{2}{(x^2 + 1)} y = (x^2 + 1) \\
+\text{Da er den partikkulære løsningen gitt av formelen} \\
+y_p = - y_1 \int \frac{y_2 R}{W} dx + y_2 \int \frac{y_1 R}{W} dx \\
+\text{hvor $W$ er determinaneten bestående av $y_1$, $y_2$, $y_1'$ og $y_2'$} \\
+W = \left|
+\begin{tabular}{ cc }
+$y_1$ & $y_2$ \\
+$y_1'$ & $y_2'$
+\end{tabular}
+\right| = \left|
+\begin{tabular}{ cc }
+$x$ & $1 - x^2$ \\
+$1$ & $- 2 x$
+\end{tabular}
+\right| = - 2 x^2 - 1 + x^2 = - x^2 - 1 \\
+y_p = - x \int \frac{(1 - x^2) (1 + x^2)}{- (1 + x^2)} dx + (1 - x^2) \int \frac{x (1 + x^2)}{- (1 + x^2)} dx \\
+y_p = x \int 1 - x^2 dx - (1 - x^2) \int x dx \\
+y_p = x \left( x - \frac{1}{3} x^3 \right) - (1 - x^2) \frac{1}{2} x^2 = x^2 - \frac{1}{3} x^4 - \frac{1}{2} x^2 + \frac{1}{2} x^4 = \frac{1}{6} x^4 + \frac{1}{2} x^2 \\
+y = y_h + y_p = 1 + x - x^2 + \frac{1}{2} x^2 + \frac{1}{6} x^4 = 1 + x - \frac{1}{2} x^2 + \frac{1}{6} x^4
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+		\paragraph{9.3}
+			\subparagraph{8.11.15.a)}
+				\begin{flushleft}
+Evaluerer integralet
+$$\int_{0}^{\pi} \sin(x) \delta\left( x - \frac{\pi}{2} \right) dx$$
+ved hjelp av definisjonen for deltafunskjonen i et integral, som er gitt som $(8.11.6)$ i Boas. Ut fra denne definisjoen blir dette integralet $\sin\left( \frac{\pi}{2} \right) = 1$ siden $\frac{\pi}{2}$ ligger mellom $0$ og $\pi$. Altså får vi
+$$\int_{0}^{\pi} \sin(x) \delta\left( x - \frac{\pi}{2} \right) dx = 1$$
+				\end{flushleft}
+
+\clearpage
+
+
+
+
+
+
+
+			\subparagraph{8.11.15.b)}
+				\begin{flushleft}
+Neste integralet er
+$$\int_{0}^{\pi} \sin(x) \delta\left( x + \frac{\pi}{2} \right) dx = \int_{0}^{\pi} \sin(x) \delta\left( x - \left( - \frac{\pi}{2} \right) \right) dx$$
+Her får vi motsatte svaret fordi $- \frac{\pi}{2}$ ikke ligger mellom $0$ og $\pi$. Altså blir det
+$$\int_{0}^{\pi} \sin(x) \delta\left( x + \frac{\pi}{2} \right) dx = 0$$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{8.11.15.c)}
+				\begin{flushleft}
+Ser på integralet
+$$\int_{-1}^{1} e^{3x} \delta'(x) dx = \int_{-1}^{1} e^{3x} \delta'(x - 0) dx$$
+Siden $0$ ligger innenfor intervallet $(-1, 1)$ så vil dette integralet bli lik $- \left( e^{3x} \right)'(0) = - 3e^{0} = - 3$ i følge $(8.11.16)$. Dette betyr at vi får
+$$\int_{-1}^{1} e^{3x} \delta'(x) dx = - 3$$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{8.11.15.d)}
+				\begin{flushleft}
+Evaluerer
+$$\int_{0}^{\pi} \cosh(x) \delta''(x - 1) dx$$
+Bruker samme setning som i forrige oppgave, og siden $1 \in (0, \pi)$ får vi at dette integralet blir lik $\left( \cosh(x) \right)''(1) = \cosh(1) = \frac{e + e^{-1}}{2} \approx 1.543$ altså får vi.
+$$\int_{0}^{\pi} \cosh(x) \delta''(x - 1) dx = \frac{e + e^{-1}}{2} \approx 1.543$$
+				\end{flushleft}
+\end{document}

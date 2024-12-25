@@ -1,0 +1,362 @@
+\documentclass[11pt, A4paper,norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{textcomp}
+\usepackage{float}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/Fys2140/Python programmer"}
+\graphicspath{{C:/Users/Torstein/Documents/UiO/Fys2140/"Python programmer"/}}
+\hypersetup{colorlinks, urlcolor=url}
+
+\author{Torstein Solheim Ølberg}
+\title{Eksamen våren 2014}
+
+
+
+%\lstinputlisting{Filnavn! type kodefil}
+%\includegraphics[width=12.6cm,height=8cm]{Filnavn! type png}
+
+
+
+\begin{document}
+\maketitle
+	\begin{center}
+\Large \textbf{Oppgaver}
+	\end{center}
+
+
+
+
+
+
+
+
+
+		\paragraph{1.}
+			\subparagraph{a)}
+				\begin{flushleft}
+$n$ kan ha verdiene $1, 2, 3, \dots$, $l$ kan ha verdiene $0, 1, 2, \dots, n - 1$, og $m$ kan ha verdiene $0, \pm 1, \pm 2, \dots \pm l$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{flushleft}
+Normeringsbetingelsen er $\int \psi^{*} \psi d^3r = \int \psi^{*} \psi r^2 \sin(\theta) dr d\phi d\theta$ og hvis vi kan normere disse hver for seg så blir uttrykkene
+$$\int_{0}^{\infty} |R(r)|^2 r^2 dr = 1 \wedge \int_{0}^{\pi} \int_{0}^{2\pi} |Y(\theta, \phi)|^2 \sin(\theta) d\phi d\theta = 1$$
+				\end{flushleft}
+
+			
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+Siden normeringsbetingelsen skal bli $1$, så betyr det at siden normeringsbetingelsen inneholder $r^2 \Rightarrow [\text{m}^2]$ og ett integral $\Rightarrow [\text{m}]$, så må enheten til $R(r)$ være $[\text{m}^{-\frac{3}{2}}]$.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{d)}
+				\begin{gather*}
+\text{Hvis den laveste energitilstanden er normert så er alle senere energitilstander} \\
+\text{som bruker samme konstanten også normerte.} \\
+\int_{0}^{\infty} |R(r)|^2 r^2 dr = \int_{0}^{\infty} A^2 r^2 e^{- 2 \frac{r}{a}} dr = 1 \\
+A^2 2! \frac{2}{a}^{-3} = 1 \Rightarrow A = \sqrt{\frac{4}{a^3}} \\
+\int_{0}^{\pi} \int_{0}^{2\pi} |Y(\theta, \phi)|^2 \sin(\theta) d\phi d\theta = \int_{0}^{\pi} \int_{0}^{2\pi} B^2 \sin(\theta) d\phi d\theta = 1 \\
+B^2 \left[ - 2 \pi \cos(\theta) \right]_{0}^{\pi} = 4 B^2 \pi = 1 \Rightarrow B = \frac{1}{\sqrt{4 \pi}}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{e)}
+				\begin{flushleft}
+Degenerasjon er et mål på hvor mange forskjellige tilstander som har den samme energitilstanden. \\
+For hydrogenatomet er energien bare avhengig av $n$ og derfor  vil alle de forskjellige $l$ og $m$ ha samme energien. Da blir degenerasjonen gitt av
+$$d = \sum_{l = 0}^{n - 1} 2l + 1 = n + 2 \sum_{l = 0}^{n - 1} l = n + n(n - 1) = n^2$$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{f)}
+				\begin{gather*}
+X_{11} = \frac{1}{\sqrt{2}} \left( Y_{1}^{-1} + (-1)^{1} Y_{1}^{1} \right) = \frac{1}{\sqrt{2}} \left( \sqrt{\frac{3}{2}} B \sin(\theta) e^{- i \phi} + \sqrt{\frac{3}{2}} B \sin(\theta) e^{i \phi} \right) \\
+\frac{1}{\sqrt{2}} \sqrt{\frac{3}{2}} B \sin(\theta) \left( e^{- i \phi} + e^{i \phi} \right) = \sqrt{3} B \sin(\theta) \cos(\phi) \\
+X_{1, -1} = \frac{i}{\sqrt{2}} \left( Y_{1}^{-1} - (-1)^{-1} Y_{1}^{1} \right) = \frac{i}{\sqrt{2}} \left( \sqrt{\frac{3}{2}} B \sin(\theta) e^{- i \phi} - \sqrt{\frac{3}{2}} B \sin(\theta) e^{i \phi} \right) \\
+\frac{1}{i \sqrt{2}} \sqrt{\frac{3}{2}} B \sin(\theta) \left( e^{i \phi} - e^{- i \phi} \right) = \sqrt{3} B \sin(\theta) \sin(\phi)
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{g)}
+				\begin{flushleft}
+Fordi alle disse tre kan skrives som lineærkombinasjoner av forskjellige tilstander $\psi_{nlm}$. Alle disse tilstandene er egenfunksjoner, og derfor blir også summer av dem egenfunksjoner av Hamilton. 
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{h)}
+				\begin{flushleft}
+Måler du kvadratet av det angulære momentet så kan du bare få egenverdien til tilstanden siden det finnes en egenverdi. Denne egenverdien er $\hbar^2 l(l + 1) = 2 \hbar^2$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{i)}
+				\begin{gather*}
+\hat{L}_z R_{21} X_{11} = - i \hbar \frac{\partial}{\partial \phi} R_{21}(r) \sqrt{3} B \sin(\theta) \cos(\phi) = - i \hbar R_{21}(r) \sqrt{3} B \sin(\theta) \frac{\partial}{\partial \phi} \cos(\phi) \\
+i \hbar R_{21}(r) \sqrt{3} B \sin(\theta) \sin(\phi) \\
+\text{Nei, det var ikke en egenfunksjon.} \\
+\hat{L}_z R_{21} X_{11} = i \hbar \left( \sin(\phi) \frac{\partial}{\partial \theta} + \cos(\phi) \cot(\theta) \frac{\partial}{\partial \phi} \right) R_{21}(r) \sqrt{3} B \sin(\theta) \cos(\phi) \\
+i \hbar R_{21}(r) \sqrt{3} B \left( \sin(\phi) \frac{\partial}{\partial \theta} + \cos(\phi) \cot(\theta) \frac{\partial}{\partial \phi} \right) \sin(\theta) \cos(\phi) \\
+i \hbar R_{21}(r) \sqrt{3} B \left( \sin(\phi) \cos(\phi) \cos(\theta) - \cos(\phi) \cot(\theta) \sin(\theta) \sin(\phi) \right) \\
+i \hbar R_{21}(r) \sqrt{3} B \left( \sin(\phi) \cos(\phi) \cos(\theta) - \sin(\phi) \cos(\phi) \cos(\theta) \right) = i \hbar R_{21}(r) \sqrt{3} B \cdot  0 = 0 \\
+\text{Dette er altså en egenfunksjon for $\hat{L}_x$, siden det blir $0$, som er $0 \cdot R_{21}X_{11}$}
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{j)}
+				\begin{flushleft}
+Siden $R_{21}X_{11} = \frac{1}{\sqrt{2}} \left( \psi_{21, -1} - \psi_{211} \right)$ og siden $\psi_{21, -1}$ har egenverdien $- \hbar$, er det $P = |c|^2 = \frac{1}{\sqrt{2}}^2 = \frac{1}{2}$ sannsynlighet for å måle $- \hbar$.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+			\subparagraph{k)}
+				\begin{flushleft}
+
+				\end{flushleft}
+
+
+
+
+
+
+
+
+		\paragraph{2.}
+			\subparagraph{a)}
+				\begin{gather*}
+a
+				\end{gather*}
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{flushleft}
+
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+
+				\end{flushleft}
+\end{document}

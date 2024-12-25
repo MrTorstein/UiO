@@ -1,0 +1,347 @@
+\documentclass[11pt, A4paper,norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/Fys-mek1110/Python programmer"}
+\hypersetup{colorlinks, urlcolor=url}
+
+\author{Torstein Solheim Ølberg}
+\title{Svar på Oblig nr. 4 i Fys-Mek1110}
+
+
+
+
+
+
+
+
+\begin{document}
+\maketitle
+	\begin{center}
+\Large \textbf{Oppgaver}
+	\end{center}
+		\begin{flushleft}
+We address a one-dimensional system. An atom moves along the $x$-axis with a kinetic energy $K = \frac{1}{2}mv^2$ . In the range $-x_0 < x < x_0$ the atom enters the trap, and is affected by a magnetic field. The interaction with the magnetic field gives rise to a poential $U(x)$, which we model as: 
+$$U(x) = \left \{
+\begin{tabular} { cc }
+$U_0$ & $|x| \geq x_0$ \\
+$U_0 \frac{|x|}{x_0}$ & $|x| < x_0$
+\end{tabular}
+\right \} $$.
+		\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+
+		\paragraph{a)}
+			\begin{flushleft}
+Notice that this is all we need to know about the interaction between the atom and the magnetic field. Make a sketch of $U(x)$. Discuss the motion of the atom for representative values of the total energy $E$ of the atom. Find equilibrium points and discuss their stability. \\
+\vspace{1mm}
+\textbf{Løsning:}
+\vspace{1mm}
+\includegraphics[width=12.6cm,height=8cm]{"C:/Users/Torstein/Documents/UiO/Fys-Mek1110"/oblig4_a.png}
+Likevektspunktene finner du der kraften på partikkelen er lik null, altså utenfor fella eller i $x = 0$. Uten for fella er ikke likevektspunktet veldig stabilt fordi partikkelen kan bevege seg fritt. Punktet $x = 0$, inne i fella, er derimot mye mer stabilt fordi partikkelen vil bli utsatt for en kraft i motsatt retning så fort den beveger seg bort fra punktet.
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+
+		\paragraph{b)}
+			\begin{flushleft}
+Find the force $F(x)$ acting on the atom from the magnetic field. Is this force conservative? \\
+\vspace{1mm}
+\textbf{Løsning:}
+\vspace{1mm}
+					\begin{align}
+U'(x) = F(x) = 
+\left \{
+\begin{tabular} { cc }
+$\frac{U_0 x}{x_0 |x|}$ & $|x| \geq x_0$ \\
+$0$ & $|x| > x_0$
+\end{tabular} \right \} 
+					\end{align}
+Vi legger inn $\frac{|x|}{x}$ for å få med retningen på den deriverte til potensialet. Dette må vi gjøre fordi funksjonen for potensialet tar en absolutverdi av posisjonen.
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+		\paragraph{c)}
+			\begin{flushleft}
+If the atom of mass $m$ has the velocity $v_0 = \sqrt{4U_0/m}$ at $x = 0$, find the velocity at $x = x_0/2$ and $x = 2x_0$. \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+				\begin{align}
+E = E_p + E_k \nonumber \\
+\frac{1}{2}mv_{1}^2 = E - U_0\frac{|x|}{x_0} \nonumber \\
+v_1 = \sqrt{\frac{2}{m} \left(E - U_0 \frac{|x|}{x_0} \right)} \nonumber \\
+\text{Setter inn $v_0$ og $x = 0$ for å finne $E$} \nonumber \\
+\sqrt{\frac{4 U_0}{m}} = \sqrt{\frac{2}{m} \left(E - U_0 \frac{0}{x_0} \right)} \nonumber \\
+\sqrt{\frac{4 U_0}{m}} = \sqrt{\frac{2 E}{m}} \nonumber \\
+E = 2U_0 \nonumber \\
+v_1 = \sqrt{\frac{2}{m} \left(2U_0 - U_0 \frac{|x|}{x_0} \right)} \nonumber \\
+\text{Putter så inn $x = x_0/2$} \nonumber \\
+v_1 = \sqrt{\frac{2}{m} \left(2U_0 - U_0 \frac{\frac{x_0}{2}}{x_0}\right)} \nonumber \\
+v_1 = \sqrt{\frac{3U_0}{m}} \nonumber \\
+\text{Når vi skal finne $v_2$ altså hastigheten i $x = 2x_0$ så blir utrykket for $E$} \nonumber \\
+E = U_0 + \frac{1}{2} m v_2^2 \nonumber \\
+\text{Energien er fortsatt den samme fordi den er bevart.} \nonumber \\
+v_2 = \sqrt{\frac{2}{m}(2U_0 - U_0)} \nonumber \\
+v_2 = \sqrt{\frac{2 U_0}{m}} \nonumber
+				\end{align}
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+		\paragraph{d)}
+			\begin{flushleft}
+If the atom of mass $m$ has the velocity $v_0 = -\sqrt{4U_0/m}$ at $x = 0$, find the velocity at $x = -x_0/2$ and $x = -2x_0$. \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+				\begin{align}
+v_1 = \sqrt{\frac{2}{m} \left(E - U_0\frac{|x|}{x_0} \right)} \nonumber \\
+-\sqrt{\frac{4U_0}{m}} = \sqrt{\frac{2}{m} \left(E - U_0 \frac{|x|}{x_0} \right)} \nonumber \\
+\frac{4U_0}{m} = \frac{2}{m}\left(E - U_0 \frac{|x|}{x_0}\right) \Rightarrow 2U_0 = E - U_0 \frac{0}{x_0} \nonumber \\
+E = 2U_0 \nonumber \\
+\text{Siden $E$ er den samme blir også farten til de to tilfellene det samme.} \nonumber \\
+v_1 = \sqrt{\frac{3U_0}{m}} \nonumber \\
+v_2 = \sqrt{\frac{2U_0}{m}} \nonumber 
+				\end{align}
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+		\paragraph{e)}
+			\begin{flushleft}
+Let us also assume that the atom is charged and subject to a constant electrostatic force, $F_0$ acting in the positive $x$-direction. \\
+If the atom has the kinetic energy $K = 0$ at $x = 0$, how large must $F_0$ be in order for the atom to escape? And if the kinetic energy is $K = U_0/2 at x = 0$, how large must $F_0$ then be in order for the atom to escape? \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+Hvis partikkelen skal unnslippe må  arbeidet som kraften $F_0$ utfører være lik potensialet til partikkelen.
+				\begin{align}
+F_0 x = U(x) = U_0 \frac{|x|}{x_0} \nonumber \\
+F_0 = \frac{U_0}{x_0} \nonumber \\
+\text{Hvis $K$ ikke er lik $0$ så må vi ta med denne}. \nonumber \\
+\text{Det vil si at arbeidet og den kinetiske kraften nå må være lik potensialet.} \nonumber \\
+F_0 = \frac{U_0 \frac{|x|}{x_0} - \frac{U_0}{2}}{x} = U_0\frac{\frac{|x|}{x_0} - \frac{1}{2}}{x} = U_0 \left(\frac{1}{x_0} - \frac{1}{2x} \right) \nonumber
+				\end{align}
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+		\paragraph{f)}
+			\begin{flushleft}
+In the following, let us assume that the atom is only affected by the magnetic field. In addition, while the atom is in the trap, we send photons with a particular wavelength at the atom. For example, for Li-atoms, a wavelength of $671$nm is used. The force on the atom due to a continuous adsorption (and emission) of photons, can be written as
+$$F = -\alpha v,$$ 
+where $v$ is the velocity of the atom, and $\alpha$ is a constant. This force also only acts in the range $-x_0 < x < x_0$. \\
+Is the force $F$ conservative? (Provide an argument for your answer). \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+$F$ er ikke konservativ fordi den er hastighetsavhengig.
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+		\paragraph{g)}
+			\begin{flushleft}
+The equations of motion for the atom may be non-dimensionalized, but we will not address the details of this. You can in the following use the non-dimensional values $U_0 = 150$, $m = 23$, $x_0 = 2$, and $\alpha = 39.48$, and describe the motion using nondimensional positions, times, and velocities. The equations of motion for the atom are difficult to solve analytically, but can be addressed using numerical methods. In the following exercises, use your experience with numerical solutions of the equation of motion to solve the problems. \\
+Find an expression for the acceleration of the atom. What are the initial conditions for the motion? \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+				\begin{align}
+\sum F = F(x) + F = \frac{U_0 x}{x_0 |x|} - \alpha v \nonumber \\
+U_0 = 150 , m = 23 , x_0 = 2 , \alpha = 39,48 \nonumber \\
+ma = \frac{2U_0 x}{||x|} - \alpha v \nonumber \\
+a = \frac{U_0 x}{mx_0 |x|} - \frac{\alpha v}{m} \nonumber
+				\end{align}
+Initialverdiene for bevegelsen er $v_0$ og en utgangsposisjon.
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+		\paragraph{h)}
+			\begin{flushleft}
+Write a program to find the position, $x(t)$, as a function of time for the atom given the expression for the acceleration and the initial conditions from above. \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+\lstinputlisting{oblig4_h.py}
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+		\paragraph{i)}
+			\begin{flushleft}
+Find the motion, $x(t)$, of an atom with velocity $v_0 = 8.0$ at $x = -5$. Describe what happens. \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+\includegraphics[width=12.6cm,height=8cm]{"C:/Users/Torstein/Documents/UiO/Fys-Mek1110/Python programmer"/Oblig4_i.png}
+Som vi ser av plottet blir denne partikkelen fanget av fella.
+\lstinputlisting{oblig4_i.py}
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+		\paragraph{j)}
+			\begin{flushleft}
+Find the motion, $x(t)$, of an atom with velocity $v_0 = 10.0$ at $x = -5$. Describe what happens. \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+\includegraphics[width=12.6cm,height=8cm]{"C:/Users/Torstein/Documents/UiO/Fys-Mek1110/Python programmer"/Oblig4_j.png}
+Med utgangsfarten på $10$ meter per sekund vi ikke fella klare å stoppe partikkelen og partikkelen vil derfor komme til slutten og fortsette i samme fart.
+\lstinputlisting{oblig4_j.py}
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		\paragraph{k)}
+			\begin{flushleft}
+Find the maximal initial velocity $v_0$ the atom may have and still be trapped. \\
+\vspace{1mm}
+\textbf{Løsning:} \\
+\vspace{1mm}
+Maksimalverdien for $v_0$ blir $8.66$.
+\lstinputlisting{oblig4_k.py}
+			\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

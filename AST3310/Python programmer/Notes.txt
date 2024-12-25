@@ -1,0 +1,10 @@
+Notes:
+
+Senker R0 med *0.2      - Får omtrent kun stråling hele veien
+Øker R0 med *1.5        - Kommer helt inn til sentrum av modellen, og øker konveksjonsområdet ytters litt
+Senker T0 med *0.2      - konveksjonsområdene blir større. Spesielt den ytterste.
+Øker T0 med *5          - Konveksjon ytterst forsvinner nesten
+Senker rho0 med *0.1    - Konveksjon forsvinner nesten ytterst
+Øker rho0 med *10       - Øker konveksjon ytters kraftig
+Senker P0 med * 0.1     - Konveksjonen ytterst blir veldig liten
+Øker P0 med * 5         - Større konveksjon ytterst

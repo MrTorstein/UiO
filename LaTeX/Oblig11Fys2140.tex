@@ -1,0 +1,188 @@
+\documentclass[11pt, A4paper,norsk]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{textcomp}
+\usepackage{float}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{daynineyellow}{rgb}{1.0,0.655,0.102}
+\definecolor{url}{rgb}{0.1,0.1,0.4}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{daynineyellow},
+	stringstyle=\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\lstset{inputpath="C:/Users/Torstein/Documents/UiO/Fys2140/Python programmer"}
+\graphicspath{{C:/Users/Torstein/Documents/UiO/Fys2140/"Python programmer"/}}
+\hypersetup{colorlinks, urlcolor=url}
+
+\author{Torstein Solheim Ølberg}
+\title{Svar på Oblig nr. 11 i Fys2140}
+
+
+
+%\lstinputlisting{Filnavn! type kodefil}
+%\includegraphics[width=12.6cm,height=8cm]{Filnavn! type png}
+
+
+
+\begin{document}
+\maketitle
+	\begin{center}
+\Large \textbf{Oppgaver}
+	\end{center}
+
+
+
+
+
+
+
+
+
+		\paragraph{1.}
+			\subparagraph{a)}
+				\begin{flushleft}
+Dispersjonsrelasjonen for en fri, ikke-relativistisk partikkel er $\omega(k) = \frac{\hbar k^2}{2m}$, og gruppe og fase hastigheten er gitt ved $v_{\text{gruppe}} = \frac{d \omega}{dk} = \frac{\hbar k}{m}$, $v_{\text{fase}} = \frac{\omega}{k} = \frac{\hbar k}{2m}$. Den klasiske hastigheten til partikkelen er gitt fra løsningen av TASL, som er på formen $A e^{i(x \pm vt)}$, og da får vi at denne hastigheten skal være $v_{\text{klassisk}} = \frac{\hbar k}{m}$, som hos oss er det samme som gruppehastigheten.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{flushleft}
+Hvis $s = \frac{1}{2}$ følger det at $m_s \in \{- \frac{1}{2}, \frac{1}{2}\}$ \\
+For å finne ut om dette er en egenfunksjon setter jeg opp egenfunksjonen og lar opperatorene virke på hver side av likhetstegnet.
+$$\hat{S}^2 \psi(x) = \hat{S}^2 A \sum_{m_s} m_s \psi_{s, m_s} = A \sum_{m_s} \hat{S}^2 m_s \psi_{s, m_s} = A \sum_{m_s} m_s \hbar^2 s(s + 1) \psi_{s, m_s}$$
+$$\hat{S}^2 \psi(x) = A \sum_{m_s} m_s \hbar^2 s(s + 1) \psi_{s, m_s} = \hbar^2 s(s + 1) A \sum_{m_s} m_s \psi_{s, m_s} = \hbar^2 s(s + 1) \psi(x)$$
+Siden det å få operatoren til å virke på funksjonen er lik en konstant ganget med funksjonen, og deffinisjonen av den egenfuksjon er en funksjon som, hvis en spesifik operator virker på den tilsvarer at en konstant ganger med den, så er $\psi(x)$ egenfunksjonen til $\hat{S}^2$.
+Gjør det samme for $\hat{S}_z$
+$$\hat{S}_z \psi(x) = A \sum_{m_s} \hat{S}_z m_s \psi_{s, m_s} = A \sum_{m_s} m_s \hbar m_s \psi_{s, m_s} = A \hbar \sum_{m_s} m_s^2 \psi_{s, m_s}$$
+Dette blir ikke en konstant ganget med funksjonen, og vi får dermed at $\psi(x)$ ikke er en egenfunksjon.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+Antar at vi kan se på partikkelen som at den beveger seg i en dimensjon i en uendelig brønn med bred bredde $5 \text{fm}$. Uskarphetsrelasjonen for bevegelsesmengde og posisjon er
+$$\sigma_p \sigma_x \geq \frac{\hbar}{2}$$
+Det fører til at uskarpheten for bevegelsesmengden er gitt av $\sigma_p = \frac{\hbar}{2 \sigma_x}$ hvis vi antar at skarpheten er på sitt laveste. Siden vi kan ikke vet noe mer enn at nøytronet befinner seg inne i en kjerne på $5 \text{fm}$ blir dette uskarpheten til posisjonen, og vi får at skarpheten til bevegelsesmengde er gitt ved
+$$\sigma_p = \frac{\hbar c}{2 \sigma_x c} = \frac{197.3 \text{nm eV}}{2 \cdot 5 c \cdot 10^{-6} \text{nm}} = \frac{197.3 \text{nm eV}}{2 \cdot 5 c \cdot 10^{-6} \text{nm}} = 19.73 \frac{\text{MeV}}{c}$$
+Skarpheten til hastigheten tilsvarer skarpheten til bevegelsesmengden delt på massen, akkurat som forventet utifra den klassiske definisjonen av bevegelsesmengde og hastighet.
+$$\sigma_h = \frac{\sigma_p}{m_N} = \frac{19.73 \frac{\text{MeV}}{c}}{939.6 \frac{\text{MeV}}{c^2}} = 0.021c$$
+Forventningsverdien til hastigheten er lik $0$ siden partikkelen har like stor sannsynlighet for å bevege seg i en hvilken som helst retning, og ikke kan stikke av fra kjernen. Altså burde vi kunne forvente å måle hastigheter mellom $0.021c$ og $- 0.021c$.
+				\end{flushleft}
+			
+
+
+
+
+
+
+
+
+
+			\subparagraph{d)}
+				\begin{flushleft}
+Hamilton operatoren for en partikkel i tre dimensjoner er
+$$\hat{H}_0 = \frac{\hbar^2}{2m} \nabla^2$$
+For de stasjonære tilstandene så kommuterer Hamilton operatoren med både det angulære momentet kvadrert, og operatoren for det angulære momentet i $z$-retning. Det betyr at det da fint kan være helt skarpe verdier for disse størrelsene.
+				\end{flushleft}
+
+
+
+
+
+
+
+
+\clearpage
+		\paragraph{2.}
+			\subparagraph{a)}
+				\begin{flushleft}
+Kinetisk energi er gitt ved $K = \frac{1}{2} M v^2$ og hvis vi gjør om på utrykket oppgitt i oppgaven så får vi at $v = \frac{L_z}{M R}$. Da blir $K = \frac{L_z^2}{2MR^2} = - \frac{\hbar^2}{2MR^2} \frac{\partial^2}{\partial \phi^2}$. Siden operatoren $\hat{H} = \hat{K}$ får vi da at dette til slutt blir
+$$\hat{H} = K = - \frac{\hbar^2}{2MR^2} \frac{\partial^2}{\partial \phi^2}$$
+				\end{flushleft}
+
+
+
+
+
+
+
+
+
+
+			\subparagraph{b)}
+				\begin{flushleft}
+TUSL ser i dette tilfelle slik ut
+$$\hat{H} \psi(\phi) = K \psi(\phi)$$
+$$- \frac{\hbar^2}{2MR^2} \frac{\partial^2}{\partial \phi^2} \psi(\phi) = K \psi(\phi)$$
+$$\frac{\partial^2}{\partial \phi^2} \psi(\phi) = - \frac{2MKR^2}{\hbar^2} \psi(\phi) = - k \psi(\phi)$$
+En løsning for dette er $\psi_k(\phi) = N_k e^{i k \phi}$, der $k = \frac{2 M K R^2}{\hbar^2}$. 
+Sjekker så om dette er en egenfunksjon for operatoren $\hat{L}_z$
+$$\hat{L}_z \psi_k(\phi) = - i \hbar \frac{\partial}{\partial \phi} N_k e^{i k \phi} = \hbar k N_k e^{i k \phi} = C \psi_k(\phi)$$
+Altså er dette en egenfunksjon for operatoren. Så bestemmer vi normeringskonstanten ved at vi integrerer $|\psi_k|^2$ fra null til to pi, og dette skal være lik en.
+				\end{flushleft}
+				\begin{gather*}
+\int_{0}^{2 \pi} \psi_k^{*} \psi_k d\phi = \int_{0}^{2 \pi} N_k e^{- i k \phi} N_k e^{i k \phi} d\phi = N_k^2 \int_{0}^{2 \pi} d\phi = 2 \pi N_k^2 = 1 \\
+N_k = \frac{1}{\sqrt{2 \pi}} \\
+\psi_k(\phi) = \frac{1}{\sqrt{2 \pi}} e^{i k \phi}
+				\end{gather*}
+
+
+
+
+
+
+
+
+			\subparagraph{c)}
+				\begin{flushleft}
+Hvis funksjonen skal være entydig må disse kravene stemme
+$$\psi_k(\phi) = \psi_k(\phi + 2 \pi)$$
+$$\frac{1}{\sqrt{2 \pi}} e^{i k \phi} = \frac{1}{\sqrt{2 \pi}} e^{i k (\phi + 2 \pi)}$$
+$$\frac{1}{\sqrt{2 \pi}} e^{0} = \frac{1}{\sqrt{2 \pi}} = \frac{1}{\sqrt{2 \pi}} e^{i 2 k \pi}$$
+For at det siste kravet skal gjelde må $k$ være et heltall, altså at $k = 0, \pm 1, \pm 2, \dots$
+Egenverdien for angulært moment er $\hbar k$ som vi vet fra tidligere.
+De kvantiserte verdiene av $E_k$ er lik $K = \frac{\hbar^2 k^2}{2MR^2}$.
+Degenerasjonsgraden til $E_k$ er $2$ fordi de positive og negative verdiene av $k$ gir samme svaret. Unntaket er $0$ der det ikke finnes noen negativ eller positiv versjon, bare null.
+				\end{flushleft}
+\end{document}
